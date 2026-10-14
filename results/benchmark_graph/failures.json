@@ -1,0 +1,82 @@
+[
+  {
+    "query_id": "q_def_07",
+    "query": "What is GraphRAG?",
+    "type": "definition",
+    "category": "VOCABULARY_MISMATCH",
+    "strategy_used": "graph",
+    "retrieved_count": 0
+  },
+  {
+    "query_id": "q_def_09",
+    "query": "What is the RAGAS evaluation framework?",
+    "type": "definition",
+    "category": "VOCABULARY_MISMATCH",
+    "strategy_used": "graph",
+    "retrieved_count": 0
+  },
+  {
+    "query_id": "q_def_10",
+    "query": "What is Corrective Retrieval Augmented Generation (CRAG)?",
+    "type": "definition",
+    "category": "VOCABULARY_MISMATCH",
+    "strategy_used": "graph",
+    "retrieved_count": 0
+  },
+  {
+    "query_id": "q_rel_04",
+    "query": "Who authored Attention Is All You Need?",
+    "type": "relationship",
+    "category": "ENTITY_UNRESOLVED",
+    "strategy_used": "graph",
+    "retrieved_count": 0
+  },
+  {
+    "query_id": "q_rel_07",
+    "query": "Which organization introduced GraphRAG?",
+    "type": "relationship",
+    "category": "ENTITY_UNRESOLVED",
+    "strategy_used": "graph",
+    "retrieved_count": 0
+  },
+  {
+    "query_id": "q_comp_10",
+    "query": "Compare QA-GNN and GraphRAG knowledge graph usage.",
+    "type": "comparison",
+    "category": "VOCABULARY_MISMATCH",
+    "strategy_used": "graph",
+    "retrieved_count": 0
+  },
+  {
+    "query_id": "q_hop_02",
+    "query": "Which PEFT methods derived from Houlsby adapters reduced inference overhead?",
+    "type": "multi_hop",
+    "category": "MULTI_HOP_CHAIN_BROKEN",
+    "strategy_used": "graph",
+    "retrieved_count": 0
+  },
+  {
+    "query_id": "q_hop_09",
+    "query": "Which papers citing Attention Is All You Need introduced low-rank parameter adaptation?",
+    "type": "multi_hop",
+    "category": "MULTI_HOP_CHAIN_BROKEN",
+    "strategy_used": "graph",
+    "retrieved_count": 0
+  },
+  {
+    "query_id": "q_exp_06",
+    "query": "How many parameters did GPT-3 have according to the original paper?",
+    "type": "experimental",
+    "category": "VOCABULARY_MISMATCH",
+    "strategy_used": "graph",
+    "retrieved_count": 0
+  },
+  {
+    "query_id": "q_exp_10",
+    "query": "How much inference latency increase do adapter modules introduce in Transformer layers?",
+    "type": "experimental",
+    "category": "VOCABULARY_MISMATCH",
+    "strategy_used": "graph",
+    "retrieved_count": 5
+  }
+]

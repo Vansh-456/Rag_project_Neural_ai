@@ -1,0 +1,19 @@
+# Experiment: Adaptive Retrieval Routing
+experiment_id: "exp_07_adaptive"
+description: "Query intent analysis, complexity estimation, and dynamic routing to optimal retrieval strategy"
+
+retrieval:
+  default_strategy: "adaptive"
+  dense_top_k: 10
+  sparse_top_k: 10
+  graph_top_k: 10
+  final_top_k: 5
+  fusion_method: "rrf"
+  rrf_k: 60
+
+reranking:
+  enabled: true
+  candidate_pool_size: 20
+
+verification:
+  enabled: false

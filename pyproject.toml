@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adaptive-graph-vector-rag"
+version = "0.1.0"
+description = "Adaptive Graph + Vector RAG System built from first principles"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "Research Team", email = "research@example.com"}
+]
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn[standard]>=0.28.0",
+    "pydantic>=2.6.0",
+    "pydantic-settings>=2.2.0",
+    "pyyaml>=6.0.1",
+    "numpy>=1.26.0",
+    "rank-bm25>=0.2.2",
+    "networkx>=3.2.1",
+    "qdrant-client>=1.8.0",
+    "httpx>=0.27.0",
+    "structlog>=24.1.0",
+    "python-multipart>=0.0.9",
+    "jinja2>=3.1.3",
+]
+
+[project.optional-dependencies]
+ml = [
+    "sentence-transformers>=2.5.0",
+    "torch>=2.2.0",
+]
+neo4j = [
+    "neo4j>=5.18.0",
+]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.1.0",
+    "pytest-asyncio>=0.23.0",
+    "ruff>=0.3.0",
+    "mypy>=1.9.0",
+]
+all = [
+    "adaptive-graph-vector-rag[ml,neo4j,dev]",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false

@@ -1,0 +1,73 @@
+{
+  "experiment_id": "benchmark_bm25",
+  "pipeline_mode": "bm25",
+  "query_count": 50,
+  "metrics": {
+    "recall@k": {
+      "mean": 0.89,
+      "ci_95": [
+        0.8233,
+        0.95
+      ]
+    },
+    "precision@k": {
+      "mean": 0.512,
+      "ci_95": [
+        0.448,
+        0.572
+      ]
+    },
+    "mrr": {
+      "mean": 0.9067,
+      "ci_95": [
+        0.84,
+        0.96
+      ]
+    },
+    "ndcg@k": {
+      "mean": 1.423,
+      "ci_95": [
+        1.2932,
+        1.5616
+      ]
+    },
+    "hit_rate@k": 0.98,
+    "latency_ms": {
+      "p50": 12.93,
+      "p95": 26.12
+    }
+  },
+  "per_query_type": {
+    "definition": {
+      "count": 10,
+      "mean_recall": 0.8,
+      "mean_mrr": 0.95,
+      "mean_ndcg": 1.5366
+    },
+    "relationship": {
+      "count": 10,
+      "mean_recall": 0.9,
+      "mean_mrr": 0.9,
+      "mean_ndcg": 1.6502
+    },
+    "comparison": {
+      "count": 10,
+      "mean_recall": 0.95,
+      "mean_mrr": 0.95,
+      "mean_ndcg": 1.471
+    },
+    "multi_hop": {
+      "count": 10,
+      "mean_recall": 0.8,
+      "mean_mrr": 0.8833,
+      "mean_ndcg": 1.0465
+    },
+    "experimental": {
+      "count": 10,
+      "mean_recall": 1.0,
+      "mean_mrr": 0.85,
+      "mean_ndcg": 1.4109
+    }
+  },
+  "total_failures": 1
+}

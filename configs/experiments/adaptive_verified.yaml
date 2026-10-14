@@ -1,0 +1,26 @@
+# Experiment: Adaptive Retrieval + Grounded Generation & Claim Verification
+experiment_id: "exp_08_adaptive_verified"
+description: "Full end-to-end adaptive system with citation enforcement, atomic claim verification, and bounded self-correction"
+
+retrieval:
+  default_strategy: "adaptive"
+  dense_top_k: 10
+  sparse_top_k: 10
+  graph_top_k: 10
+  final_top_k: 5
+  fusion_method: "rrf"
+  rrf_k: 60
+
+reranking:
+  enabled: true
+  candidate_pool_size: 20
+
+generation:
+  enforce_citations: true
+  abstain_when_uncertain: true
+
+verification:
+  enabled: true
+  max_retries: 2
+  contradiction_threshold: 0.8
+  min_supported_claims_ratio: 0.8

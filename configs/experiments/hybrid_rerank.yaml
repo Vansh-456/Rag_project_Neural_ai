@@ -1,0 +1,19 @@
+# Experiment: Hybrid Dense + Lexical with Cross-Encoder Reranking
+experiment_id: "exp_04_hybrid_rerank"
+description: "Dense + BM25 RRF candidate pooling followed by cross-encoder reranking"
+
+retrieval:
+  default_strategy: "hybrid"
+  dense_top_k: 15
+  sparse_top_k: 15
+  graph_top_k: 0
+  final_top_k: 5
+  fusion_method: "rrf"
+  rrf_k: 60
+
+reranking:
+  enabled: true
+  candidate_pool_size: 20
+
+verification:
+  enabled: false

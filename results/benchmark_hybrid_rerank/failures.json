@@ -1,0 +1,10 @@
+[
+  {
+    "query_id": "q_rel_05",
+    "query": "Which paper introduced Fusion-in-Decoder?",
+    "type": "relationship",
+    "category": "ENTITY_UNRESOLVED",
+    "strategy_used": "hybrid_rerank",
+    "retrieved_count": 5
+  }
+]

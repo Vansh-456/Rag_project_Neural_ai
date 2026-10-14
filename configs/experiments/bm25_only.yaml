@@ -1,0 +1,16 @@
+# Experiment: BM25 Only Retrieval Baseline
+experiment_id: "exp_02_bm25_only"
+description: "Lexical BM25 retrieval without dense vectors, graph traversal, reranking, or verification"
+
+retrieval:
+  default_strategy: "bm25"
+  dense_top_k: 0
+  sparse_top_k: 5
+  graph_top_k: 0
+  final_top_k: 5
+
+reranking:
+  enabled: false
+
+verification:
+  enabled: false

@@ -1,0 +1,354 @@
+[
+  {
+    "system": "vector",
+    "recall@5": 0.6267,
+    "recall_ci": [
+      0.52,
+      0.7367
+    ],
+    "mrr": 0.622,
+    "ndcg@5": 0.8001,
+    "hit_rate": 0.78,
+    "p95_latency_ms": 18.3,
+    "per_query_type": {
+      "definition": {
+        "count": 10,
+        "mean_recall": 0.55,
+        "mean_mrr": 0.54,
+        "mean_ndcg": 0.8322
+      },
+      "relationship": {
+        "count": 10,
+        "mean_recall": 0.5,
+        "mean_mrr": 0.4,
+        "mean_ndcg": 0.6024
+      },
+      "comparison": {
+        "count": 10,
+        "mean_recall": 0.8,
+        "mean_mrr": 0.8033,
+        "mean_ndcg": 1.0514
+      },
+      "multi_hop": {
+        "count": 10,
+        "mean_recall": 0.3833,
+        "mean_mrr": 0.5333,
+        "mean_ndcg": 0.4066
+      },
+      "experimental": {
+        "count": 10,
+        "mean_recall": 0.9,
+        "mean_mrr": 0.8333,
+        "mean_ndcg": 1.1079
+      }
+    }
+  },
+  {
+    "system": "bm25",
+    "recall@5": 0.89,
+    "recall_ci": [
+      0.8233,
+      0.95
+    ],
+    "mrr": 0.9067,
+    "ndcg@5": 1.423,
+    "hit_rate": 0.98,
+    "p95_latency_ms": 26.12,
+    "per_query_type": {
+      "definition": {
+        "count": 10,
+        "mean_recall": 0.8,
+        "mean_mrr": 0.95,
+        "mean_ndcg": 1.5366
+      },
+      "relationship": {
+        "count": 10,
+        "mean_recall": 0.9,
+        "mean_mrr": 0.9,
+        "mean_ndcg": 1.6502
+      },
+      "comparison": {
+        "count": 10,
+        "mean_recall": 0.95,
+        "mean_mrr": 0.95,
+        "mean_ndcg": 1.471
+      },
+      "multi_hop": {
+        "count": 10,
+        "mean_recall": 0.8,
+        "mean_mrr": 0.8833,
+        "mean_ndcg": 1.0465
+      },
+      "experimental": {
+        "count": 10,
+        "mean_recall": 1.0,
+        "mean_mrr": 0.85,
+        "mean_ndcg": 1.4109
+      }
+    }
+  },
+  {
+    "system": "hybrid",
+    "recall@5": 0.88,
+    "recall_ci": [
+      0.8067,
+      0.9433
+    ],
+    "mrr": 0.8683,
+    "ndcg@5": 1.2601,
+    "hit_rate": 0.98,
+    "p95_latency_ms": 24.97,
+    "per_query_type": {
+      "definition": {
+        "count": 10,
+        "mean_recall": 0.8,
+        "mean_mrr": 0.95,
+        "mean_ndcg": 1.4311
+      },
+      "relationship": {
+        "count": 10,
+        "mean_recall": 0.9,
+        "mean_mrr": 0.725,
+        "mean_ndcg": 1.2972
+      },
+      "comparison": {
+        "count": 10,
+        "mean_recall": 0.9,
+        "mean_mrr": 0.95,
+        "mean_ndcg": 1.4191
+      },
+      "multi_hop": {
+        "count": 10,
+        "mean_recall": 0.8,
+        "mean_mrr": 0.8333,
+        "mean_ndcg": 0.8605
+      },
+      "experimental": {
+        "count": 10,
+        "mean_recall": 1.0,
+        "mean_mrr": 0.8833,
+        "mean_ndcg": 1.2928
+      }
+    }
+  },
+  {
+    "system": "hybrid_rerank",
+    "recall@5": 0.88,
+    "recall_ci": [
+      0.8067,
+      0.9433
+    ],
+    "mrr": 0.8683,
+    "ndcg@5": 1.2601,
+    "hit_rate": 0.98,
+    "p95_latency_ms": 28.79,
+    "per_query_type": {
+      "definition": {
+        "count": 10,
+        "mean_recall": 0.8,
+        "mean_mrr": 0.95,
+        "mean_ndcg": 1.4311
+      },
+      "relationship": {
+        "count": 10,
+        "mean_recall": 0.9,
+        "mean_mrr": 0.725,
+        "mean_ndcg": 1.2972
+      },
+      "comparison": {
+        "count": 10,
+        "mean_recall": 0.9,
+        "mean_mrr": 0.95,
+        "mean_ndcg": 1.4191
+      },
+      "multi_hop": {
+        "count": 10,
+        "mean_recall": 0.8,
+        "mean_mrr": 0.8333,
+        "mean_ndcg": 0.8605
+      },
+      "experimental": {
+        "count": 10,
+        "mean_recall": 1.0,
+        "mean_mrr": 0.8833,
+        "mean_ndcg": 1.2928
+      }
+    }
+  },
+  {
+    "system": "graph",
+    "recall@5": 0.69,
+    "recall_ci": [
+      0.5767,
+      0.7967
+    ],
+    "mrr": 0.74,
+    "ndcg@5": 1.2135,
+    "hit_rate": 0.8,
+    "p95_latency_ms": 11.44,
+    "per_query_type": {
+      "definition": {
+        "count": 10,
+        "mean_recall": 0.55,
+        "mean_mrr": 0.7,
+        "mean_ndcg": 1.245
+      },
+      "relationship": {
+        "count": 10,
+        "mean_recall": 0.8,
+        "mean_mrr": 0.8,
+        "mean_ndcg": 1.5392
+      },
+      "comparison": {
+        "count": 10,
+        "mean_recall": 0.7,
+        "mean_mrr": 0.8333,
+        "mean_ndcg": 1.2575
+      },
+      "multi_hop": {
+        "count": 10,
+        "mean_recall": 0.6,
+        "mean_mrr": 0.6333,
+        "mean_ndcg": 0.6913
+      },
+      "experimental": {
+        "count": 10,
+        "mean_recall": 0.8,
+        "mean_mrr": 0.7333,
+        "mean_ndcg": 1.3345
+      }
+    }
+  },
+  {
+    "system": "multi_hop",
+    "recall@5": 0.8233,
+    "recall_ci": [
+      0.7267,
+      0.9067
+    ],
+    "mrr": 0.7373,
+    "ndcg@5": 1.0333,
+    "hit_rate": 0.92,
+    "p95_latency_ms": 38.26,
+    "per_query_type": {
+      "definition": {
+        "count": 10,
+        "mean_recall": 0.75,
+        "mean_mrr": 0.7033,
+        "mean_ndcg": 1.0218
+      },
+      "relationship": {
+        "count": 10,
+        "mean_recall": 0.9,
+        "mean_mrr": 0.6333,
+        "mean_ndcg": 1.1072
+      },
+      "comparison": {
+        "count": 10,
+        "mean_recall": 0.85,
+        "mean_mrr": 0.875,
+        "mean_ndcg": 1.1329
+      },
+      "multi_hop": {
+        "count": 10,
+        "mean_recall": 0.7167,
+        "mean_mrr": 0.7,
+        "mean_ndcg": 0.6559
+      },
+      "experimental": {
+        "count": 10,
+        "mean_recall": 0.9,
+        "mean_mrr": 0.775,
+        "mean_ndcg": 1.2488
+      }
+    }
+  },
+  {
+    "system": "adaptive",
+    "recall@5": 0.8033,
+    "recall_ci": [
+      0.71,
+      0.8867
+    ],
+    "mrr": 0.8047,
+    "ndcg@5": 1.2575,
+    "hit_rate": 0.9,
+    "p95_latency_ms": 19.81,
+    "per_query_type": {
+      "definition": {
+        "count": 10,
+        "mean_recall": 0.55,
+        "mean_mrr": 0.54,
+        "mean_ndcg": 0.8322
+      },
+      "relationship": {
+        "count": 10,
+        "mean_recall": 0.9,
+        "mean_mrr": 0.9,
+        "mean_ndcg": 1.7523
+      },
+      "comparison": {
+        "count": 10,
+        "mean_recall": 0.9,
+        "mean_mrr": 0.95,
+        "mean_ndcg": 1.4191
+      },
+      "multi_hop": {
+        "count": 10,
+        "mean_recall": 0.7667,
+        "mean_mrr": 0.7333,
+        "mean_ndcg": 0.8726
+      },
+      "experimental": {
+        "count": 10,
+        "mean_recall": 0.9,
+        "mean_mrr": 0.9,
+        "mean_ndcg": 1.4115
+      }
+    }
+  },
+  {
+    "system": "adaptive_verified",
+    "recall@5": 0.8033,
+    "recall_ci": [
+      0.71,
+      0.8867
+    ],
+    "mrr": 0.8047,
+    "ndcg@5": 1.2575,
+    "hit_rate": 0.9,
+    "p95_latency_ms": 22.28,
+    "per_query_type": {
+      "definition": {
+        "count": 10,
+        "mean_recall": 0.55,
+        "mean_mrr": 0.54,
+        "mean_ndcg": 0.8322
+      },
+      "relationship": {
+        "count": 10,
+        "mean_recall": 0.9,
+        "mean_mrr": 0.9,
+        "mean_ndcg": 1.7523
+      },
+      "comparison": {
+        "count": 10,
+        "mean_recall": 0.9,
+        "mean_mrr": 0.95,
+        "mean_ndcg": 1.4191
+      },
+      "multi_hop": {
+        "count": 10,
+        "mean_recall": 0.7667,
+        "mean_mrr": 0.7333,
+        "mean_ndcg": 0.8726
+      },
+      "experimental": {
+        "count": 10,
+        "mean_recall": 0.9,
+        "mean_mrr": 0.9,
+        "mean_ndcg": 1.4115
+      }
+    }
+  }
+]

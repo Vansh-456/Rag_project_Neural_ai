@@ -1,0 +1,179 @@
+{
+  "q_def_01": {
+    "paper_lora_2021": 2,
+    "paper_adapters_2019": 1
+  },
+  "q_def_02": {
+    "paper_attention_2017": 2,
+    "paper_bert_2018": 1
+  },
+  "q_def_03": {
+    "paper_dpr_2020": 2,
+    "paper_rag_2020": 1
+  },
+  "q_def_04": {
+    "paper_fid_2020": 2,
+    "paper_rag_2020": 1
+  },
+  "q_def_05": {
+    "paper_bert_2018": 2,
+    "paper_roberta_2019": 1
+  },
+  "q_def_06": {
+    "paper_colbert_2020": 2
+  },
+  "q_def_07": {
+    "paper_graphrag_2024": 2
+  },
+  "q_def_08": {
+    "paper_prefix_tuning_2021": 2,
+    "paper_lora_2021": 1
+  },
+  "q_def_09": {
+    "paper_ragas_2023": 2
+  },
+  "q_def_10": {
+    "paper_crag_2024": 2
+  },
+  "q_rel_01": {
+    "paper_lora_2021": 2
+  },
+  "q_rel_02": {
+    "paper_bert_2018": 2
+  },
+  "q_rel_03": {
+    "paper_dpr_2020": 2
+  },
+  "q_rel_04": {
+    "paper_attention_2017": 2
+  },
+  "q_rel_05": {
+    "paper_fid_2020": 2
+  },
+  "q_rel_06": {
+    "paper_colbert_2020": 2
+  },
+  "q_rel_07": {
+    "paper_graphrag_2024": 2
+  },
+  "q_rel_08": {
+    "paper_roberta_2019": 2
+  },
+  "q_rel_09": {
+    "paper_rag_2020": 2,
+    "paper_dpr_2020": 1
+  },
+  "q_rel_10": {
+    "paper_prefix_tuning_2021": 2
+  },
+  "q_comp_01": {
+    "paper_lora_2021": 2,
+    "paper_adapters_2019": 2
+  },
+  "q_comp_02": {
+    "paper_bert_2018": 2,
+    "paper_roberta_2019": 2
+  },
+  "q_comp_03": {
+    "paper_dpr_2020": 2
+  },
+  "q_comp_04": {
+    "paper_colbert_2020": 2
+  },
+  "q_comp_05": {
+    "paper_graphrag_2024": 2,
+    "paper_rag_2020": 1
+  },
+  "q_comp_06": {
+    "paper_lora_2021": 2,
+    "paper_prefix_tuning_2021": 2
+  },
+  "q_comp_07": {
+    "paper_fid_2020": 2,
+    "paper_rag_2020": 2
+  },
+  "q_comp_08": {
+    "paper_t5_2019": 2,
+    "paper_bert_2018": 2
+  },
+  "q_comp_09": {
+    "paper_realm_2020": 2,
+    "paper_rag_2020": 2
+  },
+  "q_comp_10": {
+    "paper_qagnn_2021": 2,
+    "paper_graphrag_2024": 2
+  },
+  "q_hop_01": {
+    "paper_bert_2018": 2,
+    "paper_roberta_2019": 2,
+    "paper_attention_2017": 1
+  },
+  "q_hop_02": {
+    "paper_lora_2021": 2,
+    "paper_adapters_2019": 2
+  },
+  "q_hop_03": {
+    "paper_dpr_2020": 2,
+    "paper_rag_2020": 2,
+    "paper_bert_2018": 1
+  },
+  "q_hop_04": {
+    "paper_rag_2020": 2,
+    "paper_dpr_2020": 2
+  },
+  "q_hop_05": {
+    "paper_bert_2018": 2
+  },
+  "q_hop_06": {
+    "paper_fid_2020": 2,
+    "paper_t5_2019": 2
+  },
+  "q_hop_07": {
+    "paper_qagnn_2021": 2,
+    "paper_roberta_2019": 2
+  },
+  "q_hop_08": {
+    "paper_rag_2020": 2,
+    "paper_fid_2020": 2,
+    "paper_dpr_2020": 1
+  },
+  "q_hop_09": {
+    "paper_lora_2021": 2,
+    "paper_attention_2017": 1
+  },
+  "q_hop_10": {
+    "paper_ragas_2023": 2,
+    "paper_rag_2020": 1
+  },
+  "q_exp_01": {
+    "paper_lora_2021": 2
+  },
+  "q_exp_02": {
+    "paper_bert_2018": 2
+  },
+  "q_exp_03": {
+    "paper_dpr_2020": 2
+  },
+  "q_exp_04": {
+    "paper_attention_2017": 2
+  },
+  "q_exp_05": {
+    "paper_fid_2020": 2
+  },
+  "q_exp_06": {
+    "paper_gpt3_2020": 2
+  },
+  "q_exp_07": {
+    "paper_roberta_2019": 2
+  },
+  "q_exp_08": {
+    "paper_colbert_2020": 2
+  },
+  "q_exp_09": {
+    "paper_prefix_tuning_2021": 2
+  },
+  "q_exp_10": {
+    "paper_adapters_2019": 2
+  }
+}

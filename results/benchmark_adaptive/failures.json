@@ -1,0 +1,42 @@
+[
+  {
+    "query_id": "q_def_04",
+    "query": "Explain the concept of Fusion-in-Decoder (FiD).",
+    "type": "definition",
+    "category": "VOCABULARY_MISMATCH",
+    "strategy_used": "vector",
+    "retrieved_count": 5
+  },
+  {
+    "query_id": "q_def_07",
+    "query": "What is GraphRAG?",
+    "type": "definition",
+    "category": "VOCABULARY_MISMATCH",
+    "strategy_used": "vector",
+    "retrieved_count": 5
+  },
+  {
+    "query_id": "q_rel_07",
+    "query": "Which organization introduced GraphRAG?",
+    "type": "relationship",
+    "category": "ENTITY_UNRESOLVED",
+    "strategy_used": "graph",
+    "retrieved_count": 0
+  },
+  {
+    "query_id": "q_hop_02",
+    "query": "Which PEFT methods derived from Houlsby adapters reduced inference overhead?",
+    "type": "multi_hop",
+    "category": "MULTI_HOP_CHAIN_BROKEN",
+    "strategy_used": "graph",
+    "retrieved_count": 0
+  },
+  {
+    "query_id": "q_exp_06",
+    "query": "How many parameters did GPT-3 have according to the original paper?",
+    "type": "experimental",
+    "category": "VOCABULARY_MISMATCH",
+    "strategy_used": "vector",
+    "retrieved_count": 5
+  }
+]

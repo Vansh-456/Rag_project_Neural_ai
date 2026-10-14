@@ -1,0 +1,18 @@
+# Experiment: Hybrid Dense + Lexical Fusion
+experiment_id: "exp_03_hybrid"
+description: "Dense vector + BM25 reciprocal rank fusion without reranking"
+
+retrieval:
+  default_strategy: "hybrid"
+  dense_top_k: 10
+  sparse_top_k: 10
+  graph_top_k: 0
+  final_top_k: 5
+  fusion_method: "rrf"
+  rrf_k: 60
+
+reranking:
+  enabled: false
+
+verification:
+  enabled: false

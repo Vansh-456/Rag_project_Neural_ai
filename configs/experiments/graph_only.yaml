@@ -1,0 +1,16 @@
+# Experiment: Graph Only Traversal
+experiment_id: "exp_05_graph_only"
+description: "Entity linking and multi-hop graph path extraction serialized to evidence"
+
+retrieval:
+  default_strategy: "graph"
+  dense_top_k: 0
+  sparse_top_k: 0
+  graph_top_k: 10
+  final_top_k: 5
+
+reranking:
+  enabled: false
+
+verification:
+  enabled: false

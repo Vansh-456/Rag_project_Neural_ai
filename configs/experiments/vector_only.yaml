@@ -1,0 +1,16 @@
+# Experiment: Vector Only Retrieval Baseline
+experiment_id: "exp_01_vector_only"
+description: "Dense vector retrieval without lexical search, graph traversal, reranking, or verification"
+
+retrieval:
+  default_strategy: "vector"
+  dense_top_k: 5
+  sparse_top_k: 0
+  graph_top_k: 0
+  final_top_k: 5
+
+reranking:
+  enabled: false
+
+verification:
+  enabled: false

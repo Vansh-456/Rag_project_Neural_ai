@@ -1,0 +1,21 @@
+# Production Configuration Override
+app:
+  environment: "production"
+  log_level: "INFO"
+
+vector_store:
+  backend: "qdrant"
+  host: "qdrant"
+  port: 6333
+
+graph:
+  backend: "neo4j"
+  neo4j_uri: "bolt://neo4j:7687"
+
+generation:
+  provider: "openai"
+  model_name: "gpt-4o-mini"
+
+verification:
+  enabled: true
+  max_retries: 2

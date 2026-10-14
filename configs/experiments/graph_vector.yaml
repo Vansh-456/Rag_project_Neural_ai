@@ -1,0 +1,19 @@
+# Experiment: Graph-Guided Vector & Vector-Guided Graph Fusion
+experiment_id: "exp_06_graph_vector"
+description: "Unified heterogeneous evidence pooling across dense text chunks and serialized graph paths"
+
+retrieval:
+  default_strategy: "multi_hop"
+  dense_top_k: 10
+  sparse_top_k: 5
+  graph_top_k: 10
+  final_top_k: 5
+  fusion_method: "rrf"
+  rrf_k: 60
+
+reranking:
+  enabled: true
+  candidate_pool_size: 20
+
+verification:
+  enabled: false

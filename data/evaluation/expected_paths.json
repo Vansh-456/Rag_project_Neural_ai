@@ -1,0 +1,20 @@
+{
+  "q_rel_01": [
+    "ent_author_edward_hu -> INTRODUCES -> ent_lora"
+  ],
+  "q_rel_02": [
+    "ent_author_devlin -> INTRODUCES -> ent_bert"
+  ],
+  "q_hop_01": [
+    "ent_transformer -> EXTENDS -> ent_bert -> EVALUATES_ON -> ent_benchmark_glue"
+  ],
+  "q_hop_02": [
+    "ent_adapters -> IMPROVES -> ent_lora"
+  ],
+  "q_hop_03": [
+    "ent_bert -> USED_IN -> ent_dpr -> EVALUATES_ON -> ent_benchmark_nq"
+  ],
+  "q_hop_04": [
+    "ent_author_patrick_lewis -> INTRODUCES -> ent_rag -> USES -> ent_dpr"
+  ]
+}

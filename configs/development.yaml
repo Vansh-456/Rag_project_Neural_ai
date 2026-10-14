@@ -1,0 +1,17 @@
+# Development Configuration Override
+app:
+  environment: "development"
+  log_level: "DEBUG"
+
+vector_store:
+  backend: "in_memory"
+
+graph:
+  backend: "networkx"
+
+generation:
+  provider: "mock"
+
+verification:
+  enabled: true
+  max_retries: 2

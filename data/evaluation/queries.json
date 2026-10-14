@@ -1,0 +1,252 @@
+[
+  {
+    "id": "q_def_01",
+    "text": "What is LoRA?",
+    "type": "definition"
+  },
+  {
+    "id": "q_def_02",
+    "text": "Define the Transformer architecture.",
+    "type": "definition"
+  },
+  {
+    "id": "q_def_03",
+    "text": "What is Dense Passage Retrieval (DPR)?",
+    "type": "definition"
+  },
+  {
+    "id": "q_def_04",
+    "text": "Explain the concept of Fusion-in-Decoder (FiD).",
+    "type": "definition"
+  },
+  {
+    "id": "q_def_05",
+    "text": "What is BERT?",
+    "type": "definition"
+  },
+  {
+    "id": "q_def_06",
+    "text": "Define ColBERT late interaction.",
+    "type": "definition"
+  },
+  {
+    "id": "q_def_07",
+    "text": "What is GraphRAG?",
+    "type": "definition"
+  },
+  {
+    "id": "q_def_08",
+    "text": "What is Prefix-Tuning?",
+    "type": "definition"
+  },
+  {
+    "id": "q_def_09",
+    "text": "What is the RAGAS evaluation framework?",
+    "type": "definition"
+  },
+  {
+    "id": "q_def_10",
+    "text": "What is Corrective Retrieval Augmented Generation (CRAG)?",
+    "type": "definition"
+  },
+  {
+    "id": "q_rel_01",
+    "text": "Who introduced LoRA?",
+    "type": "relationship"
+  },
+  {
+    "id": "q_rel_02",
+    "text": "Who authored the BERT paper?",
+    "type": "relationship"
+  },
+  {
+    "id": "q_rel_03",
+    "text": "Who created Dense Passage Retrieval (DPR)?",
+    "type": "relationship"
+  },
+  {
+    "id": "q_rel_04",
+    "text": "Who authored Attention Is All You Need?",
+    "type": "relationship"
+  },
+  {
+    "id": "q_rel_05",
+    "text": "Which paper introduced Fusion-in-Decoder?",
+    "type": "relationship"
+  },
+  {
+    "id": "q_rel_06",
+    "text": "Who introduced ColBERT?",
+    "type": "relationship"
+  },
+  {
+    "id": "q_rel_07",
+    "text": "Which organization introduced GraphRAG?",
+    "type": "relationship"
+  },
+  {
+    "id": "q_rel_08",
+    "text": "Who authored the RoBERTa paper?",
+    "type": "relationship"
+  },
+  {
+    "id": "q_rel_09",
+    "text": "Who introduced the RAG model combining DPR and BART?",
+    "type": "relationship"
+  },
+  {
+    "id": "q_rel_10",
+    "text": "Who proposed Prefix-Tuning?",
+    "type": "relationship"
+  },
+  {
+    "id": "q_comp_01",
+    "text": "How does LoRA differ from adapters in terms of inference latency?",
+    "type": "comparison"
+  },
+  {
+    "id": "q_comp_02",
+    "text": "Compare BERT and RoBERTa pretraining objectives.",
+    "type": "comparison"
+  },
+  {
+    "id": "q_comp_03",
+    "text": "What is the difference between DPR and traditional BM25 retrieval?",
+    "type": "comparison"
+  },
+  {
+    "id": "q_comp_04",
+    "text": "Compare ColBERT late interaction versus standard cross-encoders.",
+    "type": "comparison"
+  },
+  {
+    "id": "q_comp_05",
+    "text": "How does GraphRAG differ from standard vector RAG on global queries?",
+    "type": "comparison"
+  },
+  {
+    "id": "q_comp_06",
+    "text": "Compare LoRA and Prefix-Tuning parameter efficiencies.",
+    "type": "comparison"
+  },
+  {
+    "id": "q_comp_07",
+    "text": "How does FiD compare with RAG-Sequence in processing multiple passages?",
+    "type": "comparison"
+  },
+  {
+    "id": "q_comp_08",
+    "text": "Compare T5 unified text-to-text format with BERT masked language modeling.",
+    "type": "comparison"
+  },
+  {
+    "id": "q_comp_09",
+    "text": "What is the difference between REALM pretraining and standard RAG fine-tuning?",
+    "type": "comparison"
+  },
+  {
+    "id": "q_comp_10",
+    "text": "Compare QA-GNN and GraphRAG knowledge graph usage.",
+    "type": "comparison"
+  },
+  {
+    "id": "q_hop_01",
+    "text": "Which methods derived from Transformers improved GLUE benchmark scores?",
+    "type": "multi_hop"
+  },
+  {
+    "id": "q_hop_02",
+    "text": "Which PEFT methods derived from Houlsby adapters reduced inference overhead?",
+    "type": "multi_hop"
+  },
+  {
+    "id": "q_hop_03",
+    "text": "Which retrieval systems based on BERT evaluate on Natural Questions?",
+    "type": "multi_hop"
+  },
+  {
+    "id": "q_hop_04",
+    "text": "Who authored the dense retriever used by Patrick Lewis in the RAG paper?",
+    "type": "multi_hop"
+  },
+  {
+    "id": "q_hop_05",
+    "text": "Which models introduced by Devlin were subsequently evaluated on SQuAD?",
+    "type": "multi_hop"
+  },
+  {
+    "id": "q_hop_06",
+    "text": "Which methods based on T5 achieved state of the art on TriviaQA?",
+    "type": "multi_hop"
+  },
+  {
+    "id": "q_hop_07",
+    "text": "Which graph-based reasoning systems use RoBERTa embeddings?",
+    "type": "multi_hop"
+  },
+  {
+    "id": "q_hop_08",
+    "text": "Which techniques derived from DPR improve open-domain question answering?",
+    "type": "multi_hop"
+  },
+  {
+    "id": "q_hop_09",
+    "text": "Which papers citing Attention Is All You Need introduced low-rank parameter adaptation?",
+    "type": "multi_hop"
+  },
+  {
+    "id": "q_hop_10",
+    "text": "Which retrieval evaluation frameworks assess faithfulness in models using DPR?",
+    "type": "multi_hop"
+  },
+  {
+    "id": "q_exp_01",
+    "text": "What quantitative improvement did LoRA achieve in parameter reduction compared to full fine-tuning?",
+    "type": "experimental"
+  },
+  {
+    "id": "q_exp_02",
+    "text": "What was BERT's exact performance score on the GLUE benchmark?",
+    "type": "experimental"
+  },
+  {
+    "id": "q_exp_03",
+    "text": "What top-20 passage retrieval accuracy did DPR achieve on Natural Questions?",
+    "type": "experimental"
+  },
+  {
+    "id": "q_exp_04",
+    "text": "What BLEU score did the original Transformer model achieve on WMT 2014 English-German?",
+    "type": "experimental"
+  },
+  {
+    "id": "q_exp_05",
+    "text": "What exact match score did FiD obtain on Natural Questions?",
+    "type": "experimental"
+  },
+  {
+    "id": "q_exp_06",
+    "text": "How many parameters did GPT-3 have according to the original paper?",
+    "type": "experimental"
+  },
+  {
+    "id": "q_exp_07",
+    "text": "What GLUE benchmark score did RoBERTa achieve without NSP pretraining?",
+    "type": "experimental"
+  },
+  {
+    "id": "q_exp_08",
+    "text": "What latency speedup did ColBERT demonstrate over standard cross-encoders?",
+    "type": "experimental"
+  },
+  {
+    "id": "q_exp_09",
+    "text": "What percentage of parameters does Prefix-Tuning train compared to full models?",
+    "type": "experimental"
+  },
+  {
+    "id": "q_exp_10",
+    "text": "How much inference latency increase do adapter modules introduce in Transformer layers?",
+    "type": "experimental"
+  }
+]
