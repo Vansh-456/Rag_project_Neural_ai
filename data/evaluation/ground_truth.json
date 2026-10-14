@@ -1,0 +1,707 @@
+{
+  "d01": [
+    {
+      "doc_id": "2106.09685",
+      "anchors": [
+        "rank decomposition matrices"
+      ],
+      "grade": 2
+    }
+  ],
+  "d02": [
+    {
+      "doc_id": "2212.10496",
+      "anchors": [
+        "hypothetical document"
+      ],
+      "grade": 2
+    }
+  ],
+  "d03": [
+    {
+      "doc_id": "2004.12832",
+      "anchors": [
+        "late interaction"
+      ],
+      "grade": 2
+    }
+  ],
+  "d04": [
+    {
+      "doc_id": "2007.01282",
+      "anchors": [
+        "fusion-in-decoder"
+      ],
+      "grade": 2
+    }
+  ],
+  "d05": [
+    {
+      "doc_id": "2101.00190",
+      "anchors": [
+        "continuous task-specific vector"
+      ],
+      "grade": 2
+    }
+  ],
+  "d06": [
+    {
+      "doc_id": "1911.00172",
+      "anchors": [
+        "nearest neighbor"
+      ],
+      "grade": 2
+    }
+  ],
+  "d07": [
+    {
+      "doc_id": "2004.04906",
+      "anchors": [
+        "dual-encoder"
+      ],
+      "grade": 2
+    }
+  ],
+  "d08": [
+    {
+      "doc_id": "2112.04426",
+      "anchors": [
+        "retrieval-enhanced transformer"
+      ],
+      "grade": 2
+    }
+  ],
+  "d09": [
+    {
+      "doc_id": "2305.14314",
+      "anchors": [
+        "4-bit normalfloat"
+      ],
+      "grade": 2
+    }
+  ],
+  "d10": [
+    {
+      "doc_id": "2401.18059",
+      "anchors": [
+        "recursively embedding, clustering, and summarizing"
+      ],
+      "grade": 2
+    }
+  ],
+  "d11": [
+    {
+      "doc_id": "2106.10199",
+      "anchors": [
+        "bias terms"
+      ],
+      "grade": 2
+    }
+  ],
+  "d12": [
+    {
+      "doc_id": "2310.11511",
+      "anchors": [
+        "reflection tokens"
+      ],
+      "grade": 2
+    }
+  ],
+  "d13": [
+    {
+      "doc_id": "2202.06991",
+      "anchors": [
+        "differentiable search index"
+      ],
+      "grade": 2
+    }
+  ],
+  "d14": [
+    {
+      "doc_id": "2212.10496",
+      "anchors": [
+        "relevance labels"
+      ],
+      "grade": 2
+    }
+  ],
+  "d15": [
+    {
+      "doc_id": "2106.09685",
+      "anchors": [
+        "rank decomposition matrices"
+      ],
+      "grade": 2
+    }
+  ],
+  "d16": [
+    {
+      "doc_id": "1906.00300",
+      "anchors": [
+        "inverse cloze task"
+      ],
+      "grade": 2
+    }
+  ],
+  "r01": [
+    {
+      "doc_id": "2106.09685",
+      "anchors": [
+        "we propose low-rank adaptation"
+      ],
+      "grade": 2
+    }
+  ],
+  "r02": [
+    {
+      "doc_id": "2004.12832",
+      "anchors": [
+        "we present colbert"
+      ],
+      "grade": 2
+    }
+  ],
+  "r03": [
+    {
+      "doc_id": "2004.04906",
+      "anchors": [
+        "dual-encoder"
+      ],
+      "grade": 2
+    }
+  ],
+  "r04": [
+    {
+      "doc_id": "2007.01282",
+      "anchors": [
+        "fusion-in-decoder"
+      ],
+      "grade": 2
+    }
+  ],
+  "r05": [
+    {
+      "doc_id": "2002.08909",
+      "anchors": [
+        "kelvin guu"
+      ],
+      "grade": 2
+    }
+  ],
+  "r06": [
+    {
+      "doc_id": "1809.09600",
+      "anchors": [
+        "hotpotqa"
+      ],
+      "grade": 2
+    }
+  ],
+  "r07": [
+    {
+      "doc_id": "2104.08663",
+      "anchors": [
+        "beir"
+      ],
+      "grade": 2
+    }
+  ],
+  "r08": [
+    {
+      "doc_id": "2104.08691",
+      "anchors": [
+        "prompt tuning"
+      ],
+      "grade": 2
+    }
+  ],
+  "r09": [
+    {
+      "doc_id": "2208.03299",
+      "anchors": [
+        "contriever"
+      ],
+      "grade": 2
+    }
+  ],
+  "r10": [
+    {
+      "doc_id": "2005.11401",
+      "anchors": [
+        "dense passage retriever"
+      ],
+      "grade": 2
+    }
+  ],
+  "r11": [
+    {
+      "doc_id": "2210.07316",
+      "anchors": [
+        "mteb"
+      ],
+      "grade": 2
+    }
+  ],
+  "r12": [
+    {
+      "doc_id": "2309.11495",
+      "anchors": [
+        "chain-of-verification"
+      ],
+      "grade": 2
+    }
+  ],
+  "r13": [
+    {
+      "doc_id": "1908.10084",
+      "anchors": [
+        "siamese"
+      ],
+      "grade": 2
+    }
+  ],
+  "r14": [
+    {
+      "doc_id": "1904.08375",
+      "anchors": [
+        "doc2query"
+      ],
+      "grade": 2
+    }
+  ],
+  "c01": [
+    {
+      "doc_id": "2106.09685",
+      "anchors": [
+        "inference latency"
+      ],
+      "grade": 2
+    },
+    {
+      "doc_id": "1902.00751",
+      "anchors": [
+        "adapter modules"
+      ],
+      "grade": 1
+    }
+  ],
+  "c02": [
+    {
+      "doc_id": "2005.11401",
+      "anchors": [
+        "rag-token"
+      ],
+      "grade": 2
+    }
+  ],
+  "c03": [
+    {
+      "doc_id": "2101.00190",
+      "anchors": [
+        "0.1%"
+      ],
+      "grade": 2
+    }
+  ],
+  "c04": [
+    {
+      "doc_id": "2005.11401",
+      "anchors": [
+        "realm"
+      ],
+      "grade": 2
+    },
+    {
+      "doc_id": "2002.08909",
+      "anchors": [
+        "knowledge retriever"
+      ],
+      "grade": 1
+    }
+  ],
+  "c05": [
+    {
+      "doc_id": "2104.08663",
+      "anchors": [
+        "bm25"
+      ],
+      "grade": 2
+    }
+  ],
+  "c06": [
+    {
+      "doc_id": "2104.08691",
+      "anchors": [
+        "prompt design"
+      ],
+      "grade": 2
+    }
+  ],
+  "c07": [
+    {
+      "doc_id": "2112.01488",
+      "anchors": [
+        "residual compression"
+      ],
+      "grade": 2
+    }
+  ],
+  "c08": [
+    {
+      "doc_id": "2112.09118",
+      "anchors": [
+        "bm25"
+      ],
+      "grade": 2
+    }
+  ],
+  "c09": [
+    {
+      "doc_id": "2104.08821",
+      "anchors": [
+        "dropout"
+      ],
+      "grade": 2
+    },
+    {
+      "doc_id": "1908.10084",
+      "anchors": [
+        "siamese"
+      ],
+      "grade": 1
+    }
+  ],
+  "c10": [
+    {
+      "doc_id": "2404.16130",
+      "anchors": [
+        "community summaries"
+      ],
+      "grade": 2
+    }
+  ],
+  "c11": [
+    {
+      "doc_id": "1901.04085",
+      "anchors": [
+        "re-ranker"
+      ],
+      "grade": 1
+    },
+    {
+      "doc_id": "2003.06713",
+      "anchors": [
+        "t5"
+      ],
+      "grade": 2
+    }
+  ],
+  "c12": [
+    {
+      "doc_id": "2410.05779",
+      "anchors": [
+        "dual-level retrieval"
+      ],
+      "grade": 2
+    }
+  ],
+  "m01": [
+    {
+      "doc_id": "2005.11401",
+      "anchors": [
+        "natural questions"
+      ],
+      "grade": 2
+    },
+    {
+      "doc_id": "2007.01282",
+      "anchors": [
+        "dpr"
+      ],
+      "grade": 1
+    }
+  ],
+  "m02": [
+    {
+      "doc_id": "2004.12832",
+      "anchors": [
+        "ms marco"
+      ],
+      "grade": 2
+    },
+    {
+      "doc_id": "1901.04085",
+      "anchors": [
+        "ms marco"
+      ],
+      "grade": 2
+    }
+  ],
+  "m03": [
+    {
+      "doc_id": "2004.12832",
+      "anchors": [
+        "ms marco"
+      ],
+      "grade": 2
+    }
+  ],
+  "m04": [
+    {
+      "doc_id": "2106.09685",
+      "anchors": [
+        "glue"
+      ],
+      "grade": 2
+    },
+    {
+      "doc_id": "1902.00751",
+      "anchors": [
+        "glue"
+      ],
+      "grade": 2
+    },
+    {
+      "doc_id": "2106.10199",
+      "anchors": [
+        "glue"
+      ],
+      "grade": 2
+    },
+    {
+      "doc_id": "2110.07602",
+      "anchors": [
+        "glue"
+      ],
+      "grade": 1
+    }
+  ],
+  "m05": [
+    {
+      "doc_id": "2305.14314",
+      "anchors": [
+        "4-bit normalfloat"
+      ],
+      "grade": 2
+    },
+    {
+      "doc_id": "2402.09353",
+      "anchors": [
+        "lora"
+      ],
+      "grade": 1
+    }
+  ],
+  "m06": [
+    {
+      "doc_id": "2005.11401",
+      "anchors": [
+        "bart"
+      ],
+      "grade": 2
+    }
+  ],
+  "m07": [
+    {
+      "doc_id": "2212.10509",
+      "anchors": [
+        "hotpotqa"
+      ],
+      "grade": 2
+    },
+    {
+      "doc_id": "2210.03629",
+      "anchors": [
+        "hotpotqa"
+      ],
+      "grade": 2
+    }
+  ],
+  "m08": [
+    {
+      "doc_id": "2212.03533",
+      "anchors": [
+        "mteb"
+      ],
+      "grade": 2
+    },
+    {
+      "doc_id": "2309.07597",
+      "anchors": [
+        "mteb"
+      ],
+      "grade": 2
+    },
+    {
+      "doc_id": "2210.07316",
+      "anchors": [
+        "mteb"
+      ],
+      "grade": 1
+    }
+  ],
+  "m09": [
+    {
+      "doc_id": "2305.06983",
+      "anchors": [
+        "low-probability"
+      ],
+      "grade": 2
+    },
+    {
+      "doc_id": "2310.11511",
+      "anchors": [
+        "reflection tokens"
+      ],
+      "grade": 1
+    }
+  ],
+  "m10": [
+    {
+      "doc_id": "2112.01488",
+      "anchors": [
+        "beir"
+      ],
+      "grade": 2
+    }
+  ],
+  "m11": [
+    {
+      "doc_id": "1810.04805",
+      "anchors": [
+        "masked language model"
+      ],
+      "grade": 2
+    }
+  ],
+  "e01": [
+    {
+      "doc_id": "2004.04906",
+      "anchors": [
+        "9%-19%"
+      ],
+      "grade": 2
+    }
+  ],
+  "e02": [
+    {
+      "doc_id": "2106.09685",
+      "anchors": [
+        "on-par"
+      ],
+      "grade": 2
+    }
+  ],
+  "e03": [
+    {
+      "doc_id": "2305.14314",
+      "anchors": [
+        "48gb"
+      ],
+      "grade": 2
+    }
+  ],
+  "e04": [
+    {
+      "doc_id": "2201.11903",
+      "anchors": [
+        "gsm8k"
+      ],
+      "grade": 2
+    }
+  ],
+  "e05": [
+    {
+      "doc_id": "2307.03172",
+      "anchors": [
+        "u-shaped"
+      ],
+      "grade": 2
+    }
+  ],
+  "e06": [
+    {
+      "doc_id": "2212.10496",
+      "anchors": [
+        "contriever"
+      ],
+      "grade": 2
+    }
+  ],
+  "e07": [
+    {
+      "doc_id": "2007.01282",
+      "anchors": [
+        "number of passages"
+      ],
+      "grade": 2
+    }
+  ],
+  "e08": [
+    {
+      "doc_id": "2106.09685",
+      "anchors": [
+        "10,000 times"
+      ],
+      "grade": 2
+    }
+  ],
+  "e09": [
+    {
+      "doc_id": "2112.04426",
+      "anchors": [
+        "fewer parameters"
+      ],
+      "grade": 2
+    }
+  ],
+  "e10": [
+    {
+      "doc_id": "2310.11511",
+      "anchors": [
+        "chatgpt"
+      ],
+      "grade": 2
+    }
+  ],
+  "e11": [
+    {
+      "doc_id": "1911.00172",
+      "anchors": [
+        "datastore"
+      ],
+      "grade": 2
+    }
+  ],
+  "e12": [
+    {
+      "doc_id": "2001.08361",
+      "anchors": [
+        "power-law"
+      ],
+      "grade": 2
+    }
+  ],
+  "e13": [
+    {
+      "doc_id": "2106.09685",
+      "anchors": [
+        "no additional inference latency"
+      ],
+      "grade": 2
+    }
+  ],
+  "e14": [
+    {
+      "doc_id": "2309.01431",
+      "anchors": [
+        "noise robustness"
+      ],
+      "grade": 2
+    }
+  ],
+  "u01": [],
+  "u02": [],
+  "u03": [],
+  "u04": []
+}

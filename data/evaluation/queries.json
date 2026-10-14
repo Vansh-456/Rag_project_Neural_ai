@@ -1,0 +1,593 @@
+[
+  {
+    "id": "d01",
+    "text": "What is LoRA?",
+    "type": "definition",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "d02",
+    "text": "What is HyDE?",
+    "type": "definition",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "d03",
+    "text": "What is late interaction in ColBERT?",
+    "type": "definition",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "d04",
+    "text": "What is the Fusion-in-Decoder model?",
+    "type": "definition",
+    "split": "test",
+    "answerable": true,
+    "tags": [
+      "acronym"
+    ]
+  },
+  {
+    "id": "d05",
+    "text": "What is prefix-tuning?",
+    "type": "definition",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "d06",
+    "text": "What is a kNN-LM?",
+    "type": "definition",
+    "split": "test",
+    "answerable": true,
+    "tags": [
+      "acronym"
+    ]
+  },
+  {
+    "id": "d07",
+    "text": "What is Dense Passage Retrieval?",
+    "type": "definition",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "d08",
+    "text": "What is the Retrieval-Enhanced Transformer?",
+    "type": "definition",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "d09",
+    "text": "What is the 4-bit NormalFloat data type in QLoRA?",
+    "type": "definition",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "d10",
+    "text": "What is RAPTOR?",
+    "type": "definition",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "d11",
+    "text": "What is BitFit?",
+    "type": "definition",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "d12",
+    "text": "What are reflection tokens in Self-RAG?",
+    "type": "definition",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "d13",
+    "text": "What is a Differentiable Search Index?",
+    "type": "definition",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "d14",
+    "text": "Which method does not require relevance labels for zero-shot dense retrieval?",
+    "type": "definition",
+    "split": "test",
+    "answerable": true,
+    "tags": [
+      "negation",
+      "paraphrase"
+    ]
+  },
+  {
+    "id": "d15",
+    "text": "what is low rank adaption",
+    "type": "definition",
+    "split": "dev",
+    "answerable": true,
+    "tags": [
+      "acronym",
+      "paraphrase",
+      "typo"
+    ]
+  },
+  {
+    "id": "d16",
+    "text": "What is the inverse cloze task?",
+    "type": "definition",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "r01",
+    "text": "Who introduced LoRA?",
+    "type": "relationship",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "r02",
+    "text": "Which paper introduced ColBERT?",
+    "type": "relationship",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "r03",
+    "text": "Who proposed Dense Passage Retrieval?",
+    "type": "relationship",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "r04",
+    "text": "Which paper introduced the Fusion-in-Decoder approach?",
+    "type": "relationship",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "r05",
+    "text": "Who are the authors of REALM?",
+    "type": "relationship",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "r06",
+    "text": "Which paper introduced the HotpotQA dataset?",
+    "type": "relationship",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "r07",
+    "text": "Who introduced the BEIR benchmark?",
+    "type": "relationship",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "r08",
+    "text": "Who introduced prompt tuning?",
+    "type": "relationship",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "r09",
+    "text": "Which retriever is Atlas based on?",
+    "type": "relationship",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "r10",
+    "text": "Which retriever does RAG use?",
+    "type": "relationship",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "r11",
+    "text": "Which paper introduced MTEB?",
+    "type": "relationship",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "r12",
+    "text": "Who proposed Chain-of-Verification?",
+    "type": "relationship",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "r13",
+    "text": "Which paper introduced Sentence-BERT siamese networks?",
+    "type": "relationship",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "r14",
+    "text": "Who introduced doc2query document expansion?",
+    "type": "relationship",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "c01",
+    "text": "How does LoRA differ from adapters?",
+    "type": "comparison",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "c02",
+    "text": "What is the difference between RAG-Sequence and RAG-Token?",
+    "type": "comparison",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "c03",
+    "text": "How does prefix-tuning compare to fine-tuning in trainable parameters?",
+    "type": "comparison",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "c04",
+    "text": "How do REALM and RAG differ?",
+    "type": "comparison",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "c05",
+    "text": "How does BM25 compare to dense retrievers on BEIR in zero-shot settings?",
+    "type": "comparison",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "c06",
+    "text": "How does prompt tuning compare to GPT-3 prompt design?",
+    "type": "comparison",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "c07",
+    "text": "How does ColBERTv2 differ from ColBERT?",
+    "type": "comparison",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "c08",
+    "text": "How does Contriever compare to BM25 without supervision?",
+    "type": "comparison",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "c09",
+    "text": "How does SimCSE versus Sentence-BERT train sentence embeddings?",
+    "type": "comparison",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "c10",
+    "text": "Compare GraphRAG with naive RAG for global questions",
+    "type": "comparison",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "c11",
+    "text": "How does monoT5 compare to monoBERT for passage re-ranking?",
+    "type": "comparison",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "c12",
+    "text": "How does LightRAG differ from GraphRAG?",
+    "type": "comparison",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "m01",
+    "text": "Which methods based on DPR were evaluated on Natural Questions?",
+    "type": "multi_hop",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "m02",
+    "text": "Which papers that use BERT introduce a ranking method evaluated on MS MARCO?",
+    "type": "multi_hop",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "m03",
+    "text": "Which datasets were used to evaluate the method that introduced late interaction?",
+    "type": "multi_hop",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "m04",
+    "text": "Which parameter-efficient methods that freeze the pretrained model were evaluated on GLUE?",
+    "type": "multi_hop",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "m05",
+    "text": "Which methods derived from LoRA reduce finetuning memory further?",
+    "type": "multi_hop",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "m06",
+    "text": "Which retrieval-augmented models that use a DPR retriever pair it with a BART generator?",
+    "type": "multi_hop",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "m07",
+    "text": "Which methods that interleave reasoning and retrieval were evaluated on HotpotQA?",
+    "type": "multi_hop",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "m08",
+    "text": "Which embedding models introduced after Sentence-BERT were evaluated on MTEB?",
+    "type": "multi_hop",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "m09",
+    "text": "Which adaptive methods that retrieve only when needed use low-probability tokens as a trigger?",
+    "type": "multi_hop",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "m10",
+    "text": "Which methods that extend ColBERT were evaluated on BEIR?",
+    "type": "multi_hop",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "m11",
+    "text": "Which papers that cite the Transformer paper introduce masked language modeling?",
+    "type": "multi_hop",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "e01",
+    "text": "What results show DPR outperforms BM25 on top-20 passage retrieval accuracy?",
+    "type": "experimental",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "e02",
+    "text": "What evidence shows LoRA performs on-par with full fine-tuning?",
+    "type": "experimental",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "e03",
+    "text": "How much GPU memory does QLoRA need to finetune a 65B model?",
+    "type": "experimental",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "e04",
+    "text": "How much does chain-of-thought prompting improve accuracy on GSM8K?",
+    "type": "experimental",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "e05",
+    "text": "How does performance change with the position of relevant information in a long context?",
+    "type": "experimental",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "e06",
+    "text": "What evidence shows HyDE improves zero-shot retrieval over Contriever?",
+    "type": "experimental",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "e07",
+    "text": "How does the number of retrieved passages affect Fusion-in-Decoder accuracy?",
+    "type": "experimental",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "e08",
+    "text": "By how much does LoRA reduce the number of trainable parameters compared with GPT-3 fine-tuning?",
+    "type": "experimental",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "e09",
+    "text": "What results show RETRO matches larger models with fewer parameters?",
+    "type": "experimental",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "e10",
+    "text": "What experiments show Self-RAG outperforms ChatGPT?",
+    "type": "experimental",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "e11",
+    "text": "How does the datastore size affect kNN-LM perplexity?",
+    "type": "experimental",
+    "split": "dev",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "e12",
+    "text": "What power-law relationship links language model loss to model size?",
+    "type": "experimental",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "e13",
+    "text": "Which parameter-efficient method adds no additional inference latency according to its experiments?",
+    "type": "experimental",
+    "split": "dev",
+    "answerable": true,
+    "tags": [
+      "paraphrase"
+    ]
+  },
+  {
+    "id": "e14",
+    "text": "How robust are LLMs to noisy retrieved documents in RAG benchmarks?",
+    "type": "experimental",
+    "split": "test",
+    "answerable": true,
+    "tags": []
+  },
+  {
+    "id": "u01",
+    "text": "What is the boiling point of tungsten?",
+    "type": "definition",
+    "split": "dev",
+    "answerable": false,
+    "tags": [
+      "unanswerable"
+    ]
+  },
+  {
+    "id": "u02",
+    "text": "Who won the 2018 FIFA World Cup?",
+    "type": "relationship",
+    "split": "dev",
+    "answerable": false,
+    "tags": [
+      "unanswerable"
+    ]
+  },
+  {
+    "id": "u03",
+    "text": "How does LoRA compare to Mixture-of-Depths routing in Gemini?",
+    "type": "comparison",
+    "split": "dev",
+    "answerable": false,
+    "tags": [
+      "unanswerable",
+      "adversarial"
+    ]
+  },
+  {
+    "id": "u04",
+    "text": "What exact match score does GPT-7 achieve on SQuAD 5.0?",
+    "type": "experimental",
+    "split": "dev",
+    "answerable": false,
+    "tags": [
+      "unanswerable",
+      "adversarial"
+    ]
+  }
+]

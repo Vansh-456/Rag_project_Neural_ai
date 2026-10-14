@@ -1,0 +1,230 @@
+{
+  "r01": {
+    "entities": [
+      "method:lora",
+      "paper:2106.09685"
+    ],
+    "relations": [
+      "INTRODUCES"
+    ]
+  },
+  "r02": {
+    "entities": [
+      "method:colbert",
+      "paper:2004.12832"
+    ],
+    "relations": [
+      "INTRODUCES"
+    ]
+  },
+  "r03": {
+    "entities": [
+      "method:dpr",
+      "paper:2004.04906"
+    ],
+    "relations": [
+      "INTRODUCES"
+    ]
+  },
+  "r04": {
+    "entities": [
+      "method:fid",
+      "paper:2007.01282"
+    ],
+    "relations": [
+      "INTRODUCES"
+    ]
+  },
+  "r05": {
+    "entities": [
+      "method:realm",
+      "paper:2002.08909",
+      "author:kelvin guu"
+    ],
+    "relations": [
+      "INTRODUCES",
+      "AUTHORED_BY"
+    ]
+  },
+  "r06": {
+    "entities": [
+      "dataset:hotpotqa",
+      "paper:1809.09600"
+    ],
+    "relations": [
+      "INTRODUCES"
+    ]
+  },
+  "r07": {
+    "entities": [
+      "dataset:beir",
+      "paper:2104.08663"
+    ],
+    "relations": [
+      "INTRODUCES"
+    ]
+  },
+  "r08": {
+    "entities": [
+      "method:prompt tuning",
+      "paper:2104.08691"
+    ],
+    "relations": [
+      "INTRODUCES"
+    ]
+  },
+  "r09": {
+    "entities": [
+      "model:atlas",
+      "method:contriever"
+    ],
+    "relations": [
+      "USES",
+      "BASED_ON"
+    ]
+  },
+  "r10": {
+    "entities": [
+      "method:rag",
+      "method:dpr"
+    ],
+    "relations": [
+      "USES",
+      "BASED_ON"
+    ]
+  },
+  "r11": {
+    "entities": [
+      "dataset:mteb",
+      "paper:2210.07316"
+    ],
+    "relations": [
+      "INTRODUCES"
+    ]
+  },
+  "r12": {
+    "entities": [
+      "method:chain of verification",
+      "paper:2309.11495"
+    ],
+    "relations": [
+      "INTRODUCES"
+    ]
+  },
+  "r13": {
+    "entities": [
+      "method:sentence bert",
+      "paper:1908.10084"
+    ],
+    "relations": [
+      "INTRODUCES"
+    ]
+  },
+  "r14": {
+    "entities": [
+      "method:doc2query",
+      "paper:1904.08375"
+    ],
+    "relations": [
+      "INTRODUCES"
+    ]
+  },
+  "m01": {
+    "entities": [
+      "method:dpr",
+      "dataset:natural questions"
+    ],
+    "relations": [
+      "BASED_ON",
+      "EVALUATES_ON"
+    ]
+  },
+  "m02": {
+    "entities": [
+      "model:bert",
+      "dataset:ms marco"
+    ],
+    "relations": [
+      "USES",
+      "EVALUATES_ON"
+    ]
+  },
+  "m03": {
+    "entities": [
+      "method:colbert",
+      "dataset:ms marco"
+    ],
+    "relations": [
+      "INTRODUCES",
+      "EVALUATES_ON"
+    ]
+  },
+  "m04": {
+    "entities": [
+      "dataset:glue"
+    ],
+    "relations": [
+      "EVALUATES_ON"
+    ]
+  },
+  "m05": {
+    "entities": [
+      "method:lora",
+      "method:qlora"
+    ],
+    "relations": [
+      "BASED_ON",
+      "EXTENDS",
+      "USES"
+    ]
+  },
+  "m06": {
+    "entities": [
+      "method:rag",
+      "model:bart",
+      "method:dpr"
+    ],
+    "relations": [
+      "USES",
+      "BASED_ON"
+    ]
+  },
+  "m07": {
+    "entities": [
+      "dataset:hotpotqa"
+    ],
+    "relations": [
+      "EVALUATES_ON"
+    ]
+  },
+  "m08": {
+    "entities": [
+      "dataset:mteb"
+    ],
+    "relations": [
+      "EVALUATES_ON"
+    ]
+  },
+  "m10": {
+    "entities": [
+      "method:colbert",
+      "method:colbertv2",
+      "dataset:beir"
+    ],
+    "relations": [
+      "EXTENDS",
+      "BASED_ON",
+      "EVALUATES_ON"
+    ]
+  },
+  "m11": {
+    "entities": [
+      "model:bert",
+      "method:masked language modeling"
+    ],
+    "relations": [
+      "INTRODUCES",
+      "CITES"
+    ]
+  }
+}
