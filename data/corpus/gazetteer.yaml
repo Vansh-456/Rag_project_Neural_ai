@@ -1,0 +1,165 @@
+# Seed alias table for entity recognition, normalization and resolution (Phase 8).
+# - `aliases` are surface forms that must resolve to the same canonical entity.
+# - `introduced_in` (optional) is a *prior* that the given corpus paper introduces the entity.
+#   The rule extractor only emits an INTRODUCES edge if it can ground it in that paper's text
+#   (the alias must appear in the paper's abstract/introduction chunks), so every edge still
+#   traces back to source text.
+# - `case_sensitive: true` for short acronyms that collide with English words.
+entities:
+  # ---------------- Methods ----------------
+  - {name: LoRA, type: Method, aliases: ["Low-Rank Adaptation", "low rank adaptation"], introduced_in: "2106.09685", case_sensitive: true}
+  - {name: QLoRA, type: Method, introduced_in: "2305.14314", case_sensitive: true}
+  - {name: DoRA, type: Method, aliases: ["Weight-Decomposed Low-Rank Adaptation"], introduced_in: "2402.09353", case_sensitive: true}
+  - {name: Adapters, type: Method, aliases: ["adapter", "adapter modules", "adapter tuning", "adapter layers", "bottleneck adapters"], introduced_in: "1902.00751"}
+  - {name: AdapterFusion, type: Method, introduced_in: "2005.00247"}
+  - {name: Prefix-Tuning, type: Method, aliases: ["prefix tuning", "prefix-tuning"], introduced_in: "2101.00190"}
+  - {name: Prompt Tuning, type: Method, aliases: ["prompt tuning", "soft prompts", "soft prompt tuning"], introduced_in: "2104.08691"}
+  - {name: P-Tuning, type: Method, aliases: ["P-tuning", "ptuning"], introduced_in: "2103.10385", case_sensitive: true}
+  - {name: P-Tuning v2, type: Method, aliases: ["P-tuning v2"], introduced_in: "2110.07602"}
+  - {name: BitFit, type: Method, introduced_in: "2106.10199"}
+  - {name: "(IA)3", type: Method, aliases: ["IA3", "(IA)^3", "T-Few"], introduced_in: "2205.05638", case_sensitive: true}
+  - {name: Fine-tuning, type: Method, aliases: ["fine-tuning", "finetuning", "full fine-tuning", "fine tuning"]}
+  - {name: In-Context Learning, type: Method, aliases: ["in-context learning", "few-shot prompting", "ICL"]}
+  - {name: Chain-of-Thought, type: Method, aliases: ["chain of thought", "chain-of-thought prompting", "CoT"], introduced_in: "2201.11903", case_sensitive: true}
+  - {name: RLHF, type: Method, aliases: ["reinforcement learning from human feedback"], introduced_in: "2203.02155", case_sensitive: true}
+  - {name: DPR, type: Method, aliases: ["Dense Passage Retrieval", "dense passage retriever"], introduced_in: "2004.04906", case_sensitive: true}
+  - {name: ORQA, type: Method, aliases: ["Open-Retrieval Question Answering"], introduced_in: "1906.00300", case_sensitive: true}
+  - {name: ANCE, type: Method, aliases: ["Approximate nearest neighbor Negative Contrastive Estimation"], introduced_in: "2007.00808", case_sensitive: true}
+  - {name: ColBERT, type: Method, aliases: ["late interaction"], introduced_in: "2004.12832", case_sensitive: true}
+  - {name: ColBERTv2, type: Method, introduced_in: "2112.01488", case_sensitive: true}
+  - {name: Contriever, type: Method, introduced_in: "2112.09118"}
+  - {name: HyDE, type: Method, aliases: ["Hypothetical Document Embeddings"], introduced_in: "2212.10496", case_sensitive: true}
+  - {name: SPLADE, type: Method, introduced_in: "2107.05720", case_sensitive: true}
+  - {name: doc2query, type: Method, aliases: ["Doc2query", "document expansion"], introduced_in: "1904.08375"}
+  - {name: Query2doc, type: Method, aliases: ["query2doc"], introduced_in: "2303.07678"}
+  - {name: DSI, type: Method, aliases: ["Differentiable Search Index"], introduced_in: "2202.06991", case_sensitive: true}
+  - {name: Proposition Retrieval, type: Method, aliases: ["propositions", "proposition-level retrieval", "Dense X Retrieval"], introduced_in: "2312.06648"}
+  - {name: BM25, type: Method, aliases: ["Okapi BM25", "BM-25"], case_sensitive: true}
+  - {name: TF-IDF, type: Method, aliases: ["tf-idf", "tfidf"]}
+  - {name: Dense Retrieval, type: Concept, aliases: ["dense retrieval", "dense retriever", "dense retrievers"]}
+  - {name: Sparse Retrieval, type: Concept, aliases: ["sparse retrieval", "lexical retrieval", "sparse retriever"]}
+  - {name: Sentence-BERT, type: Method, aliases: ["SBERT", "Sentence BERT"], introduced_in: "1908.10084"}
+  - {name: SimCSE, type: Method, introduced_in: "2104.08821", case_sensitive: true}
+  - {name: E5, type: Model, aliases: ["E5 embeddings"], introduced_in: "2212.03533", case_sensitive: true}
+  - {name: BGE, type: Model, aliases: ["BAAI General Embedding", "C-Pack"], introduced_in: "2309.07597", case_sensitive: true}
+  - {name: monoBERT, type: Method, aliases: ["BERT reranker", "BERT re-ranker"], introduced_in: "1901.04085"}
+  - {name: monoT5, type: Method, introduced_in: "2003.06713"}
+  - {name: RankGPT, type: Method, aliases: ["permutation generation"], introduced_in: "2304.09542"}
+  - {name: Cross-Encoder, type: Concept, aliases: ["cross-encoder", "cross encoder", "cross-encoders"]}
+  - {name: Bi-Encoder, type: Concept, aliases: ["bi-encoder", "dual encoder", "dual-encoder", "two-tower"]}
+  - {name: RAG, type: Method, aliases: ["Retrieval-Augmented Generation", "retrieval augmented generation", "RAG-Sequence", "RAG-Token"], introduced_in: "2005.11401", case_sensitive: true}
+  - {name: REALM, type: Method, aliases: ["Retrieval-Augmented Language Model Pre-Training"], introduced_in: "2002.08909", case_sensitive: true}
+  - {name: FiD, type: Method, aliases: ["Fusion-in-Decoder", "Fusion in Decoder"], introduced_in: "2007.01282", case_sensitive: true}
+  - {name: RETRO, type: Method, aliases: ["Retrieval-Enhanced Transformer", "Retro"], introduced_in: "2112.04426", case_sensitive: true}
+  - {name: Atlas, type: Model, introduced_in: "2208.03299", case_sensitive: true}
+  - {name: REPLUG, type: Method, introduced_in: "2301.12652", case_sensitive: true}
+  - {name: In-Context RALM, type: Method, aliases: ["In-Context Retrieval-Augmented Language Models", "RALM"], introduced_in: "2302.00083", case_sensitive: true}
+  - {name: kNN-LM, type: Method, aliases: ["kNN-LMs", "nearest neighbor language model"], introduced_in: "1911.00172"}
+  - {name: Self-RAG, type: Method, aliases: ["SELF-RAG", "SelfRAG"], introduced_in: "2310.11511"}
+  - {name: CRAG, type: Method, aliases: ["Corrective Retrieval Augmented Generation", "Corrective RAG"], introduced_in: "2401.15884", case_sensitive: true}
+  - {name: Adaptive-RAG, type: Method, aliases: ["Adaptive RAG"], introduced_in: "2403.14403"}
+  - {name: FLARE, type: Method, aliases: ["Forward-Looking Active REtrieval"], introduced_in: "2305.06983", case_sensitive: true}
+  - {name: IRCoT, type: Method, introduced_in: "2212.10509", case_sensitive: true}
+  - {name: ReAct, type: Method, introduced_in: "2210.03629", case_sensitive: true}
+  - {name: Toolformer, type: Model, introduced_in: "2302.04761"}
+  - {name: RAPTOR, type: Method, introduced_in: "2401.18059", case_sensitive: true}
+  - {name: GraphRAG, type: Method, aliases: ["Graph RAG", "graph-based RAG"], introduced_in: "2404.16130"}
+  - {name: HippoRAG, type: Method, introduced_in: "2405.14831"}
+  - {name: LightRAG, type: Method, introduced_in: "2410.05779"}
+  - {name: G-Retriever, type: Method, introduced_in: "2402.07630"}
+  - {name: Think-on-Graph, type: Method, aliases: ["ToG", "Think on Graph"], introduced_in: "2307.07697", case_sensitive: true}
+  - {name: Personalized PageRank, type: Method, aliases: ["PPR", "personalized pagerank"], case_sensitive: true}
+  - {name: Chain-of-Verification, type: Method, aliases: ["CoVe", "chain of verification"], introduced_in: "2309.11495", case_sensitive: true}
+  - {name: Knowledge Distillation, type: Method, aliases: ["distillation", "knowledge distillation"]}
+  - {name: Contrastive Learning, type: Method, aliases: ["contrastive learning", "contrastive loss", "InfoNCE"]}
+  - {name: Hard Negative Mining, type: Method, aliases: ["hard negatives", "hard negative mining"]}
+  - {name: Beam Search, type: Method, aliases: ["beam search"]}
+  - {name: Quantization, type: Method, aliases: ["quantization", "4-bit quantization", "NF4"]}
+  - {name: Masked Language Modeling, type: Method, aliases: ["masked language modeling", "MLM", "masked language model"], case_sensitive: true}
+  - {name: Replaced Token Detection, type: Method, aliases: ["replaced token detection"], introduced_in: "2003.10555"}
+  - {name: Self-Attention, type: Concept, aliases: ["self-attention", "multi-head attention", "scaled dot-product attention"]}
+  - {name: Knowledge Graph, type: Concept, aliases: ["knowledge graph", "knowledge graphs", "KG", "KGs"], case_sensitive: true}
+  - {name: Hallucination, type: Concept, aliases: ["hallucination", "hallucinations", "hallucinate"]}
+  - {name: Scaling Laws, type: Concept, aliases: ["scaling laws", "power law"], introduced_in: "2001.08361"}
+  - {name: Approximate Nearest Neighbor Search, type: Concept, aliases: ["approximate nearest neighbor", "ANN search", "FAISS", "MIPS", "maximum inner product search"]}
+  - {name: Lost in the Middle, type: Concept, aliases: ["lost in the middle", "U-shaped"], introduced_in: "2307.03172"}
+  # ---------------- Models ----------------
+  - {name: Transformer, type: Model, aliases: ["Transformers", "transformer architecture"], introduced_in: "1706.03762", case_sensitive: true}
+  - {name: BERT, type: Model, aliases: ["BERT-base", "BERT-large", "BERTBASE", "BERTLARGE"], introduced_in: "1810.04805", case_sensitive: true}
+  - {name: RoBERTa, type: Model, aliases: ["RoBERTa-base", "RoBERTa-large"], introduced_in: "1907.11692", case_sensitive: true}
+  - {name: T5, type: Model, aliases: ["T5-base", "T5-large", "T5-11B", "Text-to-Text Transfer Transformer"], introduced_in: "1910.10683", case_sensitive: true}
+  - {name: BART, type: Model, aliases: ["BART-large", "BART-base"], introduced_in: "1910.13461", case_sensitive: true}
+  - {name: ELECTRA, type: Model, introduced_in: "2003.10555", case_sensitive: true}
+  - {name: Longformer, type: Model, introduced_in: "2004.05150"}
+  - {name: GPT-2, type: Model, aliases: ["GPT2", "GPT-2 Medium"], case_sensitive: true}
+  - {name: GPT-3, type: Model, aliases: ["GPT3", "GPT-3 175B"], introduced_in: "2005.14165", case_sensitive: true}
+  - {name: InstructGPT, type: Model, introduced_in: "2203.02155"}
+  - {name: ChatGPT, type: Model, aliases: ["gpt-3.5-turbo", "GPT-3.5"], case_sensitive: true}
+  - {name: GPT-4, type: Model, aliases: ["GPT4"], case_sensitive: true}
+  - {name: LLaMA, type: Model, aliases: ["LLaMA-7B", "LLaMA-13B", "LLaMA-65B", "Llama", "Llama 2", "Llama-2"], introduced_in: "2302.13971", case_sensitive: true}
+  - {name: Guanaco, type: Model, introduced_in: "2305.14314"}
+  - {name: DeBERTa, type: Model, aliases: ["DeBERTaV3"], case_sensitive: true}
+  - {name: PaLM, type: Model, case_sensitive: true}
+  - {name: Codex, type: Model, case_sensitive: true}
+  - {name: Flan-T5, type: Model, aliases: ["FLAN-T5", "Flan"], case_sensitive: true}
+  - {name: Mistral, type: Model, aliases: ["Mistral-7B"], case_sensitive: true}
+  # ---------------- Datasets ----------------
+  - {name: GLUE, type: Dataset, case_sensitive: true}
+  - {name: SuperGLUE, type: Dataset, case_sensitive: true}
+  - {name: SQuAD, type: Dataset, aliases: ["SQuAD v1.1", "SQuAD 2.0", "SQuAD v2.0"], case_sensitive: true}
+  - {name: Natural Questions, type: Dataset, aliases: ["NaturalQuestions", "NQ"], case_sensitive: true}
+  - {name: TriviaQA, type: Dataset, introduced_in: "1705.03551"}
+  - {name: WebQuestions, type: Dataset, aliases: ["WebQ", "WQ"], case_sensitive: true}
+  - {name: CuratedTREC, type: Dataset, aliases: ["CuratedTrec", "TREC"], case_sensitive: true}
+  - {name: MS MARCO, type: Dataset, aliases: ["MSMARCO", "MS-MARCO"], introduced_in: "1611.09268", case_sensitive: true}
+  - {name: HotpotQA, type: Dataset, introduced_in: "1809.09600"}
+  - {name: 2WikiMultiHopQA, type: Dataset, aliases: ["2WikiMultihopQA", "2Wiki"]}
+  - {name: MuSiQue, type: Dataset, case_sensitive: true}
+  - {name: FEVER, type: Dataset, case_sensitive: true}
+  - {name: KILT, type: Dataset, introduced_in: "2009.02252", case_sensitive: true}
+  - {name: BEIR, type: Dataset, introduced_in: "2104.08663", case_sensitive: true}
+  - {name: MTEB, type: Dataset, aliases: ["Massive Text Embedding Benchmark"], introduced_in: "2210.07316", case_sensitive: true}
+  - {name: TREC DL, type: Dataset, aliases: ["TREC Deep Learning", "TREC-DL", "DL19", "DL20", "TREC DL 2019"], case_sensitive: true}
+  - {name: WikiText-103, type: Dataset, aliases: ["WikiText103", "Wikitext-103"]}
+  - {name: MMLU, type: Dataset, case_sensitive: true}
+  - {name: E2E NLG, type: Dataset, aliases: ["E2E", "E2E NLG Challenge"], case_sensitive: true}
+  - {name: WikiSQL, type: Dataset}
+  - {name: SAMSum, type: Dataset}
+  - {name: XSum, type: Dataset, case_sensitive: true}
+  - {name: Wizard of Wikipedia, type: Dataset, aliases: ["WoW"], case_sensitive: true}
+  - {name: PopQA, type: Dataset}
+  - {name: ARC-Challenge, type: Dataset, aliases: ["ARC Challenge", "ARC"], case_sensitive: true}
+  - {name: Wikipedia, type: Dataset, aliases: ["English Wikipedia"], case_sensitive: true}
+  - {name: Common Crawl, type: Dataset, aliases: ["CommonCrawl", "C4"], case_sensitive: true}
+  - {name: Vicuna Benchmark, type: Dataset, aliases: ["Vicuna benchmark"]}
+  - {name: RGB, type: Dataset, aliases: ["Retrieval-Augmented Generation Benchmark"], introduced_in: "2309.01431", case_sensitive: true}
+  # ---------------- Metrics ----------------
+  - {name: Exact Match, type: Metric, aliases: ["exact match", "EM"], case_sensitive: true}
+  - {name: F1, type: Metric, aliases: ["F1 score", "F1-score"], case_sensitive: true}
+  - {name: BLEU, type: Metric, case_sensitive: true}
+  - {name: ROUGE, type: Metric, aliases: ["ROUGE-L", "ROUGE-1", "ROUGE-2"], case_sensitive: true}
+  - {name: Accuracy, type: Metric, aliases: ["accuracy"]}
+  - {name: Perplexity, type: Metric, aliases: ["perplexity", "PPL"]}
+  - {name: MRR, type: Metric, aliases: ["MRR@10", "Mean Reciprocal Rank", "mean reciprocal rank"], case_sensitive: true}
+  - {name: NDCG, type: Metric, aliases: ["nDCG", "nDCG@10", "NDCG@10"], case_sensitive: true}
+  - {name: Recall@k, type: Metric, aliases: ["Recall@20", "Recall@100", "recall@k", "top-20 accuracy", "top-k accuracy"]}
+  - {name: Faithfulness, type: Metric, aliases: ["faithfulness", "groundedness"]}
+  - {name: FActScore, type: Metric, introduced_in: "2305.14251"}
+  - {name: RAGAS, type: Method, aliases: ["Ragas"], introduced_in: "2309.15217", case_sensitive: true}
+  - {name: ARES, type: Method, introduced_in: "2311.09476", case_sensitive: true}
+  # ---------------- Tasks ----------------
+  - {name: Open-Domain Question Answering, type: Task, aliases: ["open-domain question answering", "open-domain QA", "ODQA", "open domain question answering"]}
+  - {name: Question Answering, type: Task, aliases: ["question answering", "QA", "reading comprehension"], case_sensitive: true}
+  - {name: Multi-Hop Question Answering, type: Task, aliases: ["multi-hop question answering", "multi-hop QA", "multi-hop reasoning", "multihop"]}
+  - {name: Information Retrieval, type: Task, aliases: ["information retrieval", "passage retrieval", "document retrieval", "passage ranking"]}
+  - {name: Re-ranking, type: Task, aliases: ["reranking", "re-ranking", "passage re-ranking"]}
+  - {name: Summarization, type: Task, aliases: ["summarization", "query-focused summarization", "abstractive summarization"]}
+  - {name: Machine Translation, type: Task, aliases: ["machine translation", "translation"]}
+  - {name: Language Modeling, type: Task, aliases: ["language modeling", "language modelling"]}
+  - {name: Text Classification, type: Task, aliases: ["text classification", "sentiment analysis"]}
+  - {name: Fact Verification, type: Task, aliases: ["fact verification", "fact checking", "fact-checking"]}
+  - {name: Dialogue, type: Task, aliases: ["dialogue", "conversation", "knowledge-grounded dialogue"]}
+  - {name: Table-to-Text Generation, type: Task, aliases: ["table-to-text", "data-to-text"]}
+  - {name: Natural Language Inference, type: Task, aliases: ["natural language inference", "NLI", "entailment"], case_sensitive: true}
+  - {name: Semantic Textual Similarity, type: Task, aliases: ["semantic textual similarity", "STS"], case_sensitive: true}
+  - {name: Long-Form Generation, type: Task, aliases: ["long-form generation", "biography generation"]}

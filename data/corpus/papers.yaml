@@ -1,0 +1,102 @@
+# Corpus: RAG / LLM research papers.
+# `verify: true` marks ids the author was not certain of. The downloader compares every
+# expected title against arXiv metadata and refuses mismatches (see download report), so an
+# incorrect id can never silently enter the corpus.
+topics:
+  - name: foundations
+    papers:
+      - {arxiv_id: "1706.03762", title: "Attention Is All You Need"}
+      - {arxiv_id: "1810.04805", title: "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"}
+      - {arxiv_id: "1907.11692", title: "RoBERTa: A Robustly Optimized BERT Pretraining Approach"}
+      - {arxiv_id: "1910.10683", title: "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"}
+      - {arxiv_id: "1910.13461", title: "BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension"}
+      - {arxiv_id: "2005.14165", title: "Language Models are Few-Shot Learners"}
+      - {arxiv_id: "2003.10555", title: "ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators"}
+      - {arxiv_id: "2004.05150", title: "Longformer: The Long-Document Transformer"}
+      - {arxiv_id: "2203.02155", title: "Training language models to follow instructions with human feedback"}
+      - {arxiv_id: "2302.13971", title: "LLaMA: Open and Efficient Foundation Language Models"}
+      - {arxiv_id: "2201.11903", title: "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models"}
+      - {arxiv_id: "2001.08361", title: "Scaling Laws for Neural Language Models"}
+  - name: dense_and_sparse_retrieval
+    papers:
+      - {arxiv_id: "2004.04906", title: "Dense Passage Retrieval for Open-Domain Question Answering"}
+      - {arxiv_id: "1906.00300", title: "Latent Retrieval for Weakly Supervised Open Domain Question Answering"}
+      - {arxiv_id: "2007.00808", title: "Approximate Nearest Neighbor Negative Contrastive Learning for Dense Text Retrieval"}
+      - {arxiv_id: "2004.12832", title: "ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT"}
+      - {arxiv_id: "2112.01488", title: "ColBERTv2: Effective and Efficient Retrieval via Lightweight Late Interaction"}
+      - {arxiv_id: "2112.09118", title: "Unsupervised Dense Information Retrieval with Contrastive Learning"}
+      - {arxiv_id: "2212.10496", title: "Precise Zero-Shot Dense Retrieval without Relevance Labels"}
+      - {arxiv_id: "2107.05720", title: "SPLADE: Sparse Lexical and Expansion Model for First Stage Ranking"}
+      - {arxiv_id: "1904.08375", title: "Document Expansion by Query Prediction"}
+      - {arxiv_id: "2303.07678", title: "Query2doc: Query Expansion with Large Language Models"}
+      - {arxiv_id: "2202.06991", title: "Transformer Memory as a Differentiable Search Index"}
+      - {arxiv_id: "2312.06648", title: "Dense X Retrieval: What Retrieval Granularity Should We Use?", verify: true}
+  - name: embeddings
+    papers:
+      - {arxiv_id: "1908.10084", title: "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks"}
+      - {arxiv_id: "2104.08821", title: "SimCSE: Simple Contrastive Learning of Sentence Embeddings"}
+      - {arxiv_id: "2212.03533", title: "Text Embeddings by Weakly-Supervised Contrastive Pre-training"}
+      - {arxiv_id: "2309.07597", title: "C-Pack: Packaged Resources To Advance General Chinese Embedding", verify: true}
+      - {arxiv_id: "2210.07316", title: "MTEB: Massive Text Embedding Benchmark"}
+  - name: reranking
+    papers:
+      - {arxiv_id: "1901.04085", title: "Passage Re-ranking with BERT"}
+      - {arxiv_id: "2003.06713", title: "Document Ranking with a Pretrained Sequence-to-Sequence Model"}
+      - {arxiv_id: "2304.09542", title: "Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agents"}
+  - name: retrieval_augmented_lms
+    papers:
+      - {arxiv_id: "2005.11401", title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"}
+      - {arxiv_id: "2002.08909", title: "REALM: Retrieval-Augmented Language Model Pre-Training"}
+      - {arxiv_id: "2007.01282", title: "Leveraging Passage Retrieval with Generative Models for Open Domain Question Answering"}
+      - {arxiv_id: "2112.04426", title: "Improving language models by retrieving from trillions of tokens"}
+      - {arxiv_id: "2208.03299", title: "Atlas: Few-shot Learning with Retrieval Augmented Language Models"}
+      - {arxiv_id: "2301.12652", title: "REPLUG: Retrieval-Augmented Black-Box Language Models"}
+      - {arxiv_id: "2302.00083", title: "In-Context Retrieval-Augmented Language Models"}
+      - {arxiv_id: "1911.00172", title: "Generalization through Memorization: Nearest Neighbor Language Models"}
+      - {arxiv_id: "2104.07567", title: "Retrieval Augmentation Reduces Hallucination in Conversation"}
+      - {arxiv_id: "2312.10997", title: "Retrieval-Augmented Generation for Large Language Models: A Survey"}
+      - {arxiv_id: "2307.03172", title: "Lost in the Middle: How Language Models Use Long Contexts"}
+  - name: adaptive_and_iterative_rag
+    papers:
+      - {arxiv_id: "2310.11511", title: "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection"}
+      - {arxiv_id: "2401.15884", title: "Corrective Retrieval Augmented Generation"}
+      - {arxiv_id: "2403.14403", title: "Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language Models through Question Complexity"}
+      - {arxiv_id: "2305.06983", title: "Active Retrieval Augmented Generation"}
+      - {arxiv_id: "2212.10509", title: "Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions"}
+      - {arxiv_id: "2210.03629", title: "ReAct: Synergizing Reasoning and Acting in Language Models"}
+      - {arxiv_id: "2302.04761", title: "Toolformer: Language Models Can Teach Themselves to Use Tools"}
+      - {arxiv_id: "2401.18059", title: "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval"}
+  - name: graph_rag
+    papers:
+      - {arxiv_id: "2404.16130", title: "From Local to Global: A Graph RAG Approach to Query-Focused Summarization"}
+      - {arxiv_id: "2405.14831", title: "HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models", verify: true}
+      - {arxiv_id: "2410.05779", title: "LightRAG: Simple and Fast Retrieval-Augmented Generation", verify: true}
+      - {arxiv_id: "2402.07630", title: "G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering", verify: true}
+      - {arxiv_id: "2307.07697", title: "Think-on-Graph: Deep and Responsible Reasoning of Large Language Model on Knowledge Graph", verify: true}
+      - {arxiv_id: "2306.08302", title: "Unifying Large Language Models and Knowledge Graphs: A Roadmap"}
+  - name: parameter_efficient_fine_tuning
+    papers:
+      - {arxiv_id: "2106.09685", title: "LoRA: Low-Rank Adaptation of Large Language Models"}
+      - {arxiv_id: "1902.00751", title: "Parameter-Efficient Transfer Learning for NLP"}
+      - {arxiv_id: "2101.00190", title: "Prefix-Tuning: Optimizing Continuous Prompts for Generation"}
+      - {arxiv_id: "2104.08691", title: "The Power of Scale for Parameter-Efficient Prompt Tuning"}
+      - {arxiv_id: "2103.10385", title: "GPT Understands, Too"}
+      - {arxiv_id: "2110.07602", title: "P-Tuning v2: Prompt Tuning Can Be Comparable to Fine-tuning Universally Across Scales and Tasks"}
+      - {arxiv_id: "2305.14314", title: "QLoRA: Efficient Finetuning of Quantized LLMs"}
+      - {arxiv_id: "2106.10199", title: "BitFit: Simple Parameter-efficient Fine-tuning for Transformer-based Masked Language-models"}
+      - {arxiv_id: "2205.05638", title: "Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning"}
+      - {arxiv_id: "2005.00247", title: "AdapterFusion: Non-Destructive Task Composition for Transfer Learning"}
+      - {arxiv_id: "2110.04366", title: "Towards a Unified View of Parameter-Efficient Transfer Learning"}
+      - {arxiv_id: "2402.09353", title: "DoRA: Weight-Decomposed Low-Rank Adaptation", verify: true}
+  - name: evaluation_and_benchmarks
+    papers:
+      - {arxiv_id: "2309.15217", title: "RAGAS: Automated Evaluation of Retrieval Augmented Generation"}
+      - {arxiv_id: "2311.09476", title: "ARES: An Automated Evaluation Framework for Retrieval-Augmented Generation Systems", verify: true}
+      - {arxiv_id: "2104.08663", title: "BEIR: A Heterogenous Benchmark for Zero-shot Evaluation of Information Retrieval Models"}
+      - {arxiv_id: "1611.09268", title: "MS MARCO: A Human Generated MAchine Reading COmprehension Dataset"}
+      - {arxiv_id: "1809.09600", title: "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering"}
+      - {arxiv_id: "1705.03551", title: "TriviaQA: A Large Scale Distantly Supervised Challenge Dataset for Reading Comprehension"}
+      - {arxiv_id: "2009.02252", title: "KILT: a Benchmark for Knowledge Intensive Language Tasks"}
+      - {arxiv_id: "2309.01431", title: "Benchmarking Large Language Models in Retrieval-Augmented Generation", verify: true}
+      - {arxiv_id: "2305.14251", title: "FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation"}
+      - {arxiv_id: "2309.11495", title: "Chain-of-Verification Reduces Hallucination in Large Language Models"}
