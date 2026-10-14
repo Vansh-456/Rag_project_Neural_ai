@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+# Secrets
+.env
+# Data (large / regenerable). Corpus list, gazetteer and evaluation set ARE committed.
+data/raw/
+data/processed/
+data/index/
+data/cache/
+data/traces/
+data/hf-cache/
+# Results: keep curated summaries, ignore bulky per-run traces
+results/**/traces.jsonl
+results/*.log
+# Frontend
+frontend/node_modules/
+frontend/.next/
+# OS
+.DS_Store
+Thumbs.db
