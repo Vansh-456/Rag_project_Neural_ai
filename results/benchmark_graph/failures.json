@@ -40,6 +40,22 @@
     "retrieved_count": 0
   },
   {
+    "query_id": "q_comp_05",
+    "query": "How does GraphRAG differ from standard vector RAG on global queries?",
+    "type": "comparison",
+    "category": "VOCABULARY_MISMATCH",
+    "strategy_used": "graph",
+    "retrieved_count": 0
+  },
+  {
+    "query_id": "q_comp_09",
+    "query": "What is the difference between REALM pretraining and standard RAG fine-tuning?",
+    "type": "comparison",
+    "category": "VOCABULARY_MISMATCH",
+    "strategy_used": "graph",
+    "retrieved_count": 0
+  },
+  {
     "query_id": "q_comp_10",
     "query": "Compare QA-GNN and GraphRAG knowledge graph usage.",
     "type": "comparison",

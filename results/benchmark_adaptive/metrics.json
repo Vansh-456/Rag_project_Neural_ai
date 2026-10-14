@@ -11,30 +11,30 @@
       ]
     },
     "precision@k": {
-      "mean": 0.492,
+      "mean": 0.504,
       "ci_95": [
-        0.412,
-        0.576
+        0.4279,
+        0.584
       ]
     },
     "mrr": {
       "mean": 0.8047,
       "ci_95": [
-        0.702,
-        0.8933
+        0.7073,
+        0.894
       ]
     },
     "ndcg@k": {
-      "mean": 1.2575,
+      "mean": 1.2833,
       "ci_95": [
-        1.0635,
-        1.4797
+        1.091,
+        1.5025
       ]
     },
     "hit_rate@k": 0.9,
     "latency_ms": {
-      "p50": 15.95,
-      "p95": 19.81
+      "p50": 17.82,
+      "p95": 24.83
     }
   },
   "per_query_type": {
@@ -47,8 +47,8 @@
     "relationship": {
       "count": 10,
       "mean_recall": 0.9,
-      "mean_mrr": 0.9,
-      "mean_ndcg": 1.7523
+      "mean_mrr": 0.85,
+      "mean_ndcg": 1.7536
     },
     "comparison": {
       "count": 10,
@@ -59,14 +59,14 @@
     "multi_hop": {
       "count": 10,
       "mean_recall": 0.7667,
-      "mean_mrr": 0.7333,
-      "mean_ndcg": 0.8726
+      "mean_mrr": 0.7833,
+      "mean_ndcg": 0.8938
     },
     "experimental": {
       "count": 10,
       "mean_recall": 0.9,
       "mean_mrr": 0.9,
-      "mean_ndcg": 1.4115
+      "mean_ndcg": 1.5177
     }
   },
   "total_failures": 5

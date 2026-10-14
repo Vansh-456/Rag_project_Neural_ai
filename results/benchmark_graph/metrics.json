@@ -4,70 +4,70 @@
   "query_count": 50,
   "metrics": {
     "recall@k": {
-      "mean": 0.69,
+      "mean": 0.6633,
       "ci_95": [
-        0.5767,
-        0.7967
+        0.5466,
+        0.7734
       ]
     },
     "precision@k": {
-      "mean": 0.48,
+      "mean": 0.476,
       "ci_95": [
-        0.38,
-        0.5841
+        0.372,
+        0.584
       ]
     },
     "mrr": {
-      "mean": 0.74,
+      "mean": 0.6283,
       "ci_95": [
-        0.6233,
-        0.8533
+        0.5133,
+        0.7384
       ]
     },
     "ndcg@k": {
-      "mean": 1.2135,
+      "mean": 1.1701,
       "ci_95": [
-        0.9639,
-        1.4646
+        0.9061,
+        1.4394
       ]
     },
-    "hit_rate@k": 0.8,
+    "hit_rate@k": 0.76,
     "latency_ms": {
-      "p50": 1.04,
-      "p95": 11.44
+      "p50": 3.08,
+      "p95": 12.86
     }
   },
   "per_query_type": {
     "definition": {
       "count": 10,
-      "mean_recall": 0.55,
-      "mean_mrr": 0.7,
-      "mean_ndcg": 1.245
+      "mean_recall": 0.6,
+      "mean_mrr": 0.6,
+      "mean_ndcg": 1.2117
     },
     "relationship": {
       "count": 10,
       "mean_recall": 0.8,
-      "mean_mrr": 0.8,
-      "mean_ndcg": 1.5392
+      "mean_mrr": 0.75,
+      "mean_ndcg": 1.5405
     },
     "comparison": {
       "count": 10,
-      "mean_recall": 0.7,
-      "mean_mrr": 0.8333,
-      "mean_ndcg": 1.2575
+      "mean_recall": 0.55,
+      "mean_mrr": 0.6,
+      "mean_ndcg": 1.0715
     },
     "multi_hop": {
       "count": 10,
-      "mean_recall": 0.6,
-      "mean_mrr": 0.6333,
-      "mean_ndcg": 0.6913
+      "mean_recall": 0.5667,
+      "mean_mrr": 0.4917,
+      "mean_ndcg": 0.5983
     },
     "experimental": {
       "count": 10,
       "mean_recall": 0.8,
-      "mean_mrr": 0.7333,
-      "mean_ndcg": 1.3345
+      "mean_mrr": 0.7,
+      "mean_ndcg": 1.4282
     }
   },
-  "total_failures": 10
+  "total_failures": 12
 }
