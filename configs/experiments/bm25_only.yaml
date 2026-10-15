@@ -1,0 +1,2 @@
+extends: ../base.yaml
+pipeline: {name: bm25_only, description: "BM25 only", router: fixed, strategy: bm25}

@@ -1,0 +1,2 @@
+extends: ../base.yaml
+pipeline: {name: hybrid, description: "Dense + BM25, reciprocal rank fusion", router: fixed, strategy: hybrid}

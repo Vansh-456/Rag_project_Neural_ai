@@ -1,0 +1,3 @@
+extends: ../base.yaml
+router: {mode: rule}
+pipeline: {name: adaptive, description: "Rule-based router picks the strategy per query", router: adaptive, strategy: hybrid}

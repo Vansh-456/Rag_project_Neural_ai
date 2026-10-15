@@ -1,0 +1,15 @@
+# Router table re-fit on the DEV split (results/ablation_*_dev_*): BM25-containing strategies beat
+# dense-only for definitions and experimental questions on this acronym-heavy corpus, and
+# graph_vector keeps most of graph_only's path recall for relationship questions while retrieving
+# far better text. Evaluated on the frozen TEST split only after this change. See ADR-015.
+extends: ../base.yaml
+router:
+  mode: rule
+  intent_strategy:
+    definition: hybrid
+    relationship: graph_vector
+    comparison: graph_vector
+    multi_hop: multi_hop
+    experimental: hybrid
+  rerank_intents: [experimental]
+pipeline: {name: adaptive_tuned, description: "Adaptive router with the intent table re-fit on dev", router: adaptive, strategy: hybrid}

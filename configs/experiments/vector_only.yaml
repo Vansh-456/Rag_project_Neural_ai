@@ -1,0 +1,2 @@
+extends: ../base.yaml
+pipeline: {name: vector_only, description: "Dense retrieval only", router: fixed, strategy: vector}

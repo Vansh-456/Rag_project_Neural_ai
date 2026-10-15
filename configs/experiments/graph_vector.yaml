@@ -1,0 +1,2 @@
+extends: ../base.yaml
+pipeline: {name: graph_vector, description: "Dense + BM25 + graph-grounded chunks fused (RRF) + paths", router: fixed, strategy: graph_vector}

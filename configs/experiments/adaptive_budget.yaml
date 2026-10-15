@@ -1,0 +1,3 @@
+extends: ../base.yaml
+router: {mode: rule}
+pipeline: {name: adaptive_budget, description: "Cost-aware: start cheap, escalate on low confidence", router: adaptive, strategy: hybrid, use_budget: true}

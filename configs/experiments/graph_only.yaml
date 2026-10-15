@@ -1,0 +1,2 @@
+extends: ../base.yaml
+pipeline: {name: graph_only, description: "Entity linking + multi-hop graph paths only", router: fixed, strategy: graph}

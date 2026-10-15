@@ -1,0 +1,3 @@
+extends: ../base.yaml
+retrieval: {fusion: weighted, weights: {dense: 0.6, bm25: 0.4}}
+pipeline: {name: hybrid_weighted, description: "Dense + BM25, min-max weighted fusion", router: fixed, strategy: hybrid}

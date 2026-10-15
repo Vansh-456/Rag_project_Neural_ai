@@ -1,0 +1,2 @@
+extends: ../base.yaml
+pipeline: {name: multi_hop, description: "Graph traversal then document-restricted dense retrieval", router: fixed, strategy: multi_hop}

@@ -1,0 +1,2 @@
+extends: ../base.yaml
+pipeline: {name: hybrid_rerank, description: "Hybrid + cross-encoder rerank of top-50", router: fixed, strategy: hybrid, rerank: true}

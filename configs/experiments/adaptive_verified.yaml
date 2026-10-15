@@ -1,0 +1,10 @@
+extends: ../base.yaml
+router: {mode: rule}
+pipeline:
+  name: adaptive_verified
+  description: "Adaptive + generation + claim verification with bounded re-retrieval"
+  router: adaptive
+  strategy: hybrid
+  generate: true
+  verify: true
+verification: {method: lexical, max_iterations: 2}
