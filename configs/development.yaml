@@ -1,0 +1,4 @@
+extends: base.yaml
+env: development
+logging: {level: DEBUG, json_logs: false}
+api: {auth_enabled: false}

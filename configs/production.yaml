@@ -1,0 +1,10 @@
+# Docker / server deployment: Qdrant server + Neo4j, JSON logs, auth on.
+extends: base.yaml
+env: production
+vector_store: {backend: qdrant, url: "http://qdrant:6333"}
+graph: {backend: neo4j, neo4j_uri: "bolt://neo4j:7687", neo4j_user: neo4j}
+logging: {level: INFO, json_logs: true}
+api:
+  auth_enabled: true
+  rate_limit_per_minute: 60
+  cors_origins: ["http://localhost:3000"]
