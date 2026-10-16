@@ -1,0 +1,237 @@
+{
+  "label_coverage_unmapped": [],
+  "failures": [
+    {
+      "query_id": "d05",
+      "type": "definition",
+      "query": "What is prefix-tuning?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2101.00190"
+      ],
+      "expected_docs": [
+        "2101.00190"
+      ],
+      "best_relevant_term_overlap": 0.75
+    },
+    {
+      "query_id": "d07",
+      "type": "definition",
+      "query": "What is Dense Passage Retrieval?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2004.04906",
+        "2312.06648"
+      ],
+      "expected_docs": [
+        "2004.04906"
+      ],
+      "best_relevant_term_overlap": 0.75
+    },
+    {
+      "query_id": "r01",
+      "type": "relationship",
+      "query": "Who introduced LoRA?",
+      "strategy": "graph",
+      "categories": [
+        "right_doc_wrong_passage",
+        "vocabulary_mismatch"
+      ],
+      "top_docs": [
+        "2106.09685",
+        "2402.09353"
+      ],
+      "expected_docs": [
+        "2106.09685"
+      ],
+      "best_relevant_term_overlap": 0.333
+    },
+    {
+      "query_id": "r03",
+      "type": "relationship",
+      "query": "Who proposed Dense Passage Retrieval?",
+      "strategy": "graph",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2004.04906"
+      ],
+      "expected_docs": [
+        "2004.04906"
+      ],
+      "best_relevant_term_overlap": 1.0
+    },
+    {
+      "query_id": "r05",
+      "type": "relationship",
+      "query": "Who are the authors of REALM?",
+      "strategy": "graph_vector",
+      "categories": [
+        "right_doc_wrong_passage",
+        "vocabulary_mismatch"
+      ],
+      "top_docs": [
+        "2002.08909"
+      ],
+      "expected_docs": [
+        "2002.08909"
+      ],
+      "best_relevant_term_overlap": 0.333
+    },
+    {
+      "query_id": "r09",
+      "type": "relationship",
+      "query": "Which retriever is Atlas based on?",
+      "strategy": "graph",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2208.03299"
+      ],
+      "expected_docs": [
+        "2208.03299"
+      ],
+      "best_relevant_term_overlap": 1.0
+    },
+    {
+      "query_id": "c01",
+      "type": "comparison",
+      "query": "How does LoRA differ from adapters?",
+      "strategy": "multi_hop",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2106.09685",
+        "2110.04366",
+        "2402.09353"
+      ],
+      "expected_docs": [
+        "1902.00751",
+        "2106.09685"
+      ],
+      "best_relevant_term_overlap": 1.0
+    },
+    {
+      "query_id": "m01",
+      "type": "multi_hop",
+      "query": "Which methods based on DPR were evaluated on Natural Questions?",
+      "strategy": "multi_hop",
+      "categories": [
+        "relevant_doc_not_retrieved",
+        "multi_hop_chain"
+      ],
+      "top_docs": [
+        "2004.04906",
+        "2009.02252",
+        "2104.08663"
+      ],
+      "expected_docs": [
+        "2005.11401",
+        "2007.01282"
+      ],
+      "best_relevant_term_overlap": 0.857
+    },
+    {
+      "query_id": "m11",
+      "type": "multi_hop",
+      "query": "Which papers that cite the Transformer paper introduce masked language modeling?",
+      "strategy": "multi_hop",
+      "categories": [
+        "relevant_doc_not_retrieved",
+        "multi_hop_chain"
+      ],
+      "top_docs": [
+        "1706.03762",
+        "1910.10683",
+        "2003.10555"
+      ],
+      "expected_docs": [
+        "1810.04805"
+      ],
+      "best_relevant_term_overlap": 0.625
+    },
+    {
+      "query_id": "e01",
+      "type": "experimental",
+      "query": "What results show DPR outperforms BM25 on top-20 passage retrieval accuracy?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2004.04906"
+      ],
+      "expected_docs": [
+        "2004.04906"
+      ],
+      "best_relevant_term_overlap": 0.727
+    },
+    {
+      "query_id": "e09",
+      "type": "experimental",
+      "query": "What results show RETRO matches larger models with fewer parameters?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2001.08361",
+        "2112.04426",
+        "2307.03172"
+      ],
+      "expected_docs": [
+        "2112.04426"
+      ],
+      "best_relevant_term_overlap": 0.5
+    },
+    {
+      "query_id": "e13",
+      "type": "experimental",
+      "query": "Which parameter-efficient method adds no additional inference latency according to its experiments?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2106.09685",
+        "2110.04366",
+        "2205.05638"
+      ],
+      "expected_docs": [
+        "2106.09685"
+      ],
+      "best_relevant_term_overlap": 0.5
+    },
+    {
+      "query_id": "u01",
+      "category": "answered_unanswerable",
+      "query": "What is the boiling point of tungsten?"
+    },
+    {
+      "query_id": "u02",
+      "category": "answered_unanswerable",
+      "query": "Who won the 2018 FIFA World Cup?"
+    },
+    {
+      "query_id": "u04",
+      "category": "answered_unanswerable",
+      "query": "What exact match score does GPT-7 achieve on SQuAD 5.0?"
+    }
+  ],
+  "category_counts": {
+    "right_doc_wrong_passage": 10,
+    "answered_unanswerable": 3,
+    "vocabulary_mismatch": 2,
+    "relevant_doc_not_retrieved": 2,
+    "multi_hop_chain": 2
+  }
+}

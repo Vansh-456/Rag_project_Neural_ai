@@ -1,0 +1,200 @@
+{
+  "label_coverage_unmapped": [],
+  "failures": [
+    {
+      "query_id": "d10",
+      "type": "definition",
+      "query": "What is RAPTOR?",
+      "strategy": "graph",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2401.18059"
+      ],
+      "expected_docs": [
+        "2401.18059"
+      ],
+      "best_relevant_term_overlap": 0.5
+    },
+    {
+      "query_id": "d14",
+      "type": "definition",
+      "query": "Which method does not require relevance labels for zero-shot dense retrieval?",
+      "strategy": "graph",
+      "categories": [
+        "relevant_doc_not_retrieved"
+      ],
+      "top_docs": [
+        "2007.00808",
+        "2208.03299",
+        "2312.06648"
+      ],
+      "expected_docs": [
+        "2212.10496"
+      ],
+      "best_relevant_term_overlap": 0.909
+    },
+    {
+      "query_id": "d16",
+      "type": "definition",
+      "query": "What is the inverse cloze task?",
+      "strategy": "graph",
+      "categories": [
+        "entity_not_linked",
+        "empty_result"
+      ],
+      "top_docs": [],
+      "expected_docs": [
+        "1906.00300"
+      ],
+      "best_relevant_term_overlap": 1.0
+    },
+    {
+      "query_id": "r10",
+      "type": "relationship",
+      "query": "Which retriever does RAG use?",
+      "strategy": "graph",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2005.11401",
+        "2311.09476"
+      ],
+      "expected_docs": [
+        "2005.11401"
+      ],
+      "best_relevant_term_overlap": 1.0
+    },
+    {
+      "query_id": "c02",
+      "type": "comparison",
+      "query": "What is the difference between RAG-Sequence and RAG-Token?",
+      "strategy": "graph",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2005.11401",
+        "2311.09476"
+      ],
+      "expected_docs": [
+        "2005.11401"
+      ],
+      "best_relevant_term_overlap": 0.857
+    },
+    {
+      "query_id": "c12",
+      "type": "comparison",
+      "query": "How does LightRAG differ from GraphRAG?",
+      "strategy": "graph",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2404.16130",
+        "2410.05779"
+      ],
+      "expected_docs": [
+        "2410.05779"
+      ],
+      "best_relevant_term_overlap": 0.5
+    },
+    {
+      "query_id": "m06",
+      "type": "multi_hop",
+      "query": "Which retrieval-augmented models that use a DPR retriever pair it with a BART generator?",
+      "strategy": "graph",
+      "categories": [
+        "right_doc_wrong_passage",
+        "multi_hop_chain"
+      ],
+      "top_docs": [
+        "2005.11401",
+        "2009.02252"
+      ],
+      "expected_docs": [
+        "2005.11401"
+      ],
+      "best_relevant_term_overlap": 0.889
+    },
+    {
+      "query_id": "m10",
+      "type": "multi_hop",
+      "query": "Which methods that extend ColBERT were evaluated on BEIR?",
+      "strategy": "graph",
+      "categories": [
+        "relevant_doc_not_retrieved",
+        "multi_hop_chain"
+      ],
+      "top_docs": [
+        "2004.12832",
+        "2104.08663"
+      ],
+      "expected_docs": [
+        "2112.01488"
+      ],
+      "best_relevant_term_overlap": 0.833
+    },
+    {
+      "query_id": "e04",
+      "type": "experimental",
+      "query": "How much does chain-of-thought prompting improve accuracy on GSM8K?",
+      "strategy": "graph",
+      "categories": [
+        "relevant_doc_not_retrieved"
+      ],
+      "top_docs": [
+        "2009.02252",
+        "2212.10509",
+        "2307.07697"
+      ],
+      "expected_docs": [
+        "2201.11903"
+      ],
+      "best_relevant_term_overlap": 0.889
+    },
+    {
+      "query_id": "e12",
+      "type": "experimental",
+      "query": "What power-law relationship links language model loss to model size?",
+      "strategy": "graph",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2001.08361",
+        "2302.13971"
+      ],
+      "expected_docs": [
+        "2001.08361"
+      ],
+      "best_relevant_term_overlap": 0.8
+    },
+    {
+      "query_id": "e14",
+      "type": "experimental",
+      "query": "How robust are LLMs to noisy retrieved documents in RAG benchmarks?",
+      "strategy": "graph",
+      "categories": [
+        "relevant_doc_not_retrieved"
+      ],
+      "top_docs": [
+        "2005.11401",
+        "2311.09476"
+      ],
+      "expected_docs": [
+        "2309.01431"
+      ],
+      "best_relevant_term_overlap": 0.875
+    }
+  ],
+  "category_counts": {
+    "right_doc_wrong_passage": 6,
+    "relevant_doc_not_retrieved": 4,
+    "multi_hop_chain": 2,
+    "entity_not_linked": 1,
+    "empty_result": 1
+  }
+}

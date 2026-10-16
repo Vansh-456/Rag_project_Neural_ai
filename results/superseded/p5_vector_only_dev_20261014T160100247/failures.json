@@ -1,0 +1,286 @@
+{
+  "label_coverage_unmapped": [],
+  "failures": [
+    {
+      "query_id": "d05",
+      "type": "definition",
+      "query": "What is prefix-tuning?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2101.00190"
+      ],
+      "expected_docs": [
+        "2101.00190"
+      ],
+      "best_relevant_term_overlap": 0.75
+    },
+    {
+      "query_id": "d07",
+      "type": "definition",
+      "query": "What is Dense Passage Retrieval?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2004.04906",
+        "2312.06648"
+      ],
+      "expected_docs": [
+        "2004.04906"
+      ],
+      "best_relevant_term_overlap": 0.75
+    },
+    {
+      "query_id": "r01",
+      "type": "relationship",
+      "query": "Who introduced LoRA?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage",
+        "vocabulary_mismatch"
+      ],
+      "top_docs": [
+        "2106.09685"
+      ],
+      "expected_docs": [
+        "2106.09685"
+      ],
+      "best_relevant_term_overlap": 0.333
+    },
+    {
+      "query_id": "r03",
+      "type": "relationship",
+      "query": "Who proposed Dense Passage Retrieval?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2004.04906"
+      ],
+      "expected_docs": [
+        "2004.04906"
+      ],
+      "best_relevant_term_overlap": 1.0
+    },
+    {
+      "query_id": "r05",
+      "type": "relationship",
+      "query": "Who are the authors of REALM?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage",
+        "vocabulary_mismatch"
+      ],
+      "top_docs": [
+        "2002.08909"
+      ],
+      "expected_docs": [
+        "2002.08909"
+      ],
+      "best_relevant_term_overlap": 0.333
+    },
+    {
+      "query_id": "c03",
+      "type": "comparison",
+      "query": "How does prefix-tuning compare to fine-tuning in trainable parameters?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2101.00190"
+      ],
+      "expected_docs": [
+        "2101.00190"
+      ],
+      "best_relevant_term_overlap": 0.778
+    },
+    {
+      "query_id": "c07",
+      "type": "comparison",
+      "query": "How does ColBERTv2 differ from ColBERT?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2112.01488"
+      ],
+      "expected_docs": [
+        "2112.01488"
+      ],
+      "best_relevant_term_overlap": 0.5
+    },
+    {
+      "query_id": "c09",
+      "type": "comparison",
+      "query": "How does SimCSE versus Sentence-BERT train sentence embeddings?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2104.08821"
+      ],
+      "expected_docs": [
+        "1908.10084",
+        "2104.08821"
+      ],
+      "best_relevant_term_overlap": 0.75
+    },
+    {
+      "query_id": "m01",
+      "type": "multi_hop",
+      "query": "Which methods based on DPR were evaluated on Natural Questions?",
+      "strategy": "vector",
+      "categories": [
+        "relevant_doc_not_retrieved",
+        "multi_hop_chain"
+      ],
+      "top_docs": [
+        "2004.04906"
+      ],
+      "expected_docs": [
+        "2005.11401",
+        "2007.01282"
+      ],
+      "best_relevant_term_overlap": 0.857
+    },
+    {
+      "query_id": "m03",
+      "type": "multi_hop",
+      "query": "Which datasets were used to evaluate the method that introduced late interaction?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage",
+        "multi_hop_chain"
+      ],
+      "top_docs": [
+        "2004.12832",
+        "2112.01488"
+      ],
+      "expected_docs": [
+        "2004.12832"
+      ],
+      "best_relevant_term_overlap": 0.857
+    },
+    {
+      "query_id": "m05",
+      "type": "multi_hop",
+      "query": "Which methods derived from LoRA reduce finetuning memory further?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage",
+        "multi_hop_chain"
+      ],
+      "top_docs": [
+        "2305.14314"
+      ],
+      "expected_docs": [
+        "2305.14314",
+        "2402.09353"
+      ],
+      "best_relevant_term_overlap": 0.714
+    },
+    {
+      "query_id": "m09",
+      "type": "multi_hop",
+      "query": "Which adaptive methods that retrieve only when needed use low-probability tokens as a trigger?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage",
+        "multi_hop_chain"
+      ],
+      "top_docs": [
+        "2305.06983",
+        "2305.14251",
+        "2401.15884"
+      ],
+      "expected_docs": [
+        "2305.06983",
+        "2310.11511"
+      ],
+      "best_relevant_term_overlap": 0.8
+    },
+    {
+      "query_id": "m11",
+      "type": "multi_hop",
+      "query": "Which papers that cite the Transformer paper introduce masked language modeling?",
+      "strategy": "vector",
+      "categories": [
+        "relevant_doc_not_retrieved",
+        "multi_hop_chain"
+      ],
+      "top_docs": [
+        "1910.10683",
+        "2003.10555",
+        "2106.10199"
+      ],
+      "expected_docs": [
+        "1810.04805"
+      ],
+      "best_relevant_term_overlap": 0.625
+    },
+    {
+      "query_id": "e01",
+      "type": "experimental",
+      "query": "What results show DPR outperforms BM25 on top-20 passage retrieval accuracy?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2004.04906"
+      ],
+      "expected_docs": [
+        "2004.04906"
+      ],
+      "best_relevant_term_overlap": 0.727
+    },
+    {
+      "query_id": "e09",
+      "type": "experimental",
+      "query": "What results show RETRO matches larger models with fewer parameters?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2112.04426"
+      ],
+      "expected_docs": [
+        "2112.04426"
+      ],
+      "best_relevant_term_overlap": 0.5
+    },
+    {
+      "query_id": "e13",
+      "type": "experimental",
+      "query": "Which parameter-efficient method adds no additional inference latency according to its experiments?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2106.09685",
+        "2110.04366",
+        "2205.05638"
+      ],
+      "expected_docs": [
+        "2106.09685"
+      ],
+      "best_relevant_term_overlap": 0.5
+    }
+  ],
+  "category_counts": {
+    "right_doc_wrong_passage": 14,
+    "multi_hop_chain": 5,
+    "vocabulary_mismatch": 2,
+    "relevant_doc_not_retrieved": 2
+  }
+}

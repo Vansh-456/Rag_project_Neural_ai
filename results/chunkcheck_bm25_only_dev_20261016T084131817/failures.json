@@ -1,0 +1,175 @@
+{
+  "label_coverage_unmapped": [],
+  "failures": [
+    {
+      "query_id": "d01",
+      "type": "definition",
+      "query": "What is LoRA?",
+      "strategy": "bm25",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2106.09685",
+        "2305.14314",
+        "2402.07630"
+      ],
+      "expected_docs": [
+        "2106.09685"
+      ],
+      "best_relevant_term_overlap": 0.5
+    },
+    {
+      "query_id": "d07",
+      "type": "definition",
+      "query": "What is Dense Passage Retrieval?",
+      "strategy": "bm25",
+      "categories": [
+        "relevant_doc_not_retrieved"
+      ],
+      "top_docs": [
+        "2312.06648"
+      ],
+      "expected_docs": [
+        "2004.04906"
+      ],
+      "best_relevant_term_overlap": 0.75
+    },
+    {
+      "query_id": "d11",
+      "type": "definition",
+      "query": "What is BitFit?",
+      "strategy": "bm25",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2106.10199",
+        "2110.04366",
+        "2210.07316"
+      ],
+      "expected_docs": [
+        "2106.10199"
+      ],
+      "best_relevant_term_overlap": 0.5
+    },
+    {
+      "query_id": "r01",
+      "type": "relationship",
+      "query": "Who introduced LoRA?",
+      "strategy": "bm25",
+      "categories": [
+        "relevant_doc_not_retrieved",
+        "vocabulary_mismatch"
+      ],
+      "top_docs": [
+        "2402.09353"
+      ],
+      "expected_docs": [
+        "2106.09685"
+      ],
+      "best_relevant_term_overlap": 0.333
+    },
+    {
+      "query_id": "r05",
+      "type": "relationship",
+      "query": "Who are the authors of REALM?",
+      "strategy": "bm25",
+      "categories": [
+        "right_doc_wrong_passage",
+        "vocabulary_mismatch"
+      ],
+      "top_docs": [
+        "2002.08909",
+        "2202.06991",
+        "2309.01431",
+        "2310.11511",
+        "2405.14831"
+      ],
+      "expected_docs": [
+        "2002.08909"
+      ],
+      "best_relevant_term_overlap": 0.333
+    },
+    {
+      "query_id": "c01",
+      "type": "comparison",
+      "query": "How does LoRA differ from adapters?",
+      "strategy": "bm25",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2106.09685",
+        "2110.04366"
+      ],
+      "expected_docs": [
+        "1902.00751",
+        "2106.09685"
+      ],
+      "best_relevant_term_overlap": 1.0
+    },
+    {
+      "query_id": "c11",
+      "type": "comparison",
+      "query": "How does monoT5 compare to monoBERT for passage re-ranking?",
+      "strategy": "bm25",
+      "categories": [
+        "relevant_doc_not_retrieved"
+      ],
+      "top_docs": [
+        "2304.09542"
+      ],
+      "expected_docs": [
+        "1901.04085",
+        "2003.06713"
+      ],
+      "best_relevant_term_overlap": 0.75
+    },
+    {
+      "query_id": "m01",
+      "type": "multi_hop",
+      "query": "Which methods based on DPR were evaluated on Natural Questions?",
+      "strategy": "bm25",
+      "categories": [
+        "relevant_doc_not_retrieved",
+        "multi_hop_chain"
+      ],
+      "top_docs": [
+        "2004.04906",
+        "2007.00808",
+        "2104.07567",
+        "2401.18059"
+      ],
+      "expected_docs": [
+        "2005.11401",
+        "2007.01282"
+      ],
+      "best_relevant_term_overlap": 0.714
+    },
+    {
+      "query_id": "e01",
+      "type": "experimental",
+      "query": "What results show DPR outperforms BM25 on top-20 passage retrieval accuracy?",
+      "strategy": "bm25",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2004.04906",
+        "2007.00808",
+        "2312.06648"
+      ],
+      "expected_docs": [
+        "2004.04906"
+      ],
+      "best_relevant_term_overlap": 0.727
+    }
+  ],
+  "category_counts": {
+    "right_doc_wrong_passage": 5,
+    "relevant_doc_not_retrieved": 4,
+    "vocabulary_mismatch": 2,
+    "multi_hop_chain": 1
+  }
+}

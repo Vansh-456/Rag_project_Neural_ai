@@ -1,0 +1,517 @@
+{
+  "summary": {
+    "bm25_only": {
+      "exp_id": "ablation_bm25_only_test_20261015T134102653",
+      "ndcg@5": {
+        "mean": 0.6782,
+        "ci_low": 0.5463,
+        "ci_high": 0.7977
+      }
+    },
+    "vector_only": {
+      "exp_id": "ablation_vector_only_test_20261015T134104331",
+      "ndcg@5": {
+        "mean": 0.6214,
+        "ci_low": 0.4856,
+        "ci_high": 0.7532
+      }
+    },
+    "hybrid": {
+      "exp_id": "ablation_hybrid_test_20261015T134106728",
+      "ndcg@5": {
+        "mean": 0.683,
+        "ci_low": 0.5532,
+        "ci_high": 0.8153
+      }
+    },
+    "hybrid_rerank": {
+      "exp_id": "ablation_hybrid_rerank_test_20261015T134112460",
+      "ndcg@5": {
+        "mean": 0.6611,
+        "ci_low": 0.5337,
+        "ci_high": 0.7812
+      }
+    },
+    "graph_only": {
+      "exp_id": "ablation_graph_only_test_20261015T134358574",
+      "ndcg@5": {
+        "mean": 0.5221,
+        "ci_low": 0.3813,
+        "ci_high": 0.6742
+      }
+    },
+    "graph_vector": {
+      "exp_id": "ablation_graph_vector_test_20261015T134403589",
+      "ndcg@5": {
+        "mean": 0.7659,
+        "ci_low": 0.6534,
+        "ci_high": 0.8762
+      }
+    },
+    "adaptive": {
+      "exp_id": "ablation_adaptive_test_20261015T134411128",
+      "ndcg@5": {
+        "mean": 0.6836,
+        "ci_low": 0.5553,
+        "ci_high": 0.8144
+      }
+    },
+    "adaptive_tuned": {
+      "exp_id": "ablation_adaptive_tuned_test_20261015T134508762",
+      "ndcg@5": {
+        "mean": 0.7001,
+        "ci_low": 0.5839,
+        "ci_high": 0.8268
+      }
+    },
+    "adaptive_budget": {
+      "exp_id": "ablation_adaptive_budget_test_20261015T134606100",
+      "ndcg@5": {
+        "mean": 0.6935,
+        "ci_low": 0.5716,
+        "ci_high": 0.821
+      }
+    }
+  },
+  "significance": {
+    "bm25_only": {
+      "overall": {
+        "diff": 0.05674150860239108,
+        "ci_low": -0.05962323534897776,
+        "ci_high": 0.17942278123541325,
+        "p_value": 0.349,
+        "n": 33
+      },
+      "definition": {
+        "diff": 0.1272228201007499,
+        "ci_low": 0.0,
+        "ci_high": 0.3028022411058175,
+        "p_value": 0.194,
+        "n": 8
+      },
+      "relationship": {
+        "diff": 0.015315819897946772,
+        "ci_low": -0.21767414489797574,
+        "ci_high": 0.21089728367345284,
+        "p_value": 0.858,
+        "n": 7
+      },
+      "comparison": {
+        "diff": -0.1012017898809379,
+        "ci_low": -0.24604683095236166,
+        "ci_high": 0.04364325119048584,
+        "p_value": 0.218,
+        "n": 6
+      },
+      "multi_hop": {
+        "diff": -0.12906255538541875,
+        "ci_low": -0.40114677850770314,
+        "ci_high": 0.14302166773686564,
+        "p_value": 0.406,
+        "n": 5
+      },
+      "experimental": {
+        "diff": 0.2857142857142857,
+        "ci_low": 0.0,
+        "ci_high": 0.7142857142857143,
+        "p_value": 0.191,
+        "n": 7
+      }
+    },
+    "vector_only": {
+      "overall": {
+        "diff": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "p_value": 1.0,
+        "n": 33
+      },
+      "definition": {
+        "diff": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "p_value": 1.0,
+        "n": 8
+      },
+      "relationship": {
+        "diff": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "p_value": 1.0,
+        "n": 7
+      },
+      "comparison": {
+        "diff": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "p_value": 1.0,
+        "n": 6
+      },
+      "multi_hop": {
+        "diff": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "p_value": 1.0,
+        "n": 5
+      },
+      "experimental": {
+        "diff": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "p_value": 1.0,
+        "n": 7
+      }
+    },
+    "hybrid": {
+      "overall": {
+        "diff": 0.061541728972102264,
+        "ci_low": -0.0032087905860885635,
+        "ci_high": 0.128450287288794,
+        "p_value": 0.06,
+        "n": 33
+      },
+      "definition": {
+        "diff": 0.1272228201007499,
+        "ci_low": 0.0,
+        "ci_high": 0.3028022411058175,
+        "p_value": 0.194,
+        "n": 8
+      },
+      "relationship": {
+        "diff": 0.09918810600260478,
+        "ci_low": -0.05840940582945965,
+        "ci_high": 0.2395048830303192,
+        "p_value": 0.233,
+        "n": 7
+      },
+      "comparison": {
+        "diff": 0.02182162559524292,
+        "ci_low": 0.0,
+        "ci_high": 0.06546487678572877,
+        "p_value": 0.673,
+        "n": 6
+      },
+      "multi_hop": {
+        "diff": 0.03756959993673693,
+        "ci_low": -0.22027393737494994,
+        "ci_high": 0.23662714294660026,
+        "p_value": 0.69,
+        "n": 5
+      },
+      "experimental": {
+        "diff": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "p_value": 1.0,
+        "n": 7
+      }
+    },
+    "hybrid_rerank": {
+      "overall": {
+        "diff": 0.03966714968253351,
+        "ci_low": -0.08494435265649537,
+        "ci_high": 0.17707006805019013,
+        "p_value": 0.518,
+        "n": 33
+      },
+      "definition": {
+        "diff": 0.002222820100749895,
+        "ci_low": -0.27606397809061467,
+        "ci_high": 0.3288662191964322,
+        "p_value": 0.992,
+        "n": 8
+      },
+      "relationship": {
+        "diff": 0.03402007040815499,
+        "ci_low": -0.07591944922394092,
+        "ci_high": 0.16807631160174777,
+        "p_value": 0.593,
+        "n": 7
+      },
+      "comparison": {
+        "diff": 0.12669792223864476,
+        "ci_low": -0.16666666666666666,
+        "ci_high": 0.4634271000492676,
+        "p_value": 0.539,
+        "n": 6
+      },
+      "multi_hop": {
+        "diff": -0.21878949096117775,
+        "ci_low": -0.5190939030666223,
+        "ci_high": 0.08393775449264437,
+        "p_value": 0.169,
+        "n": 5
+      },
+      "experimental": {
+        "diff": 0.19812182960493452,
+        "ci_low": 0.0,
+        "ci_high": 0.4838361153192202,
+        "p_value": 0.191,
+        "n": 7
+      }
+    },
+    "graph_only": {
+      "overall": {
+        "diff": -0.09934016299568492,
+        "ci_low": -0.3144014539670093,
+        "ci_high": 0.11935749769160788,
+        "p_value": 0.365,
+        "n": 33
+      },
+      "definition": {
+        "diff": -0.0625,
+        "ci_low": -0.5625,
+        "ci_high": 0.4375,
+        "p_value": 0.921,
+        "n": 8
+      },
+      "relationship": {
+        "diff": 0.15817296275508963,
+        "ci_low": 0.05272432091836321,
+        "ci_high": 0.31634592551017926,
+        "p_value": 0.046,
+        "n": 7
+      },
+      "comparison": {
+        "diff": -0.14300778769019176,
+        "ci_low": -0.5178684565476045,
+        "ci_high": 0.19004688335796713,
+        "p_value": 0.491,
+        "n": 6
+      },
+      "multi_hop": {
+        "diff": -0.3054778784004157,
+        "ci_low": -0.699282504380137,
+        "ci_high": 0.11199979009616222,
+        "p_value": 0.15,
+        "n": 5
+      },
+      "experimental": {
+        "diff": -0.21428571428571427,
+        "ci_low": -0.7857142857142857,
+        "ci_high": 0.42857142857142855,
+        "p_value": 0.606,
+        "n": 7
+      }
+    },
+    "graph_vector": {
+      "overall": {
+        "diff": 0.14443820142504346,
+        "ci_low": 0.04277987289413858,
+        "ci_high": 0.25227574651453105,
+        "p_value": 0.003,
+        "n": 33
+      },
+      "definition": {
+        "diff": 0.1875,
+        "ci_low": 0.0,
+        "ci_high": 0.4375,
+        "p_value": 0.194,
+        "n": 8
+      },
+      "relationship": {
+        "diff": 0.18678056211195598,
+        "ci_low": 0.05272432091836321,
+        "ci_high": 0.3494444026624151,
+        "p_value": 0.044,
+        "n": 7
+      },
+      "comparison": {
+        "diff": 0.11514401525087692,
+        "ci_low": -0.03466172096330347,
+        "ci_high": 0.38009376671593426,
+        "p_value": 0.672,
+        "n": 6
+      },
+      "multi_hop": {
+        "diff": 0.1012546227189132,
+        "ci_low": -0.14826662347604688,
+        "ci_high": 0.3730542599247841,
+        "p_value": 0.384,
+        "n": 5
+      },
+      "experimental": {
+        "diff": 0.10883707244898787,
+        "ci_low": -0.10544864183672642,
+        "ci_high": 0.3418270372449103,
+        "p_value": 0.379,
+        "n": 7
+      }
+    },
+    "adaptive": {
+      "overall": {
+        "diff": 0.062144225212973865,
+        "ci_low": -0.01916525693038325,
+        "ci_high": 0.14500084733826576,
+        "p_value": 0.133,
+        "n": 33
+      },
+      "definition": {
+        "diff": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "p_value": 1.0,
+        "n": 8
+      },
+      "relationship": {
+        "diff": 0.15817296275508963,
+        "ci_low": 0.05272432091836321,
+        "ci_high": 0.31634592551017926,
+        "p_value": 0.046,
+        "n": 7
+      },
+      "comparison": {
+        "diff": 0.11514401525087692,
+        "ci_low": -0.03466172096330347,
+        "ci_high": 0.38009376671593426,
+        "p_value": 0.672,
+        "n": 6
+      },
+      "multi_hop": {
+        "diff": -0.13559839136722895,
+        "ci_low": -0.41706993341894183,
+        "ci_high": 0.1477981111400803,
+        "p_value": 0.334,
+        "n": 5
+      },
+      "experimental": {
+        "diff": 0.13295379401048474,
+        "ci_low": 0.0,
+        "ci_high": 0.3175294617562246,
+        "p_value": 0.191,
+        "n": 7
+      }
+    },
+    "adaptive_tuned": {
+      "overall": {
+        "diff": 0.07870492197147406,
+        "ci_low": -0.013178193754237991,
+        "ci_high": 0.1686521534748121,
+        "p_value": 0.1,
+        "n": 33
+      },
+      "definition": {
+        "diff": 0.1272228201007499,
+        "ci_low": 0.0,
+        "ci_high": 0.3028022411058175,
+        "p_value": 0.194,
+        "n": 8
+      },
+      "relationship": {
+        "diff": 0.18678056211195598,
+        "ci_low": 0.05272432091836321,
+        "ci_high": 0.3494444026624151,
+        "p_value": 0.044,
+        "n": 7
+      },
+      "comparison": {
+        "diff": 0.11514401525087692,
+        "ci_low": -0.03466172096330347,
+        "ci_high": 0.38009376671593426,
+        "p_value": 0.672,
+        "n": 6
+      },
+      "multi_hop": {
+        "diff": -0.26114019385417,
+        "ci_low": -0.4447993101895847,
+        "ci_high": -0.06197637093824492,
+        "p_value": 0.011,
+        "n": 5
+      },
+      "experimental": {
+        "diff": 0.1266932581763631,
+        "ci_low": 0.0,
+        "ci_high": 0.2924873184197381,
+        "p_value": 0.191,
+        "n": 7
+      }
+    },
+    "adaptive_budget": {
+      "overall": {
+        "diff": 0.07203767972761638,
+        "ci_low": -0.025553150021729434,
+        "ci_high": 0.16591303640545896,
+        "p_value": 0.155,
+        "n": 33
+      },
+      "definition": {
+        "diff": 0.1413662191964322,
+        "ci_low": 0.0,
+        "ci_high": 0.31546487678572877,
+        "p_value": 0.194,
+        "n": 8
+      },
+      "relationship": {
+        "diff": 0.15191242692096799,
+        "ci_low": -0.05188008465460075,
+        "ci_high": 0.3494444026624151,
+        "p_value": 0.149,
+        "n": 7
+      },
+      "comparison": {
+        "diff": 0.11514401525087692,
+        "ci_low": -0.03466172096330347,
+        "ci_high": 0.38009376671593426,
+        "p_value": 0.672,
+        "n": 6
+      },
+      "multi_hop": {
+        "diff": -0.2877227921171096,
+        "ci_low": -0.4867087008685302,
+        "ci_high": -0.08208819560525969,
+        "p_value": 0.011,
+        "n": 5
+      },
+      "experimental": {
+        "diff": 0.13295379401048474,
+        "ci_low": 0.0,
+        "ci_high": 0.3175294617562246,
+        "p_value": 0.191,
+        "n": 7
+      }
+    }
+  },
+  "oracle": {
+    "router_config": "adaptive_tuned",
+    "metric": "ndcg@5",
+    "lambda": 0.01,
+    "split": "test",
+    "n": 33,
+    "router_accuracy": 0.0606,
+    "router_accuracy_per_type": {
+      "definition": 0.0,
+      "relationship": 0.1429,
+      "comparison": 0.1667,
+      "multi_hop": 0.0,
+      "experimental": 0.0
+    },
+    "mean_quality": {
+      "vector": 0.6214,
+      "bm25": 0.6782,
+      "hybrid": 0.683,
+      "graph": 0.5221,
+      "graph_vector": 0.7659,
+      "multi_hop": 0.6665,
+      "adaptive_tuned": 0.7001,
+      "oracle": 0.8846
+    },
+    "mean_cost_units": {
+      "vector": 1.0,
+      "bm25": 0.3,
+      "hybrid": 1.3,
+      "graph": 0.6212,
+      "graph_vector": 1.9364,
+      "multi_hop": 2.9394,
+      "adaptive_tuned": 2.0818
+    },
+    "adaptive_vs_always_hybrid": {
+      "diff": 0.0171631929993718,
+      "ci_low": -0.06689101590561904,
+      "ci_high": 0.10554567921628888,
+      "p_value": 0.696,
+      "n": 33,
+      "cost_saved_units": -0.7818
+    },
+    "dir": "C:\\Users\\Vansh\\Desktop\\Rag_neural_ai\\adaptive-graph-vector-rag\\results\\oracle_adaptive_tuned_test_20261015T134904"
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "label_coverage_unmapped": [],
+  "failures": [
+    {
+      "query_id": "d01",
+      "type": "definition",
+      "query": "What is LoRA?",
+      "strategy": "graph_vector",
+      "categories": [
+        "relevant_doc_not_retrieved"
+      ],
+      "top_docs": [
+        "2110.04366",
+        "2402.09353"
+      ],
+      "expected_docs": [
+        "2106.09685"
+      ],
+      "best_relevant_term_overlap": 0.5
+    },
+    {
+      "query_id": "d07",
+      "type": "definition",
+      "query": "What is Dense Passage Retrieval?",
+      "strategy": "graph_vector",
+      "categories": [
+        "relevant_doc_not_retrieved"
+      ],
+      "top_docs": [
+        "2312.06648",
+        "2401.18059"
+      ],
+      "expected_docs": [
+        "2004.04906"
+      ],
+      "best_relevant_term_overlap": 0.75
+    },
+    {
+      "query_id": "d11",
+      "type": "definition",
+      "query": "What is BitFit?",
+      "strategy": "graph_vector",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2106.10199",
+        "2110.04366"
+      ],
+      "expected_docs": [
+        "2106.10199"
+      ],
+      "best_relevant_term_overlap": 0.5
+    },
+    {
+      "query_id": "r01",
+      "type": "relationship",
+      "query": "Who introduced LoRA?",
+      "strategy": "graph_vector",
+      "categories": [
+        "right_doc_wrong_passage",
+        "vocabulary_mismatch"
+      ],
+      "top_docs": [
+        "2106.09685",
+        "2110.04366",
+        "2402.09353"
+      ],
+      "expected_docs": [
+        "2106.09685"
+      ],
+      "best_relevant_term_overlap": 0.333
+    },
+    {
+      "query_id": "r05",
+      "type": "relationship",
+      "query": "Who are the authors of REALM?",
+      "strategy": "graph_vector",
+      "categories": [
+        "right_doc_wrong_passage",
+        "vocabulary_mismatch"
+      ],
+      "top_docs": [
+        "2002.08909"
+      ],
+      "expected_docs": [
+        "2002.08909"
+      ],
+      "best_relevant_term_overlap": 0.333
+    },
+    {
+      "query_id": "m01",
+      "type": "multi_hop",
+      "query": "Which methods based on DPR were evaluated on Natural Questions?",
+      "strategy": "graph_vector",
+      "categories": [
+        "relevant_doc_not_retrieved",
+        "multi_hop_chain"
+      ],
+      "top_docs": [
+        "2004.04906",
+        "2009.02252",
+        "2202.06991"
+      ],
+      "expected_docs": [
+        "2005.11401",
+        "2007.01282"
+      ],
+      "best_relevant_term_overlap": 0.857
+    },
+    {
+      "query_id": "m09",
+      "type": "multi_hop",
+      "query": "Which adaptive methods that retrieve only when needed use low-probability tokens as a trigger?",
+      "strategy": "graph_vector",
+      "categories": [
+        "entity_not_linked",
+        "right_doc_wrong_passage",
+        "multi_hop_chain"
+      ],
+      "top_docs": [
+        "2009.02252",
+        "2305.06983",
+        "2401.15884"
+      ],
+      "expected_docs": [
+        "2305.06983",
+        "2310.11511"
+      ],
+      "best_relevant_term_overlap": 0.8
+    },
+    {
+      "query_id": "e11",
+      "type": "experimental",
+      "query": "How does the datastore size affect kNN-LM perplexity?",
+      "strategy": "graph_vector",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "1911.00172",
+        "2110.04366",
+        "2112.04426"
+      ],
+      "expected_docs": [
+        "1911.00172"
+      ],
+      "best_relevant_term_overlap": 0.75
+    },
+    {
+      "query_id": "e13",
+      "type": "experimental",
+      "query": "Which parameter-efficient method adds no additional inference latency according to its experiments?",
+      "strategy": "graph_vector",
+      "categories": [
+        "entity_not_linked",
+        "relevant_doc_not_retrieved"
+      ],
+      "top_docs": [
+        "1902.00751",
+        "2110.04366",
+        "2205.05638"
+      ],
+      "expected_docs": [
+        "2106.09685"
+      ],
+      "best_relevant_term_overlap": 0.5
+    }
+  ],
+  "category_counts": {
+    "right_doc_wrong_passage": 5,
+    "relevant_doc_not_retrieved": 4,
+    "vocabulary_mismatch": 2,
+    "multi_hop_chain": 2,
+    "entity_not_linked": 2
+  }
+}

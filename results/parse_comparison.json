@@ -1,0 +1,17 @@
+{
+  "n": 10,
+  "layout": {
+    "pct_sections_identified": 100.0,
+    "mean_sections": 19.9,
+    "mean_empty_sections": 0.6,
+    "mean_references": 38.9,
+    "mean_garbled": 0.008
+  },
+  "plain": {
+    "pct_sections_identified": 100.0,
+    "mean_sections": 11.2,
+    "mean_empty_sections": 0.3,
+    "mean_references": 37.2,
+    "mean_garbled": 0.0079
+  }
+}

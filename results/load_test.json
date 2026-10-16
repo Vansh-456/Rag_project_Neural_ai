@@ -1,0 +1,6 @@
+{
+  "note": "60 requests, concurrency 4, pipeline graph_vector, local CPU while the retrieval sweep was re-embedding in parallel. 12 requests hit the 60/min per-client rate limit (HTTP 429) as designed.",
+  "requests": 60, "concurrency": 4, "ok": 48, "errors": 12, "error_codes": [429],
+  "throughput_rps": 4.23,
+  "latency_ms": {"p50": 1200.6, "p95": 2757.7, "max": 3250.9, "mean": 1168.1}
+}

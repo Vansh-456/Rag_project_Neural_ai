@@ -1,0 +1,226 @@
+{
+  "label_coverage_unmapped": [],
+  "failures": [
+    {
+      "query_id": "d05",
+      "type": "definition",
+      "query": "What is prefix-tuning?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2101.00190",
+        "2110.04366"
+      ],
+      "expected_docs": [
+        "2101.00190"
+      ],
+      "best_relevant_term_overlap": 0.75
+    },
+    {
+      "query_id": "d11",
+      "type": "definition",
+      "query": "What is BitFit?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2106.10199"
+      ],
+      "expected_docs": [
+        "2106.10199"
+      ],
+      "best_relevant_term_overlap": 0.5
+    },
+    {
+      "query_id": "d15",
+      "type": "definition",
+      "query": "what is low rank adaption",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2106.09685",
+        "2305.14314"
+      ],
+      "expected_docs": [
+        "2106.09685"
+      ],
+      "best_relevant_term_overlap": 0.75
+    },
+    {
+      "query_id": "c01",
+      "type": "comparison",
+      "query": "How does LoRA differ from adapters?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2106.09685",
+        "2110.04366"
+      ],
+      "expected_docs": [
+        "1902.00751",
+        "2106.09685"
+      ],
+      "best_relevant_term_overlap": 1.0
+    },
+    {
+      "query_id": "c05",
+      "type": "comparison",
+      "query": "How does BM25 compare to dense retrievers on BEIR in zero-shot settings?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2004.04906",
+        "2104.08663",
+        "2112.09118",
+        "2212.03533",
+        "2302.00083"
+      ],
+      "expected_docs": [
+        "2104.08663"
+      ],
+      "best_relevant_term_overlap": 0.8
+    },
+    {
+      "query_id": "m01",
+      "type": "multi_hop",
+      "query": "Which methods based on DPR were evaluated on Natural Questions?",
+      "strategy": "vector",
+      "categories": [
+        "relevant_doc_not_retrieved",
+        "multi_hop_chain"
+      ],
+      "top_docs": [
+        "2004.04906",
+        "2104.07567"
+      ],
+      "expected_docs": [
+        "2005.11401",
+        "2007.01282"
+      ],
+      "best_relevant_term_overlap": 0.857
+    },
+    {
+      "query_id": "m03",
+      "type": "multi_hop",
+      "query": "Which datasets were used to evaluate the method that introduced late interaction?",
+      "strategy": "vector",
+      "categories": [
+        "relevant_doc_not_retrieved",
+        "multi_hop_chain"
+      ],
+      "top_docs": [
+        "2104.08663",
+        "2112.01488",
+        "2307.07697"
+      ],
+      "expected_docs": [
+        "2004.12832"
+      ],
+      "best_relevant_term_overlap": 0.571
+    },
+    {
+      "query_id": "m09",
+      "type": "multi_hop",
+      "query": "Which adaptive methods that retrieve only when needed use low-probability tokens as a trigger?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage",
+        "multi_hop_chain"
+      ],
+      "top_docs": [
+        "2103.10385",
+        "2305.06983",
+        "2305.14251",
+        "2310.11511"
+      ],
+      "expected_docs": [
+        "2305.06983",
+        "2310.11511"
+      ],
+      "best_relevant_term_overlap": 0.8
+    },
+    {
+      "query_id": "m11",
+      "type": "multi_hop",
+      "query": "Which papers that cite the Transformer paper introduce masked language modeling?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage",
+        "multi_hop_chain"
+      ],
+      "top_docs": [
+        "1810.04805",
+        "1910.10683",
+        "2106.09685"
+      ],
+      "expected_docs": [
+        "1810.04805"
+      ],
+      "best_relevant_term_overlap": 0.625
+    },
+    {
+      "query_id": "e01",
+      "type": "experimental",
+      "query": "What results show DPR outperforms BM25 on top-20 passage retrieval accuracy?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2004.04906",
+        "2212.03533"
+      ],
+      "expected_docs": [
+        "2004.04906"
+      ],
+      "best_relevant_term_overlap": 0.727
+    },
+    {
+      "query_id": "e09",
+      "type": "experimental",
+      "query": "What results show RETRO matches larger models with fewer parameters?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2112.04426"
+      ],
+      "expected_docs": [
+        "2112.04426"
+      ],
+      "best_relevant_term_overlap": 0.5
+    },
+    {
+      "query_id": "e13",
+      "type": "experimental",
+      "query": "Which parameter-efficient method adds no additional inference latency according to its experiments?",
+      "strategy": "vector",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2106.09685",
+        "2205.05638"
+      ],
+      "expected_docs": [
+        "2106.09685"
+      ],
+      "best_relevant_term_overlap": 0.583
+    }
+  ],
+  "category_counts": {
+    "right_doc_wrong_passage": 10,
+    "multi_hop_chain": 4,
+    "relevant_doc_not_retrieved": 2
+  }
+}

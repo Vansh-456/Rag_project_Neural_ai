@@ -1,0 +1,71 @@
+{
+  "version": "v2 (after ADR-016 extraction fixes)",
+  "annotator": "system builder (single annotator)",
+  "n": 50,
+  "precision": 0.78,
+  "by_extractor": {
+    "rule:abstract_task": {
+      "correct": 1,
+      "n": 3,
+      "precision": 0.333
+    },
+    "rule:cue": {
+      "correct": 9,
+      "n": 13,
+      "precision": 0.692
+    },
+    "rule:frequency": {
+      "correct": 6,
+      "n": 11,
+      "precision": 0.545
+    },
+    "rule:reference": {
+      "correct": 23,
+      "n": 23,
+      "precision": 1.0
+    }
+  },
+  "by_relation": {
+    "APPLIED_TO": {
+      "correct": 1,
+      "n": 3,
+      "precision": 0.333
+    },
+    "BASED_ON": {
+      "correct": 0,
+      "n": 1,
+      "precision": 0.0
+    },
+    "CITES": {
+      "correct": 23,
+      "n": 23,
+      "precision": 1.0
+    },
+    "EVALUATES_ON": {
+      "correct": 2,
+      "n": 3,
+      "precision": 0.667
+    },
+    "IMPROVES": {
+      "correct": 4,
+      "n": 4,
+      "precision": 1.0
+    },
+    "USES": {
+      "correct": 9,
+      "n": 16,
+      "precision": 0.562
+    }
+  },
+  "introduces_full_review": {
+    "n": 77,
+    "correct": 77,
+    "note": "all 77 INTRODUCES edges reviewed by hand after the fix (all gazetteer-grounded)"
+  },
+  "v1": {
+    "precision": 0.74,
+    "introduces_propose_pattern": "0/17 correct -> pattern disabled",
+    "improves": "1/4 -> nearest-mention window fix"
+  },
+  "sample": "random 50 non-metadata edges, seed 42"
+}

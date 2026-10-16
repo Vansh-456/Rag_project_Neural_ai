@@ -1,0 +1,118 @@
+{
+  "label_coverage_unmapped": [],
+  "failures": [
+    {
+      "query_id": "d10",
+      "type": "definition",
+      "query": "What is RAPTOR?",
+      "strategy": "bm25",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2401.18059"
+      ],
+      "expected_docs": [
+        "2401.18059"
+      ],
+      "best_relevant_term_overlap": 0.5
+    },
+    {
+      "query_id": "r08",
+      "type": "relationship",
+      "query": "Who introduced prompt tuning?",
+      "strategy": "bm25",
+      "categories": [
+        "relevant_doc_not_retrieved"
+      ],
+      "top_docs": [
+        "2110.07602",
+        "2203.02155",
+        "2205.05638",
+        "2402.07630"
+      ],
+      "expected_docs": [
+        "2104.08691"
+      ],
+      "best_relevant_term_overlap": 0.5
+    },
+    {
+      "query_id": "r10",
+      "type": "relationship",
+      "query": "Which retriever does RAG use?",
+      "strategy": "bm25",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2005.11401",
+        "2104.07567",
+        "2309.15217",
+        "2310.11511",
+        "2312.10997"
+      ],
+      "expected_docs": [
+        "2005.11401"
+      ],
+      "best_relevant_term_overlap": 1.0
+    },
+    {
+      "query_id": "c04",
+      "type": "comparison",
+      "query": "How do REALM and RAG differ?",
+      "strategy": "bm25",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2002.08909",
+        "2302.00083"
+      ],
+      "expected_docs": [
+        "2002.08909",
+        "2005.11401"
+      ],
+      "best_relevant_term_overlap": 0.5
+    },
+    {
+      "query_id": "c12",
+      "type": "comparison",
+      "query": "How does LightRAG differ from GraphRAG?",
+      "strategy": "bm25",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2410.05779"
+      ],
+      "expected_docs": [
+        "2410.05779"
+      ],
+      "best_relevant_term_overlap": 0.5
+    },
+    {
+      "query_id": "m08",
+      "type": "multi_hop",
+      "query": "Which embedding models introduced after Sentence-BERT were evaluated on MTEB?",
+      "strategy": "bm25",
+      "categories": [
+        "relevant_doc_not_retrieved",
+        "multi_hop_chain"
+      ],
+      "top_docs": [
+        "1908.10084"
+      ],
+      "expected_docs": [
+        "2210.07316",
+        "2212.03533",
+        "2309.07597"
+      ],
+      "best_relevant_term_overlap": 0.667
+    }
+  ],
+  "category_counts": {
+    "right_doc_wrong_passage": 4,
+    "relevant_doc_not_retrieved": 2,
+    "multi_hop_chain": 1
+  }
+}

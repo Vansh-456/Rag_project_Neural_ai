@@ -1,0 +1,65 @@
+{
+  "annotator": "system builder (single annotator)",
+  "n": 50,
+  "precision": 0.74,
+  "by_extractor": {
+    "rule:abstract_task": {
+      "correct": 3,
+      "n": 4,
+      "precision": 0.75
+    },
+    "rule:reference": {
+      "correct": 12,
+      "n": 12,
+      "precision": 1.0
+    },
+    "rule:cue": {
+      "correct": 11,
+      "n": 16,
+      "precision": 0.688
+    },
+    "rule:frequency": {
+      "correct": 10,
+      "n": 17,
+      "precision": 0.588
+    },
+    "rule:introduces": {
+      "correct": 1,
+      "n": 1,
+      "precision": 1.0
+    }
+  },
+  "by_relation": {
+    "APPLIED_TO": {
+      "correct": 3,
+      "n": 4,
+      "precision": 0.75
+    },
+    "CITES": {
+      "correct": 12,
+      "n": 12,
+      "precision": 1.0
+    },
+    "EVALUATES_ON": {
+      "correct": 8,
+      "n": 10,
+      "precision": 0.8
+    },
+    "IMPROVES": {
+      "correct": 1,
+      "n": 4,
+      "precision": 0.25
+    },
+    "INTRODUCES": {
+      "correct": 1,
+      "n": 1,
+      "precision": 1.0
+    },
+    "USES": {
+      "correct": 12,
+      "n": 19,
+      "precision": 0.632
+    }
+  },
+  "sample": "random 50 non-metadata edges, seed 42 (AUTHORED_BY from arXiv metadata excluded)"
+}

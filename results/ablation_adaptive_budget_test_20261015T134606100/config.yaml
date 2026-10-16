@@ -1,0 +1,238 @@
+seed: 42
+env: development
+paths:
+  corpus_file: data/corpus/papers.yaml
+  gazetteer_file: data/corpus/gazetteer.yaml
+  raw_dir: data/raw/papers
+  documents_dir: data/processed/documents
+  chunks_dir: data/processed/chunks
+  entities_dir: data/processed/entities
+  graph_dir: data/processed/graph
+  index_dir: data/index
+  cache_dir: data/cache
+  results_dir: results
+  traces_db: data/traces/traces.sqlite
+  evaluation_dir: data/evaluation
+ingestion:
+  parser: pymupdf
+  arxiv_delay_seconds: 3.0
+  min_section_chars: 40
+  max_heading_words: 12
+chunking:
+  strategy: structure_aware
+  chunk_size: 256
+  overlap: 32
+  semantic_threshold: 0.55
+  semantic_min_tokens: 64
+  include_title_context: true
+embedding:
+  provider: sentence_transformers
+  model: BAAI/bge-small-en-v1.5
+  query_prefix: 'Represent this sentence for searching relevant passages: '
+  document_prefix: ''
+  batch_size: 32
+  normalize: true
+  hashing_dim: 512
+  device: cpu
+vector_store:
+  backend: qdrant_local
+  url: http://localhost:6333
+  collection: ''
+bm25:
+  implementation: scratch
+  k1: 1.5
+  b: 0.75
+  stem: true
+  remove_stopwords: true
+  keep_acronym_case: false
+graph:
+  backend: networkx
+  extractor: rule
+  neo4j_uri: bolt://localhost:7687
+  neo4j_user: neo4j
+  min_edge_confidence: 0.3
+  fuzzy_link_threshold: 0.88
+  embedding_link_threshold: 0.8
+  resolution_similarity: 0.92
+  max_llm_extraction_chunks: 400
+retrieval:
+  top_k: 10
+  candidate_pool: 50
+  fusion: rrf
+  rrf_k: 60
+  weights:
+    dense: 0.5
+    bm25: 0.3
+    graph: 0.2
+  normalization: minmax
+  graph:
+    max_hops: 2
+    hop_decay: 0.6
+    max_paths: 20
+    max_expansions: 2000
+    relation_cue_bonus: 1.5
+    chunks_per_path: 2
+reranker:
+  enabled: true
+  provider: cross_encoder
+  model: cross-encoder/ms-marco-MiniLM-L-6-v2
+  batch_size: 32
+  candidate_pool: 50
+router:
+  mode: rule
+  fixed_strategy: vector
+  definition_cues:
+  - what is
+  - what are
+  - define
+  - definition of
+  - explain
+  - describe
+  - what does
+  relationship_cues:
+  - who introduced
+  - who proposed
+  - who authored
+  - who wrote
+  - authored
+  - cites
+  - cite
+  - based on
+  - derived from
+  - introduced
+  - proposed by
+  - which paper
+  comparison_cues:
+  - compare
+  - comparison
+  - differ
+  - difference
+  - versus
+  - ' vs'
+  - vs.
+  - contrast
+  - better than
+  multi_hop_cues:
+  - which methods
+  - which models
+  - that improved
+  - that use
+  - derived from
+  - built on
+  - papers that
+  - methods that
+  - which papers
+  experimental_cues:
+  - evidence
+  - results
+  - ablation
+  - experiment
+  - improvement over
+  - how much
+  - outperform
+  - benchmark
+  - score
+  - accuracy
+  intent_strategy:
+    definition: vector
+    relationship: graph
+    comparison: graph_vector
+    multi_hop: multi_hop
+    experimental: vector
+  rerank_intents:
+  - experimental
+  experimental_candidate_pool: 100
+  fallback_strategy: hybrid
+context:
+  max_tokens: 2500
+  ordering: relevance
+  dedup_jaccard: 0.8
+  mmr_lambda: null
+  max_graph_paths: 6
+generation:
+  enabled: false
+  provider: extractive
+  model: ''
+  max_tokens: 700
+  temperature: 0.0
+  timeout_seconds: 60.0
+  max_retries: 3
+  ollama_url: http://localhost:11434
+  prompt_version: grounded_v1
+  cache_responses: true
+  effort: medium
+  extraction_effort: low
+  anthropic_fallbacks: true
+verification:
+  enabled: false
+  method: lexical
+  nli_model: cross-encoder/nli-deberta-v3-small
+  support_threshold: 0.6
+  sufficiency_threshold: 0.7
+  max_iterations: 2
+  check_contradictions: true
+budget:
+  max_retrieval_calls: 8
+  max_graph_hops: 3
+  max_candidates: 300
+  max_tokens: 12000
+  max_latency_ms: 30000.0
+  lambda_cost: 0.01
+  action_costs:
+    dense: 1.0
+    bm25: 0.3
+    graph_hop: 0.5
+    rerank_candidate: 0.02
+    llm_1k_tokens: 2.0
+  escalation_ladder:
+  - vector
+  - hybrid
+  - graph_vector
+  - multi_hop
+  min_confidence: 0.62
+evaluation:
+  queries_file: data/evaluation/queries.json
+  ground_truth_file: data/evaluation/ground_truth.json
+  expected_paths_file: data/evaluation/expected_paths.json
+  k_values:
+  - 1
+  - 3
+  - 5
+  - 10
+  primary_k: 5
+  bootstrap_samples: 1000
+  confidence: 0.95
+  split: dev
+  save_traces: true
+pipeline:
+  name: adaptive_budget
+  description: 'Cost-aware: start cheap, escalate on low confidence'
+  router: adaptive
+  strategy: hybrid
+  rerank: false
+  generate: false
+  verify: false
+  use_budget: true
+api:
+  auth_enabled: false
+  rate_limit_per_minute: 60
+  default_pipeline: adaptive
+  pipelines:
+  - vector_only
+  - bm25_only
+  - hybrid
+  - hybrid_rerank
+  - graph_only
+  - graph_vector
+  - adaptive
+  - adaptive_tuned
+  - adaptive_budget
+  - adaptive_verified
+  cors_origins:
+  - http://localhost:3000
+  retrieval_cache_size: 512
+  max_upload_mb: 40
+logging:
+  level: INFO
+  json_logs: false
+root: C:\Users\Vansh\Desktop\Rag_neural_ai\adaptive-graph-vector-rag

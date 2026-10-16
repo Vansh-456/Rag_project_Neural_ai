@@ -1,0 +1,59 @@
+{
+  "label_coverage_unmapped": [],
+  "failures": [
+    {
+      "query_id": "d10",
+      "type": "definition",
+      "query": "What is RAPTOR?",
+      "strategy": "graph_vector",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2401.18059"
+      ],
+      "expected_docs": [
+        "2401.18059"
+      ],
+      "best_relevant_term_overlap": 0.5
+    },
+    {
+      "query_id": "r10",
+      "type": "relationship",
+      "query": "Which retriever does RAG use?",
+      "strategy": "graph_vector",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2005.11401",
+        "2104.07567",
+        "2311.09476"
+      ],
+      "expected_docs": [
+        "2005.11401"
+      ],
+      "best_relevant_term_overlap": 1.0
+    },
+    {
+      "query_id": "c12",
+      "type": "comparison",
+      "query": "How does LightRAG differ from GraphRAG?",
+      "strategy": "graph_vector",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2404.16130",
+        "2410.05779"
+      ],
+      "expected_docs": [
+        "2410.05779"
+      ],
+      "best_relevant_term_overlap": 0.5
+    }
+  ],
+  "category_counts": {
+    "right_doc_wrong_passage": 3
+  }
+}

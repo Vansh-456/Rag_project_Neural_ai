@@ -1,0 +1,96 @@
+{
+  "label_coverage_unmapped": [],
+  "failures": [
+    {
+      "query_id": "d02",
+      "type": "definition",
+      "query": "What is HyDE?",
+      "strategy": "hybrid",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2212.10496",
+        "2303.07678"
+      ],
+      "expected_docs": [
+        "2212.10496"
+      ],
+      "best_relevant_term_overlap": 0.5
+    },
+    {
+      "query_id": "d10",
+      "type": "definition",
+      "query": "What is RAPTOR?",
+      "strategy": "hybrid",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2401.18059"
+      ],
+      "expected_docs": [
+        "2401.18059"
+      ],
+      "best_relevant_term_overlap": 0.5
+    },
+    {
+      "query_id": "r10",
+      "type": "relationship",
+      "query": "Which retriever does RAG use?",
+      "strategy": "hybrid",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2005.11401",
+        "2009.02252",
+        "2104.07567",
+        "2311.09476"
+      ],
+      "expected_docs": [
+        "2005.11401"
+      ],
+      "best_relevant_term_overlap": 1.0
+    },
+    {
+      "query_id": "c10",
+      "type": "comparison",
+      "query": "Compare GraphRAG with naive RAG for global questions",
+      "strategy": "hybrid",
+      "categories": [
+        "right_doc_wrong_passage"
+      ],
+      "top_docs": [
+        "2404.16130"
+      ],
+      "expected_docs": [
+        "2404.16130"
+      ],
+      "best_relevant_term_overlap": 0.833
+    },
+    {
+      "query_id": "m06",
+      "type": "multi_hop",
+      "query": "Which retrieval-augmented models that use a DPR retriever pair it with a BART generator?",
+      "strategy": "hybrid",
+      "categories": [
+        "relevant_doc_not_retrieved",
+        "multi_hop_chain"
+      ],
+      "top_docs": [
+        "2009.02252",
+        "2104.07567"
+      ],
+      "expected_docs": [
+        "2005.11401"
+      ],
+      "best_relevant_term_overlap": 0.889
+    }
+  ],
+  "category_counts": {
+    "right_doc_wrong_passage": 4,
+    "relevant_doc_not_retrieved": 1,
+    "multi_hop_chain": 1
+  }
+}

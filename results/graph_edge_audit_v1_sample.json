@@ -1,0 +1,634 @@
+[
+  {
+    "source": "ColBERT",
+    "relation": "APPLIED_TO",
+    "target": "Re-ranking",
+    "confidence": 0.7975,
+    "extractor": "rule:abstract_task",
+    "evidence": "Beyond reducing the cost of re-ranking the documents retrieved by a traditional model, ColBERT’s pruning-friendly interaction mechanism enables leveraging vector-similarity indexes for end-to-end retrieval directly from a large document collection.",
+    "chunks": [
+      "2004.12832::structure_aware::c0c4a6::0002"
+    ],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "ColBERTv2",
+    "relation": "APPLIED_TO",
+    "target": "Information Retrieval",
+    "confidence": 0.9089,
+    "extractor": "rule:abstract_task",
+    "evidence": "Neural information retrieval (IR) has greatly advanced search and other knowledgeintensive language tasks.",
+    "chunks": [
+      "2112.01488::structure_aware::c0c4a6::0001"
+    ],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "Fine-tuning",
+    "relation": "APPLIED_TO",
+    "target": "Machine Translation",
+    "confidence": 0.7975,
+    "extractor": "rule:abstract_task",
+    "evidence": "Through comprehensive empirical studies across machine translation, text summarization, language understanding, and text classification benchmarks, we utilize the unified view to identify important design choices in previous methods.",
+    "chunks": [
+      "2110.04366::structure_aware::c0c4a6::0002"
+    ],
+    "correct": false,
+    "notes": "subject mis-attributed: paper's contribution is a unified view, not fine-tuning"
+  },
+  {
+    "source": "IRCoT",
+    "relation": "APPLIED_TO",
+    "target": "Question Answering",
+    "confidence": 0.9816,
+    "extractor": "rule:abstract_task",
+    "evidence": "Prompting-based large language",
+    "chunks": [
+      "2212.10509::structure_aware::c0c4a6::0001"
+    ],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension",
+    "relation": "CITES",
+    "target": "RoBERTa: A Robustly Optimized BERT Pretraining Approach",
+    "confidence": 0.9,
+    "extractor": "rule:reference",
+    "evidence": "Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Man- dar Joshi, Danqi Chen, Omer Levy, Mike Lewis, Luke Zettlemoyer, and Veselin Stoyanov. Roberta: A robustly optimized bert pretraining approach. arXiv preprint arXiv:1907.11692, 2019.",
+    "chunks": [],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "Generalization through Memorization: Nearest Neighbor Language Models",
+    "relation": "CITES",
+    "target": "Attention Is All You Need",
+    "confidence": 0.9,
+    "extractor": "rule:reference",
+    "evidence": "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. Attention is all you need. In Advances in neural information processing systems, pp. 5998–6008, 2017.",
+    "chunks": [],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT",
+    "relation": "CITES",
+    "target": "Attention Is All You Need",
+    "confidence": 0.9,
+    "extractor": "rule:reference",
+    "evidence": "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Lukasz Kaiser, and Illia Polosukhin. 2017. Atention is all you need. In Advances in neural information processing systems. 5998–6008.",
+    "chunks": [],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "Language Models are Few-Shot Learners",
+    "relation": "CITES",
+    "target": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    "confidence": 0.9,
+    "extractor": "rule:reference",
+    "evidence": "In Advances in neural information processing systems, pages 3981–3989, 2016. [AI19] WeChat AI. Tr-mt (ensemble), December 2019. [AJF19] Roee Aharoni, Melvin Johnson, and Orhan Firat. Massively multilingual neural machine translation. In Proceedings of the 2019 Conference of the North American Chapte",
+    "chunks": [],
+    "correct": true,
+    "notes": "claim correct, but evidence string is a mis-split reference blob"
+  },
+  {
+    "source": "Leveraging Passage Retrieval with Generative Models for Open Domain Question Answering",
+    "relation": "CITES",
+    "target": "Dense Passage Retrieval for Open-Domain Question Answering",
+    "confidence": 0.9,
+    "extractor": "rule:reference",
+    "evidence": "Vladimir Karpukhin, Barlas O ̆guz, Sewon Min, Ledell Wu, Sergey Edunov, Danqi Chen, and Wen- tau Yih. 2020. Dense passage retrieval for open-domain question answering. arXiv preprint arXiv:2004.04906.",
+    "chunks": [],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "Atlas: Few-shot Learning with Retrieval Augmented Language Models",
+    "relation": "CITES",
+    "target": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+    "confidence": 0.9,
+    "extractor": "rule:reference",
+    "evidence": "Patrick Lewis, Ethan Perez, Aleksandara Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich Küttler, Mike Lewis, Wen-tau Yih, Tim Rocktäschel, et al. Retrieval-augmented generation for knowledge- intensive nlp tasks. arXiv preprint arXiv:2005.11401, 2020. 1, 7, 14",
+    "chunks": [],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "Atlas: Few-shot Learning with Retrieval Augmented Language Models",
+    "relation": "CITES",
+    "target": "Approximate Nearest Neighbor Negative Contrastive Learning for Dense Text Retrieval",
+    "confidence": 0.9,
+    "extractor": "rule:reference",
+    "evidence": "Lee Xiong, Chenyan Xiong, Ye Li, Kwok-Fung Tang, Jialin Liu, Paul Bennett, Junaid Ahmed, and Arnold Overwijk. Approximate nearest neighbor negative contrastive learning for dense text retrieval. arXiv preprint arXiv:2007.00808, 2020. 7",
+    "chunks": [],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "Interleaving Retrieval with Chain-of-Thought Reasoning for Knowledge-Intensive Multi-Step Questions",
+    "relation": "CITES",
+    "target": "ReAct: Synergizing Reasoning and Acting in Language Models",
+    "confidence": 0.9,
+    "extractor": "rule:reference",
+    "evidence": "Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, and Yuan Cao. 2022. ReAct: Synergizing reasoning and acting in language models. arXiv preprint arXiv:2210.03629.",
+    "chunks": [],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "REPLUG: Retrieval-Augmented Black-Box Language Models",
+    "relation": "CITES",
+    "target": "Improving language models by retrieving from trillions of tokens",
+    "confidence": 0.99,
+    "extractor": "rule:reference",
+    "evidence": "Borgeaud, S., Mensch, A., Hoffmann, J., Cai, T., Ruther- ford, E., Millican, K., Driessche, G. v. d., Lespiau, J.-B., Damoc, B., Clark, A., et al. Improving language mod- els by retrieving from trillions of tokens. arXiv preprint arXiv:2112.04426, 2021.",
+    "chunks": [],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "Query2doc: Query Expansion with Large Language Models",
+    "relation": "CITES",
+    "target": "Dense Passage Retrieval for Open-Domain Question Answering",
+    "confidence": 0.99,
+    "extractor": "rule:reference",
+    "evidence": "Vladimir Karpukhin, Barlas Oguz, Sewon Min, Patrick Lewis, Ledell Wu, Sergey Edunov, Danqi Chen, and Wen-tau Yih. 2020. Dense passage retrieval for open- domain question answering. In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP), pages 6769–6781, Onl",
+    "chunks": [],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
+    "relation": "CITES",
+    "target": "P-Tuning v2: Prompt Tuning Can Be Comparable to Fine-tuning Universally Across Scales and Tasks",
+    "confidence": 0.9,
+    "extractor": "rule:reference",
+    "evidence": "X. Liu, K. Ji, Y. Fu, Z. Du, Z. Yang, and J. Tang, “P-tuning v2: Prompt tuning can be comparable to fine-tuning universally across scales and tasks,” CoRR, vol. abs/2110.07602, 2021.",
+    "chunks": [],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "Corrective Retrieval Augmented Generation",
+    "relation": "CITES",
+    "target": "Language Models are Few-Shot Learners",
+    "confidence": 0.9,
+    "extractor": "rule:reference",
+    "evidence": "Tom B Brown, Benjamin Mann, Nick Ryder, et al. 2020. Language models are few-shot learners. In Advances in neural information processing systems, pages 1877–1901.",
+    "chunks": [],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "Fine-tuning",
+    "relation": "EVALUATES_ON",
+    "target": "BEIR",
+    "confidence": 0.6,
+    "extractor": "rule:cue:results on",
+    "evidence": "Table 2: Supervised fine-tuning results on the BEIR benchmark.",
+    "chunks": [
+      "2212.03533::structure_aware::c0c4a6::0027"
+    ],
+    "correct": false,
+    "notes": "generic subject 'fine-tuning' from a table caption (Contriever paper)"
+  },
+  {
+    "source": "REPLUG",
+    "relation": "EVALUATES_ON",
+    "target": "MMLU",
+    "confidence": 0.55,
+    "extractor": "rule:cue:evaluations on",
+    "evidence": "We perform evaluations on both language modeling (§6.1) and downstream tasks such as MMLU (§6.2) and opendomain QA (§6.3).",
+    "chunks": [
+      "2301.12652::structure_aware::c0c4a6::0027"
+    ],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "RETRO",
+    "relation": "EVALUATES_ON",
+    "target": "Wikipedia",
+    "confidence": 0.55,
+    "extractor": "rule:cue:evaluate on",
+    "evidence": "We also evaluate on a set of manually selected Wikipedia articles that were added or heavily edited in September 2021, months after our pre-training and retrieval dataset was collected (details are given in §A.2).",
+    "chunks": [
+      "2112.04426::structure_aware::c0c4a6::0046"
+    ],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "Atlas",
+    "relation": "EVALUATES_ON",
+    "target": "TriviaQA",
+    "confidence": 0.936,
+    "extractor": "rule:cue:accuracy on+rule:cue:results on",
+    "evidence": "Atlas-11B obtains state-of-the-art results on 64-shot question answering, for both NaturalQuestions and TriviaQA.",
+    "chunks": [
+      "2208.03299::structure_aware::c0c4a6::0064",
+      "2208.03299::structure_aware::c0c4a6::0091"
+    ],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators",
+    "relation": "EVALUATES_ON",
+    "target": "SQuAD",
+    "confidence": 0.9,
+    "extractor": "rule:frequency",
+    "evidence": "SQuAD mentioned 4x in experiments",
+    "chunks": [
+      "2003.10555::structure_aware::c0c4a6::0006"
+    ],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "Dense Passage Retrieval for Open-Domain Question Answering",
+    "relation": "EVALUATES_ON",
+    "target": "SQuAD",
+    "confidence": 0.9,
+    "extractor": "rule:frequency",
+    "evidence": "SQuAD mentioned 7x in experiments",
+    "chunks": [
+      "2004.04906::structure_aware::c0c4a6::0002"
+    ],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "Dense Passage Retrieval for Open-Domain Question Answering",
+    "relation": "EVALUATES_ON",
+    "target": "CuratedTREC",
+    "confidence": 0.9,
+    "extractor": "rule:frequency",
+    "evidence": "CuratedTREC mentioned 4x in experiments",
+    "chunks": [
+      "2004.04906::structure_aware::c0c4a6::0019"
+    ],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "Dense Passage Retrieval for Open-Domain Question Answering",
+    "relation": "EVALUATES_ON",
+    "target": "WebQuestions",
+    "confidence": 0.9,
+    "extractor": "rule:frequency",
+    "evidence": "WebQuestions mentioned 4x in experiments",
+    "chunks": [
+      "2004.04906::structure_aware::c0c4a6::0019"
+    ],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "KILT: a Benchmark for Knowledge Intensive Language Tasks",
+    "relation": "EVALUATES_ON",
+    "target": "Natural Questions",
+    "confidence": 0.9,
+    "extractor": "rule:frequency",
+    "evidence": "Natural Questions mentioned 7x in experiments",
+    "chunks": [
+      "2009.02252::structure_aware::c0c4a6::0008"
+    ],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "Atlas: Few-shot Learning with Retrieval Augmented Language Models",
+    "relation": "EVALUATES_ON",
+    "target": "Wikipedia",
+    "confidence": 0.9,
+    "extractor": "rule:frequency",
+    "evidence": "Wikipedia mentioned 16x in experiments",
+    "chunks": [
+      "2208.03299::structure_aware::c0c4a6::0005"
+    ],
+    "correct": false,
+    "notes": "Wikipedia is Atlas's retrieval corpus, not an evaluation dataset"
+  },
+  {
+    "source": "Contriever",
+    "relation": "IMPROVES",
+    "target": "BM25",
+    "confidence": 0.959,
+    "extractor": "rule:cue:outperforms",
+    "evidence": "On the BEIR benchmark our unsupervised model outperforms BM25 on 11 out of 15 datasets for the Recall@100.",
+    "chunks": [
+      "2112.09118::structure_aware::c0c4a6::0001",
+      "2112.09118::structure_aware::c0c4a6::0035",
+      "2112.09118::structure_aware::c0c4a6::0042"
+    ],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "GraphRAG",
+    "relation": "IMPROVES",
+    "target": "HyDE",
+    "confidence": 0.6,
+    "extractor": "rule:cue:outperform",
+    "evidence": "54.4% 48.4% 51.6% 48.4% 51.6% 50.4% 49.6% Diversity 22.8% 77.2% 40.8% 59.2% 26.4% 73.6% 36.0% 64.0% Empowerment 41.2% 58.8% 45.2% 54.8% 43.6% 56.4% 50.8% 49.2% Overall 45.2% 54.8% 48.0% 52.0% 47.2% 52.8% 50.4% 49.6% The Superiority of Graph-enhanced RAG Systems in Large-Scale Corpora When handling large token counts and complex queries that require a thorough understanding of the dataset’s context",
+    "chunks": [
+      "2410.05779::structure_aware::c0c4a6::0034"
+    ],
+    "correct": false,
+    "notes": "cue matched inside a garbled results table; HyDE not compared"
+  },
+  {
+    "source": "LoRA",
+    "relation": "IMPROVES",
+    "target": "DeBERTa",
+    "confidence": 0.55,
+    "extractor": "rule:cue:better than",
+    "evidence": "LoRA performs on-par or better than finetuning in model quality on RoBERTa, DeBERTa, GPT-2, and GPT-3, despite having fewer trainable parameters, a higher training throughput, and, unlike adapters, no additional inference latency.",
+    "chunks": [
+      "2106.09685::structure_aware::c0c4a6::0001"
+    ],
+    "correct": false,
+    "notes": "LoRA is compared to fine-tuning *on* DeBERTa; object wrong"
+  },
+  {
+    "source": "PaLM",
+    "relation": "IMPROVES",
+    "target": "GPT-3",
+    "confidence": 0.6,
+    "extractor": "rule:cue:outperforms",
+    "evidence": "This large quantity of books used by Gopher, Chinchilla and PaLM may also explain why Gopher outperforms GPT-3 on this benchmark, while it is comparable on other benchmarks.",
+    "chunks": [
+      "2302.13971::structure_aware::c0c4a6::0032"
+    ],
+    "correct": false,
+    "notes": "sentence says Gopher outperforms GPT-3; subject wrong (nearest mention)"
+  },
+  {
+    "source": "Dense X Retrieval: What Retrieval Granularity Should We Use?",
+    "relation": "INTRODUCES",
+    "target": "Proposition Retrieval",
+    "confidence": 0.95,
+    "extractor": "rule:introduces",
+    "evidence": "EMNLP 2024 Main Conference Dense X Retrieval: What Retrieval Granularity Should We Use?",
+    "chunks": [
+      "2312.06648::structure_aware::c0c4a6::0000"
+    ],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "Adapters",
+    "relation": "USES",
+    "target": "Fine-tuning",
+    "confidence": 0.959,
+    "extractor": "rule:cue:use",
+    "evidence": "In these experiments, we use the BERTBASE model with 12 layers, therefore, variable fine-tuning subsumes full fine-tuning when n = 12.",
+    "chunks": [
+      "1902.00751::structure_aware::c0c4a6::0021",
+      "1902.00751::structure_aware::c0c4a6::0022"
+    ],
+    "correct": false,
+    "notes": "'variable fine-tuning' baseline; not a USES relation"
+  },
+  {
+    "source": "ColBERTv2",
+    "relation": "USES",
+    "target": "MS MARCO",
+    "confidence": 0.55,
+    "extractor": "rule:cue:use",
+    "evidence": "Hyperparameters corresponding to retrieval are explored in §C. We default to probe = 2, but use probe = 4 on the largest datasets, namely, MS MARCO and Wikipedia.",
+    "chunks": [
+      "2112.01488::structure_aware::c0c4a6::0080"
+    ],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "G-Retriever",
+    "relation": "USES",
+    "target": "GPT-4",
+    "confidence": 0.55,
+    "extractor": "rule:cue:utilize",
+    "evidence": "We utilize GPT-4 to generate an image from the graph, assisting readers in visualizing it Graph node_id,node_attr 0,name: head; attribute: black; (x,y,w,h): (386, 185, 8, 4) 1,name: swimming pool; attribute: small, water; (x,y,w,h): (465, 92, 35, 3) 2,name: shore; (x,y,w,h): (49, 85, 436, 108) 3,name: fence; attribute: wired; (x,y,w,h): (11, 158, 167, 46) 4,name: mountains; attribute: covered; (x,",
+    "chunks": [
+      "2402.07630::structure_aware::c0c4a6::0094"
+    ],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "kNN-LM",
+    "relation": "USES",
+    "target": "WikiText-103",
+    "confidence": 0.7975,
+    "extractor": "rule:cue:use",
+    "evidence": "Data Experiments in this paper use the following English corpora: WIKITEXT-103 is a standard benchmark by Merity et al. (2017) for autoregressive language modeling with a 250K word-level vocabulary.",
+    "chunks": [
+      "1911.00172::structure_aware::c0c4a6::0011",
+      "1911.00172::structure_aware::c0c4a6::0012"
+    ],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "REPLUG",
+    "relation": "USES",
+    "target": "GPT-2",
+    "confidence": 0.55,
+    "extractor": "rule:cue:using",
+    "evidence": "We then compute the perplexity of the continuation using the original GPT-2 1.5B and its REPLUG enhanced version.",
+    "chunks": [
+      "2301.12652::structure_aware::c0c4a6::0044"
+    ],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "Self-RAG",
+    "relation": "USES",
+    "target": "Contriever",
+    "confidence": 0.7975,
+    "extractor": "rule:cue:use",
+    "evidence": "For the retriever model R, we use off-the-shelf Contriever-MS MARCO (Izacard et al., 2022a) by default and retrieve up to ten documents for each input.",
+    "chunks": [
+      "2310.11511::structure_aware::c0c4a6::0039",
+      "2310.11511::structure_aware::c0c4a6::0040"
+    ],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "BERT",
+    "relation": "USES",
+    "target": "GLUE",
+    "confidence": 0.55,
+    "extractor": "rule:cue:use",
+    "evidence": "We use a batch size of 32 and fine-tune for 3 epochs over the data for all GLUE tasks.",
+    "chunks": [
+      "1810.04805::structure_aware::c0c4a6::0032"
+    ],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "MS MARCO: A Human Generated MAchine Reading COmprehension Dataset",
+    "relation": "USES",
+    "target": "ROUGE",
+    "confidence": 0.9325,
+    "extractor": "rule:cue:use+rule:frequency",
+    "evidence": "We use accuracy and precision-recall measures for numeric answers and apply metrics like ROUGE-L [Lin, 2004] and phrasing-aware evaluation framework [Mitra et al., 2016] for long textual answers.",
+    "chunks": [
+      "1611.09268::structure_aware::c0c4a6::0027"
+    ],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+    "relation": "USES",
+    "target": "TF-IDF",
+    "confidence": 0.59,
+    "extractor": "rule:frequency",
+    "evidence": "TF-IDF mentioned 3x",
+    "chunks": [
+      "1908.10084::structure_aware::c0c4a6::0027"
+    ],
+    "correct": false,
+    "notes": "mention frequency != usage (baseline/related work)"
+  },
+  {
+    "source": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer",
+    "relation": "USES",
+    "target": "Masked Language Modeling",
+    "confidence": 0.85,
+    "extractor": "rule:frequency",
+    "evidence": "Masked Language Modeling mentioned 7x",
+    "chunks": [
+      "1910.10683::structure_aware::c0c4a6::0040"
+    ],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "Dense Passage Retrieval for Open-Domain Question Answering",
+    "relation": "USES",
+    "target": "Exact Match",
+    "confidence": 0.85,
+    "extractor": "rule:frequency",
+    "evidence": "Exact Match mentioned 8x",
+    "chunks": [
+      "2004.04906::structure_aware::c0c4a6::0002"
+    ],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "Language Models are Few-Shot Learners",
+    "relation": "USES",
+    "target": "RoBERTa",
+    "confidence": 0.85,
+    "extractor": "rule:frequency",
+    "evidence": "RoBERTa mentioned 9x",
+    "chunks": [
+      "2005.14165::structure_aware::c0c4a6::0035"
+    ],
+    "correct": false,
+    "notes": "mention frequency != usage"
+  },
+  {
+    "source": "Language Models are Few-Shot Learners",
+    "relation": "USES",
+    "target": "Knowledge Distillation",
+    "confidence": 0.75,
+    "extractor": "rule:frequency",
+    "evidence": "Knowledge Distillation mentioned 5x",
+    "chunks": [
+      "2005.14165::structure_aware::c0c4a6::0138"
+    ],
+    "correct": false,
+    "notes": "mention frequency != usage"
+  },
+  {
+    "source": "Prefix-Tuning: Optimizing Continuous Prompts for Generation",
+    "relation": "USES",
+    "target": "BLEU",
+    "confidence": 0.85,
+    "extractor": "rule:frequency",
+    "evidence": "BLEU mentioned 11x",
+    "chunks": [
+      "2101.00190::structure_aware::c0c4a6::0023"
+    ],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning",
+    "relation": "USES",
+    "target": "Prompt Tuning",
+    "confidence": 0.85,
+    "extractor": "rule:frequency",
+    "evidence": "Prompt Tuning mentioned 38x",
+    "chunks": [
+      "2205.05638::structure_aware::c0c4a6::0001"
+    ],
+    "correct": false,
+    "notes": "prompt tuning is a compared baseline, not used"
+  },
+  {
+    "source": "REPLUG: Retrieval-Augmented Black-Box Language Models",
+    "relation": "USES",
+    "target": "PaLM",
+    "confidence": 0.85,
+    "extractor": "rule:frequency",
+    "evidence": "PaLM mentioned 7x",
+    "chunks": [
+      "2301.12652::structure_aware::c0c4a6::0032"
+    ],
+    "correct": false,
+    "notes": "mention frequency != usage"
+  },
+  {
+    "source": "Lost in the Middle: How Language Models Use Long Contexts",
+    "relation": "USES",
+    "target": "LLaMA",
+    "confidence": 0.85,
+    "extractor": "rule:frequency",
+    "evidence": "LLaMA mentioned 16x",
+    "chunks": [
+      "2307.03172::structure_aware::c0c4a6::0020"
+    ],
+    "correct": false,
+    "notes": "uncertain: models are LLaMA-derived (LongChat); marked incorrect conservatively"
+  },
+  {
+    "source": "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval",
+    "relation": "USES",
+    "target": "DPR",
+    "confidence": 0.85,
+    "extractor": "rule:frequency",
+    "evidence": "DPR mentioned 49x",
+    "chunks": [
+      "2401.18059::structure_aware::c0c4a6::0008"
+    ],
+    "correct": true,
+    "notes": ""
+  },
+  {
+    "source": "From Local to Global: A Graph RAG Approach to Query-Focused Summarization",
+    "relation": "USES",
+    "target": "GPT-4",
+    "confidence": 0.59,
+    "extractor": "rule:frequency",
+    "evidence": "GPT-4 mentioned 3x",
+    "chunks": [
+      "2404.16130::structure_aware::c0c4a6::0007"
+    ],
+    "correct": true,
+    "notes": ""
+  }
+]

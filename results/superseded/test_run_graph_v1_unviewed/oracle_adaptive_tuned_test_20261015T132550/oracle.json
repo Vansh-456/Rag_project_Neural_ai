@@ -1,0 +1,407 @@
+{
+  "router_config": "adaptive_tuned",
+  "metric": "ndcg@5",
+  "lambda": 0.01,
+  "split": "test",
+  "n": 33,
+  "router_accuracy": 0.0606,
+  "router_accuracy_per_type": {
+    "definition": 0.0,
+    "relationship": 0.1429,
+    "comparison": 0.1667,
+    "multi_hop": 0.0,
+    "experimental": 0.0
+  },
+  "mean_quality": {
+    "vector": 0.6214,
+    "bm25": 0.6782,
+    "hybrid": 0.683,
+    "graph": 0.4859,
+    "graph_vector": 0.7638,
+    "multi_hop": 0.6233,
+    "adaptive_tuned": 0.7189,
+    "oracle": 0.8811
+  },
+  "mean_cost_units": {
+    "vector": 1.0,
+    "bm25": 0.3,
+    "hybrid": 1.3,
+    "graph": 0.6212,
+    "graph_vector": 1.9364,
+    "multi_hop": 2.9394,
+    "adaptive_tuned": 2.0818
+  },
+  "adaptive_vs_always_hybrid": {
+    "diff": 0.03590614709944502,
+    "ci_low": -0.03542735190754715,
+    "ci_high": 0.10433801660063625,
+    "p_value": 0.329,
+    "n": 33,
+    "cost_saved_units": -0.7818
+  },
+  "rows": [
+    {
+      "query_id": "d02",
+      "type": "definition",
+      "router": "hybrid",
+      "oracle": [
+        "graph"
+      ],
+      "router_utility": 0.3739,
+      "oracle_utility": 0.995,
+      "correct": false
+    },
+    {
+      "query_id": "d04",
+      "type": "definition",
+      "router": "hybrid",
+      "oracle": [
+        "bm25"
+      ],
+      "router_utility": 0.987,
+      "oracle_utility": 0.997,
+      "correct": false
+    },
+    {
+      "query_id": "d06",
+      "type": "definition",
+      "router": "hybrid",
+      "oracle": [
+        "bm25"
+      ],
+      "router_utility": 0.987,
+      "oracle_utility": 0.997,
+      "correct": false
+    },
+    {
+      "query_id": "d08",
+      "type": "definition",
+      "router": "hybrid",
+      "oracle": [
+        "graph"
+      ],
+      "router_utility": 0.6179,
+      "oracle_utility": 0.995,
+      "correct": false
+    },
+    {
+      "query_id": "d10",
+      "type": "definition",
+      "router": "hybrid",
+      "oracle": [
+        "bm25"
+      ],
+      "router_utility": -0.013,
+      "oracle_utility": -0.003,
+      "correct": false
+    },
+    {
+      "query_id": "d12",
+      "type": "definition",
+      "router": "hybrid",
+      "oracle": [
+        "bm25"
+      ],
+      "router_utility": 0.987,
+      "oracle_utility": 0.997,
+      "correct": false
+    },
+    {
+      "query_id": "d14",
+      "type": "definition",
+      "router": "hybrid",
+      "oracle": [
+        "bm25"
+      ],
+      "router_utility": 0.987,
+      "oracle_utility": 0.997,
+      "correct": false
+    },
+    {
+      "query_id": "d16",
+      "type": "definition",
+      "router": "hybrid",
+      "oracle": [
+        "bm25"
+      ],
+      "router_utility": 0.987,
+      "oracle_utility": 0.997,
+      "correct": false
+    },
+    {
+      "query_id": "r02",
+      "type": "relationship",
+      "router": "graph_vector",
+      "oracle": [
+        "graph_vector"
+      ],
+      "router_utility": 0.982,
+      "oracle_utility": 0.982,
+      "correct": true
+    },
+    {
+      "query_id": "r04",
+      "type": "relationship",
+      "router": "graph_vector",
+      "oracle": [
+        "graph"
+      ],
+      "router_utility": 0.6129,
+      "oracle_utility": 0.995,
+      "correct": false
+    },
+    {
+      "query_id": "r06",
+      "type": "relationship",
+      "router": "graph_vector",
+      "oracle": [
+        "bm25"
+      ],
+      "router_utility": 0.977,
+      "oracle_utility": 0.997,
+      "correct": false
+    },
+    {
+      "query_id": "r08",
+      "type": "relationship",
+      "router": "graph_vector",
+      "oracle": [
+        "graph"
+      ],
+      "router_utility": 0.6079,
+      "oracle_utility": 0.99,
+      "correct": false
+    },
+    {
+      "query_id": "r10",
+      "type": "relationship",
+      "router": "hybrid",
+      "oracle": [
+        "bm25"
+      ],
+      "router_utility": -0.013,
+      "oracle_utility": -0.003,
+      "correct": false
+    },
+    {
+      "query_id": "r12",
+      "type": "relationship",
+      "router": "graph_vector",
+      "oracle": [
+        "bm25"
+      ],
+      "router_utility": 0.977,
+      "oracle_utility": 0.997,
+      "correct": false
+    },
+    {
+      "query_id": "r14",
+      "type": "relationship",
+      "router": "graph_vector",
+      "oracle": [
+        "bm25"
+      ],
+      "router_utility": 0.977,
+      "oracle_utility": 0.997,
+      "correct": false
+    },
+    {
+      "query_id": "c02",
+      "type": "comparison",
+      "router": "hybrid",
+      "oracle": [
+        "vector"
+      ],
+      "router_utility": 0.987,
+      "oracle_utility": 0.99,
+      "correct": false
+    },
+    {
+      "query_id": "c04",
+      "type": "comparison",
+      "router": "graph_vector",
+      "oracle": [
+        "graph_vector"
+      ],
+      "router_utility": 0.4616,
+      "oracle_utility": 0.4616,
+      "correct": true
+    },
+    {
+      "query_id": "c06",
+      "type": "comparison",
+      "router": "graph_vector",
+      "oracle": [
+        "bm25"
+      ],
+      "router_utility": 0.982,
+      "oracle_utility": 0.997,
+      "correct": false
+    },
+    {
+      "query_id": "c08",
+      "type": "comparison",
+      "router": "graph_vector",
+      "oracle": [
+        "graph"
+      ],
+      "router_utility": 0.982,
+      "oracle_utility": 0.995,
+      "correct": false
+    },
+    {
+      "query_id": "c10",
+      "type": "comparison",
+      "router": "graph_vector",
+      "oracle": [
+        "graph"
+      ],
+      "router_utility": 0.982,
+      "oracle_utility": 0.995,
+      "correct": false
+    },
+    {
+      "query_id": "c12",
+      "type": "comparison",
+      "router": "graph_vector",
+      "oracle": [
+        "multi_hop"
+      ],
+      "router_utility": -0.018,
+      "oracle_utility": 0.4007,
+      "correct": false
+    },
+    {
+      "query_id": "m02",
+      "type": "multi_hop",
+      "router": "multi_hop",
+      "oracle": [
+        "hybrid"
+      ],
+      "router_utility": 0.97,
+      "oracle_utility": 0.987,
+      "correct": false
+    },
+    {
+      "query_id": "m04",
+      "type": "multi_hop",
+      "router": "multi_hop",
+      "oracle": [
+        "graph"
+      ],
+      "router_utility": 0.3962,
+      "oracle_utility": 0.7646,
+      "correct": false
+    },
+    {
+      "query_id": "m06",
+      "type": "multi_hop",
+      "router": "multi_hop",
+      "oracle": [
+        "bm25"
+      ],
+      "router_utility": -0.03,
+      "oracle_utility": 0.6279,
+      "correct": false
+    },
+    {
+      "query_id": "m08",
+      "type": "multi_hop",
+      "router": "graph_vector",
+      "oracle": [
+        "graph"
+      ],
+      "router_utility": 0.1099,
+      "oracle_utility": 0.7506,
+      "correct": false
+    },
+    {
+      "query_id": "m10",
+      "type": "multi_hop",
+      "router": "multi_hop",
+      "oracle": [
+        "vector"
+      ],
+      "router_utility": 0.6009,
+      "oracle_utility": 0.99,
+      "correct": false
+    },
+    {
+      "query_id": "e02",
+      "type": "experimental",
+      "router": "hybrid",
+      "oracle": [
+        "bm25"
+      ],
+      "router_utility": -0.013,
+      "oracle_utility": 0.997,
+      "correct": false
+    },
+    {
+      "query_id": "e04",
+      "type": "experimental",
+      "router": "hybrid",
+      "oracle": [
+        "bm25"
+      ],
+      "router_utility": 0.987,
+      "oracle_utility": 0.997,
+      "correct": false
+    },
+    {
+      "query_id": "e06",
+      "type": "experimental",
+      "router": "hybrid",
+      "oracle": [
+        "bm25"
+      ],
+      "router_utility": 0.987,
+      "oracle_utility": 0.997,
+      "correct": false
+    },
+    {
+      "query_id": "e08",
+      "type": "experimental",
+      "router": "graph_vector",
+      "oracle": [
+        "bm25"
+      ],
+      "router_utility": 0.3689,
+      "oracle_utility": 0.997,
+      "correct": false
+    },
+    {
+      "query_id": "e10",
+      "type": "experimental",
+      "router": "hybrid",
+      "oracle": [
+        "bm25"
+      ],
+      "router_utility": 0.987,
+      "oracle_utility": 0.997,
+      "correct": false
+    },
+    {
+      "query_id": "e12",
+      "type": "experimental",
+      "router": "hybrid",
+      "oracle": [
+        "bm25"
+      ],
+      "router_utility": 0.987,
+      "oracle_utility": 0.997,
+      "correct": false
+    },
+    {
+      "query_id": "e14",
+      "type": "experimental",
+      "router": "hybrid",
+      "oracle": [
+        "bm25"
+      ],
+      "router_utility": 0.987,
+      "oracle_utility": 0.997,
+      "correct": false
+    }
+  ]
+}

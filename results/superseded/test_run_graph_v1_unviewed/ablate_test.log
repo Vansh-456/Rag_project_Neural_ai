@@ -1,0 +1,148 @@
+INFO    agvrag.evaluation.ablation: running system system=bm25_only split=test
+INFO    agvrag.pipeline.components: index loaded index=structure_aware_256_32__bge_small_en_v1_5 chunks=6384
+INFO    agvrag.evaluation.runner: eval progress exp=ablation_bm25_only_test_20261015T131618598 done=10 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=ablation_bm25_only_test_20261015T131618598 done=20 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=ablation_bm25_only_test_20261015T131618598 done=30 total=33
+INFO    agvrag.evaluation.runner: experiment done exp_id=ablation_bm25_only_test_20261015T131618598
+INFO    agvrag.evaluation.ablation: running system system=vector_only split=test
+INFO    agvrag.evaluation.runner: eval progress exp=ablation_vector_only_test_20261015T131620257 done=10 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=ablation_vector_only_test_20261015T131620257 done=20 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=ablation_vector_only_test_20261015T131620257 done=30 total=33
+INFO    agvrag.evaluation.runner: experiment done exp_id=ablation_vector_only_test_20261015T131620257
+INFO    agvrag.evaluation.ablation: running system system=hybrid split=test
+INFO    agvrag.evaluation.runner: eval progress exp=ablation_hybrid_test_20261015T131626598 done=10 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=ablation_hybrid_test_20261015T131626598 done=20 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=ablation_hybrid_test_20261015T131626598 done=30 total=33
+INFO    agvrag.evaluation.runner: experiment done exp_id=ablation_hybrid_test_20261015T131626598
+INFO    agvrag.evaluation.ablation: running system system=hybrid_rerank split=test
+INFO    agvrag.evaluation.runner: eval progress exp=ablation_hybrid_rerank_test_20261015T131632395 done=10 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=ablation_hybrid_rerank_test_20261015T131632395 done=20 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=ablation_hybrid_rerank_test_20261015T131632395 done=30 total=33
+INFO    agvrag.evaluation.runner: experiment done exp_id=ablation_hybrid_rerank_test_20261015T131632395
+INFO    agvrag.evaluation.ablation: running system system=graph_only split=test
+INFO    agvrag.evaluation.runner: eval progress exp=ablation_graph_only_test_20261015T131947969 done=10 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=ablation_graph_only_test_20261015T131947969 done=20 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=ablation_graph_only_test_20261015T131947969 done=30 total=33
+INFO    agvrag.evaluation.runner: experiment done exp_id=ablation_graph_only_test_20261015T131947969
+INFO    agvrag.evaluation.ablation: running system system=graph_vector split=test
+INFO    agvrag.evaluation.runner: eval progress exp=ablation_graph_vector_test_20261015T131951201 done=10 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=ablation_graph_vector_test_20261015T131951201 done=20 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=ablation_graph_vector_test_20261015T131951201 done=30 total=33
+INFO    agvrag.evaluation.runner: experiment done exp_id=ablation_graph_vector_test_20261015T131951201
+INFO    agvrag.evaluation.ablation: running system system=adaptive split=test
+INFO    agvrag.evaluation.runner: eval progress exp=ablation_adaptive_test_20261015T131959912 done=10 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=ablation_adaptive_test_20261015T131959912 done=20 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=ablation_adaptive_test_20261015T131959912 done=30 total=33
+INFO    agvrag.evaluation.runner: experiment done exp_id=ablation_adaptive_test_20261015T131959912
+INFO    agvrag.evaluation.ablation: running system system=adaptive_tuned split=test
+INFO    agvrag.evaluation.runner: eval progress exp=ablation_adaptive_tuned_test_20261015T132108765 done=10 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=ablation_adaptive_tuned_test_20261015T132108765 done=20 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=ablation_adaptive_tuned_test_20261015T132108765 done=30 total=33
+INFO    agvrag.evaluation.runner: experiment done exp_id=ablation_adaptive_tuned_test_20261015T132108765
+INFO    agvrag.evaluation.ablation: running system system=adaptive_budget split=test
+INFO    agvrag.evaluation.runner: eval progress exp=ablation_adaptive_budget_test_20261015T132214834 done=10 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=ablation_adaptive_budget_test_20261015T132214834 done=20 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=ablation_adaptive_budget_test_20261015T132214834 done=30 total=33
+INFO    agvrag.evaluation.runner: experiment done exp_id=ablation_adaptive_budget_test_20261015T132214834
+INFO    agvrag.evaluation.runner: eval progress exp=oracle_adaptive_tuned-vector_test_20261015T132326726 done=10 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=oracle_adaptive_tuned-vector_test_20261015T132326726 done=20 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=oracle_adaptive_tuned-vector_test_20261015T132326726 done=30 total=33
+INFO    agvrag.evaluation.runner: experiment done exp_id=oracle_adaptive_tuned-vector_test_20261015T132326726
+INFO    agvrag.evaluation.runner: eval progress exp=oracle_adaptive_tuned-bm25_test_20261015T132334675 done=10 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=oracle_adaptive_tuned-bm25_test_20261015T132334675 done=20 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=oracle_adaptive_tuned-bm25_test_20261015T132334675 done=30 total=33
+INFO    agvrag.evaluation.runner: experiment done exp_id=oracle_adaptive_tuned-bm25_test_20261015T132334675
+INFO    agvrag.evaluation.runner: eval progress exp=oracle_adaptive_tuned-hybrid_test_20261015T132341214 done=10 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=oracle_adaptive_tuned-hybrid_test_20261015T132341214 done=20 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=oracle_adaptive_tuned-hybrid_test_20261015T132341214 done=30 total=33
+INFO    agvrag.evaluation.runner: experiment done exp_id=oracle_adaptive_tuned-hybrid_test_20261015T132341214
+INFO    agvrag.evaluation.runner: eval progress exp=oracle_adaptive_tuned-graph_test_20261015T132348801 done=10 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=oracle_adaptive_tuned-graph_test_20261015T132348801 done=20 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=oracle_adaptive_tuned-graph_test_20261015T132348801 done=30 total=33
+INFO    agvrag.evaluation.runner: experiment done exp_id=oracle_adaptive_tuned-graph_test_20261015T132348801
+INFO    agvrag.evaluation.runner: eval progress exp=oracle_adaptive_tuned-graph_vector_test_20261015T132354591 done=10 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=oracle_adaptive_tuned-graph_vector_test_20261015T132354591 done=20 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=oracle_adaptive_tuned-graph_vector_test_20261015T132354591 done=30 total=33
+INFO    agvrag.evaluation.runner: experiment done exp_id=oracle_adaptive_tuned-graph_vector_test_20261015T132354591
+INFO    agvrag.evaluation.runner: eval progress exp=oracle_adaptive_tuned-multi_hop_test_20261015T132403326 done=10 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=oracle_adaptive_tuned-multi_hop_test_20261015T132403326 done=20 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=oracle_adaptive_tuned-multi_hop_test_20261015T132403326 done=30 total=33
+INFO    agvrag.evaluation.runner: experiment done exp_id=oracle_adaptive_tuned-multi_hop_test_20261015T132403326
+INFO    agvrag.evaluation.runner: eval progress exp=oracle_adaptive_tuned_test_20261015T132430988 done=10 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=oracle_adaptive_tuned_test_20261015T132430988 done=20 total=33
+INFO    agvrag.evaluation.runner: eval progress exp=oracle_adaptive_tuned_test_20261015T132430988 done=30 total=33
+INFO    agvrag.evaluation.runner: experiment done exp_id=oracle_adaptive_tuned_test_20261015T132430988
+{
+  "bm25_only": {
+    "exp_id": "ablation_bm25_only_test_20261015T131618598",
+    "ndcg@5": {
+      "mean": 0.6782,
+      "ci_low": 0.5463,
+      "ci_high": 0.7977
+    }
+  },
+  "vector_only": {
+    "exp_id": "ablation_vector_only_test_20261015T131620257",
+    "ndcg@5": {
+      "mean": 0.6214,
+      "ci_low": 0.4856,
+      "ci_high": 0.7532
+    }
+  },
+  "hybrid": {
+    "exp_id": "ablation_hybrid_test_20261015T131626598",
+    "ndcg@5": {
+      "mean": 0.683,
+      "ci_low": 0.5532,
+      "ci_high": 0.8153
+    }
+  },
+  "hybrid_rerank": {
+    "exp_id": "ablation_hybrid_rerank_test_20261015T131632395",
+    "ndcg@5": {
+      "mean": 0.6611,
+      "ci_low": 0.5337,
+      "ci_high": 0.7812
+    }
+  },
+  "graph_only": {
+    "exp_id": "ablation_graph_only_test_20261015T131947969",
+    "ndcg@5": {
+      "mean": 0.4859,
+      "ci_low": 0.3306,
+      "ci_high": 0.6358
+    }
+  },
+  "graph_vector": {
+    "exp_id": "ablation_graph_vector_test_20261015T131951201",
+    "ndcg@5": {
+      "mean": 0.7638,
+      "ci_low": 0.6548,
+      "ci_high": 0.8744
+    }
+  },
+  "adaptive": {
+    "exp_id": "ablation_adaptive_test_20261015T131959912",
+    "ndcg@5": {
+      "mean": 0.6893,
+      "ci_low": 0.555,
+      "ci_high": 0.8162
+    }
+  },
+  "adaptive_tuned": {
+    "exp_id": "ablation_adaptive_tuned_test_20261015T132108765",
+    "ndcg@5": {
+      "mean": 0.7189,
+      "ci_low": 0.6022,
+      "ci_high": 0.8401
+    }
+  },
+  "adaptive_budget": {
+    "exp_id": "ablation_adaptive_budget_test_20261015T132214834",
+    "ndcg@5": {
+      "mean": 0.701,
+      "ci_low": 0.5793,
+      "ci_high": 0.8214
+    }
+  }
+}

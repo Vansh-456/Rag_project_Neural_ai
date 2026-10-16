@@ -1,0 +1,14 @@
+{
+  "n": 33,
+  "router_acc_quality_only": 0.636,
+  "router_acc_within_0.1": 0.636,
+  "mean_strategies_tied_at_best": 3.58,
+  "per_type_quality_only": {
+    "definition": 0.75,
+    "relationship": 0.71,
+    "comparison": 0.67,
+    "multi_hop": 0.2,
+    "experimental": 0.71
+  },
+  "note": "strict utility (ndcg - 0.01*cost) accuracy is 0.06 because ties go to the cheapest strategy"
+}
