@@ -173,6 +173,8 @@ class GraphRetriever:
             for n in p.nodes:
                 if n.startswith("paper:") and n[6:] not in doc_ids:
                     doc_ids.append(n[6:])
+            # Citation display: the first grounding chunk is the primary source of the path.
+            first = self.chunks[chunk_ids[0]] if chunk_ids else None
             out.append(
                 Evidence(
                     evidence_id=f"path:{stable_hash([e.key for e in p.edges], length=12)}",
@@ -184,6 +186,8 @@ class GraphRetriever:
                     raw_score=round(p.score, 6),
                     rank=i,
                     provenance={
+                        "doc_title": first.metadata.get("doc_title") if first else None,
+                        "page_start": first.page_start if first else None,
                         "nodes": p.nodes,
                         "directions": p.directions,
                         "hops": p.hops,

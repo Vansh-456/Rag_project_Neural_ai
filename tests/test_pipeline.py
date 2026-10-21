@@ -92,6 +92,13 @@ def test_budget_pipeline_escalates_and_respects_limits(built):
     assert t.costs["budget.retrieval_calls"] <= 3
 
 
+def test_graph_citations_name_their_source_paper(built):
+    s = settings_for(built, name="g", strategy="graph")
+    t = RAGPipeline(s, built[1]).run("Who introduced LoRA?", generate=True)
+    graph_cites = [c for c in t.citations if c["type"] != "text_chunk"]
+    assert graph_cites and all(c["doc_title"] for c in graph_cites)
+
+
 def test_streaming_events(built):
     s = settings_for(built, name="v", strategy="vector", generate=True)
     events = [e["event"] for e in RAGPipeline(s, built[1]).stream("What is LoRA?")]
