@@ -22,6 +22,12 @@ extractor · LLM budget assumed $0.
 - Phase 16: dev + frozen-test ablation over 9 systems — `docs/ablation_report.md`
 - Phase 17: FastAPI service, Next.js UI, Docker, auth, rate limiting, caching, traces, load test script
 - Phase 18: docs + paper-style write-up
+- 2026-10-21 readiness pass: end-to-end run (CLI → API → Next.js proxy/SSE) on the real index;
+  fixed CLI crash on Windows consoles (UTF-8 stdio), run-time `verify=True` silently ignored on
+  non-verify pipelines (verifier now lazy), graph citations missing source title/page,
+  `/ingest` not reaching Neo4j in production (incremental delta sync), UI basic-auth passwords
+  containing ':'; added `.gitattributes` (LF shell scripts for Docker), full MIT LICENSE,
+  compose now requires API_PASSWORD; +5 regression tests (126 total). Reported metrics unaffected.
 
 ## Key decisions (see DECISIONS.md)
 - Label-based (anchor) ground truth for chunker-independent evaluation — ADR-004
@@ -56,3 +62,6 @@ See `docs/ablation_report.md` (test) and `results/ablation_report_dev.md` (dev).
 ## Known issues / tech debt
 - One test-split run executed by accident against the pre-fix graph (results archived unviewed in `results/superseded/`)
 - mypy needs ~5 min (analyses torch); consider `follow_imports = skip` for heavy deps
+- Docker stack (Qdrant server + Neo4j) not yet exercised end to end; Neo4j paths are covered only
+  by code review + a mocked sync test
+- Repo has no commits yet (`git log` empty)
