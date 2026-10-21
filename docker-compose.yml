@@ -47,7 +47,9 @@ services:
     environment:
       API_URL: http://api:8000
       API_USERNAME: ${API_USERNAME:-admin}
-      API_PASSWORD: ${API_PASSWORD}
+      # Required: production config enables API auth, and the API refuses to start without it
+      # (only after the first-start bootstrap, so fail here instead).
+      API_PASSWORD: ${API_PASSWORD:?set API_PASSWORD in .env}
       UI_BASIC_AUTH_USER: ${UI_BASIC_AUTH_USER:-}
       UI_BASIC_AUTH_PASSWORD: ${UI_BASIC_AUTH_PASSWORD:-}
     ports: ["3000:3000"]
