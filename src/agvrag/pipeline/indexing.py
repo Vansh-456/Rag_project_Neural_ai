@@ -184,14 +184,22 @@ def build_graph_index(
     return stats
 
 
-def sync_neo4j(settings: Settings, store: NetworkXGraphStore, registry: ComponentRegistry) -> None:
+def sync_neo4j(
+    settings: Settings,
+    store: NetworkXGraphStore,
+    registry: ComponentRegistry,
+    clear: bool = True,
+) -> None:
+    """Push ``store`` to Neo4j. ``clear=False`` adds incrementally (writes are MERGEs), which
+    requires relation endpoints outside ``store`` to already exist in Neo4j."""
     if not registry.secrets.neo4j_password:
         raise ValueError("NEO4J_PASSWORD is required to sync the graph to Neo4j")
     neo = Neo4jGraphStore(
         settings.graph.neo4j_uri, settings.graph.neo4j_user, registry.secrets.neo4j_password
     )
     try:
-        neo.clear()
+        if clear:
+            neo.clear()
         neo.add_entities(store.entities())
         neo.add_relations(store.relations())
         log.info("graph synced to neo4j", extra={"nodes": len(store.entities())})
@@ -255,11 +263,19 @@ def ingest_pdf(
             {d.doc_id: d.title for d in docs},
         )
         cites = [r for r in rex.extract(doc, new_chunks).relations if r.type == "CITES"]
+        cited = {r.target: e for r in cites if (e := g.get_entity(r.target)) is not None}
+        cites = [r for r in cites if r.target in cited]
+        n_rel = len(sub.relations()) + len(cites)
         g.add_entities(sub.entities())
         g.add_relations(sub.relations())
-        g.add_relations([r for r in cites if g.get_entity(r.target)])
+        g.add_relations(cites)
         g.save(graph_path)
-        n_rel = len(sub.relations()) + len(cites)
+        if settings.graph.backend == "neo4j":
+            # The served graph lives in Neo4j; graph.json alone would leave the paper invisible
+            # to graph retrieval until the next full `agvrag graph`.
+            sub.add_entities(list(cited.values()))
+            sub.add_relations(cites)
+            sync_neo4j(settings, sub, registry, clear=False)
     registry.invalidate_index(settings)
     return {
         "doc_id": doc.doc_id,
