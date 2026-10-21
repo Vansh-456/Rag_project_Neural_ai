@@ -425,7 +425,17 @@ def _keep_awake() -> None:
         ctypes.windll.kernel32.SetThreadExecutionState(es_continuous | es_system_required)
 
 
+def _utf8_stdio() -> None:
+    """Paper text is full of math symbols; a Windows console (cp1252) cannot encode them and
+    ``print`` would crash mid-output. Force UTF-8 and replace anything still unencodable."""
+    for stream in (sys.stdout, sys.stderr):
+        reconfigure = getattr(stream, "reconfigure", None)
+        if reconfigure is not None:
+            reconfigure(encoding="utf-8", errors="replace")
+
+
 def main(argv: list[str] | None = None) -> int:
+    _utf8_stdio()
     args = build_parser().parse_args(argv)
     if args.cmd in {"index", "graph", "bootstrap", "evaluate", "sweep", "oracle", "ablate"}:
         _keep_awake()
