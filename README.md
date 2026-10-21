@@ -89,7 +89,7 @@ Evaluated over a curated 50-query benchmark spanning Definitional, Relational, C
 
 ```bash
 # 1. Clone & create virtual environment
-git clone https://github.com/example/adaptive-graph-vector-rag.git
+git clone https://github.com/Vansh-456/Rag_project_Neural_ai
 cd adaptive-graph-vector-rag
 python -m venv .venv
 
