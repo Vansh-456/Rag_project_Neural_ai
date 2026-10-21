@@ -79,12 +79,20 @@ class RAGPipeline:
         self._generator: Any = None
         if p.generate or p.verify:
             self._generator = self.generator  # fail fast on misconfigured providers
-        self.verifier: Any = None
+        self._verifier: Any = None
         if p.verify:
+            self._verifier = self.verifier
+
+    @property
+    def verifier(self) -> Any:
+        """Built on first use, so any pipeline can verify on request (``run(verify=True)``)."""
+        if self._verifier is None:
             from agvrag.verification.verifier import ClaimVerifier
 
-            v_llm = self.registry.llm(settings) if settings.verification.method == "llm" else None
-            self.verifier = ClaimVerifier(settings.verification, v_llm)
+            v = self.s.verification
+            v_llm = self.registry.llm(self.s) if v.method == "llm" else None
+            self._verifier = ClaimVerifier(v, v_llm)
+        return self._verifier
 
     @property
     def generator(self) -> Any:
@@ -218,7 +226,7 @@ class RAGPipeline:
             with timer.stage("generation"):
                 gen = self.generator.generate(query, analysis, ctx)
             self._charge_llm(budget, gen)
-            if verify and self.verifier is not None:
+            if verify:
                 verification, outcome, ctx, gen = self._verify_loop(
                     query, analysis, routing, outcome, ctx, gen, budget, timer, iterations
                 )

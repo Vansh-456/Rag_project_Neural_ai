@@ -92,6 +92,14 @@ def test_budget_pipeline_escalates_and_respects_limits(built):
     assert t.costs["budget.retrieval_calls"] <= 3
 
 
+def test_verify_on_request_for_pipeline_without_verify(built):
+    # verify=True at run time must work even when the YAML pipeline has verify: false
+    # (CLI --verify and the API "verify" flag rely on it).
+    s = settings_for(built, name="h", strategy="hybrid")
+    t = RAGPipeline(s, built[1]).run("What is LoRA?", generate=True, verify=True)
+    assert t.verification is not None and "support_rate" in t.verification
+
+
 def test_graph_citations_name_their_source_paper(built):
     s = settings_for(built, name="g", strategy="graph")
     t = RAGPipeline(s, built[1]).run("Who introduced LoRA?", generate=True)
