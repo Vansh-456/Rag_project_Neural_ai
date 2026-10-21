@@ -7,8 +7,12 @@ export function middleware(req: NextRequest) {
   if (!user || !pass) return NextResponse.next();
   const header = req.headers.get("authorization");
   if (header?.startsWith("Basic ")) {
-    const [u, p] = atob(header.slice(6)).split(":");
-    if (u === user && p === pass) return NextResponse.next();
+    // Split at the first colon only: RFC 7617 allows colons in the password.
+    const decoded = atob(header.slice(6));
+    const sep = decoded.indexOf(":");
+    if (sep >= 0 && decoded.slice(0, sep) === user && decoded.slice(sep + 1) === pass) {
+      return NextResponse.next();
+    }
   }
   return new NextResponse("Authentication required", {
     status: 401,
